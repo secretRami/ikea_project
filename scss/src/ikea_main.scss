@@ -3,7 +3,10 @@
 
 #wrap{width: 960px; height:auto; margin:0 auto;}
 
-h3{width:100%; height:50px; margin-bottom:40px; background-color:$mainColor;}
+h3{width:500px; height:50px;  margin:0 auto; margin-bottom:40px; 
+   color:$blackColor; font-size:2rem; line-height:50px; text-align:center;}
+h3:before{content:" | "; color:$mainColor; font-weight:bold;}
+h3:after{content:" | "; color:$mainColor; font-weight:bold;}
 
 // #headBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #headBox{width: 100%; height:60px; 
@@ -11,8 +14,9 @@ h3{width:100%; height:50px; margin-bottom:40px; background-color:$mainColor;}
   h1{width:100px; height:100%; background-color:#eee; margin-right:20px;  float:left}
   #gnb{width:800px; height:100%; float:left;}
   #gnb>ul{width:100%; height:100%;}
-  #gnb>ul>li{width:90px; height:100%; background-color:#ccc; float:left; margin-left:10px;}
-  #gnb a{width:100%; height:100%;}
+  #gnb>ul>li{width:90px; height:100%; background-color:#ccc; float:left; margin-left:10px;
+      a{width:100%; height:100%;}
+    }// #gnb>ul>li
   #gnb>ul>li:nth-child(6){float:right;}
 
 
@@ -20,31 +24,30 @@ h3{width:100%; height:50px; margin-bottom:40px; background-color:$mainColor;}
 #contentBox{width: 100%; height:auto;}
 // #searchBox____________________________________________________________________
   #searchBox{width:100%; height:400px; margin-bottom:100px; 
-            @include paddingAndBoxsizing($p:200px 50px); background-color:#fca;}
+            @include paddingAndBoxsizing($p:100px 50px); background-color:#fca;}
     .search_input{width:850px; height:120px; background-color:$mainColor;}
 
 // #popularityBox____________________________________________________________________
-  #popularityBox{width:100%; height:auto; margin-bottom:100px; background-color:#ffa;}
-    // h3{width:100%; height:100px; margin-bottom:40px; background-color:$mainColor;}              
+  #popularityBox{width:100%; height:auto; margin-bottom:200px;}
     #popularityBox>ul{width:100%; height:100%;}
-    #popularityBox>ul>li{width:440px; height:300px; margin-left:20px; background-color:$mainColor;}
-    #popularityBox>ul>li:nth-child(1){float:left; margin-left:0;}
-    #popularityBox>ul>li:nth-child(2){float:right;}
+    #popularityBox>ul>li{width:400px; height:200px; float:left; background-color:$mainColor;}
+    #popularityBox>ul>li:nth-child(1){margin-top: 80px;}
+    #popularityBox>ul>li:nth-child(2){margin-top: 160px; margin-left:120px;} 
 
 
 // #eventBox____________________________________________________________________
-  #eventBox{width:100%; height:auto; margin-bottom:100px; background-color:#fca;}
-    // h3{width:100%; height:100px; margin-bottom:40px; background-color:$mainColor;}
-    .eventlist{width:100%; height:500px; background-color:$mainColor;}
+  #eventBox{width:100%; height:auto; margin-bottom:200px;}
+    .event_list{width:30%; height:415px; background-color:#aff; float:left;}
+    .event_image{width:70%; height:415px; background-color:$mainColor; float:left;}
 
 
 // #imageBox01____________________________________________________________________
-  #imageBox01{width:100%; height:600px; margin-bottom:100px; background-color:#ffa;}
+  #imageBox01{width:100%; height:auto; margin-bottom:200px;}
+      #ikeaLogoImage{width:270px; height:100px; float:right; background-color:#ffa;}
+      .image_one{width:100%; height:352px; float:right; background-color:#ffa;}
 
 // #offlineStoreBox____________________________________________________________________
-  #offlineStoreBox{width:100%; height:auto; margin-bottom:100px; 
-                    background-color:#fca;}
-    // h3{width:100%; height:100px; margin-bottom:40px; background-color:$mainColor;}
+  #offlineStoreBox{width:100%; height:auto; margin-bottom:200px;}
     .storeimage{width:600px; height:500px; float:left; margin-right:20px; background-color:$pointColor;}
     .storebuttom{width:340px; height:500px; float:left;}
       .storebuttom>ul{width:100%; height:100%;}
@@ -53,25 +56,29 @@ h3{width:100%; height:50px; margin-bottom:40px; background-color:$mainColor;}
 
 
 // #imageBox02____________________________________________________________________
-  #imageBox02{width:100%; height:600px; margin-bottom:100px; background-color:#ffa;}
+  #imageBox02{width:100%; height:auto; margin-bottom:200px;}
+    #ikeaLogoImage2{width:270px; height:100px; float:left; background-color:#ffa;}
+    .image_two{width:400px; height:500px; float:right; background-color:#ffa;}
+
 
 
 // #homeFurnishingServiceBox____________________________________________________________________
-  #homeFurnishingServiceBox{width:100%; height:auto; margin-bottom:100px; background-color:#fca;}
-    .homefurnishing{width:100%; height:300px; background-color:#eaa;}
-    .planing{width:100%; height:300px; background-color:#aea;}
+  #homeFurnishingServiceBox{width:100%; height:auto; margin-bottom:200px;}
+    .homefurnishing{width:100%; height:300px; margin-bottom:10px;}
+    .homefurnishing:after{content:" "; width:80%; height:4px; border-bottom:2px solid #777; margin:0 auto;}
+    .planing{width:100%; height:300px;}
+      .homefurnishing_title{width:640px; height:inherit; float:left; background-color:#fef;}
+      .homefurnishing_img{width:300px; height:300px; float:right; border-radius:150px; background-color:#eff;}
 
 
 // #membershipBox____________________________________________________________________
-  #membershipBox{width:100%; height:auto; margin-bottom:100px; background-color:#ffa;}
-    // h3{width:100%; height:100px; margin-bottom:40px; background-color:$mainColor;}
+  #membershipBox{width:100%; height:auto; margin-bottom:200px;}
     .membership_image{width:100%; height:500px; background-color:$subColor;}
 
 // #subServiceBox____________________________________________________________________
-  #subServiceBox{width:100%; height:auto; margin-bottom:100px; background-color:#fca;}
-    // h3{width:100%; height:50px; margin-bottom:40px; background-color:$mainColor;}
-    #subServiceBox>ul{width:100%; height:306px; margin-bottom:20px;} 
-    #subServiceBox>ul>li{width:306px; height:306px; border-radius:150px; float:left; margin-left:20px; background-color:#eaa;}
+  #subServiceBox{width:100%; height:auto; margin-bottom:200px;}
+    #subServiceBox>ul{width:650px; height:200px; margin:0 auto; margin-bottom:20px;} 
+    #subServiceBox>ul>li{width:200px; height:200px; border-radius:150px; float:left; margin-left:20px; background-color:#eaa;}
     #subServiceBox>ul>li:nth-child(1){margin-left:0;}
 
 
