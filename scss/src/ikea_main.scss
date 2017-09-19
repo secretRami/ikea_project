@@ -1,0 +1,79 @@
+@import "../_setting/_base.scss";
+@import "../_setting/_mixin.scss";
+
+#wrap{width: 960px; height:auto; margin:0 auto;}
+
+h3{width:100%; height:50px; margin-bottom:40px; background-color:$mainColor;}
+
+// #headBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#headBox{width: 100%; height:60px; 
+        @include paddingAndBoxsizing(); background-color:$mainColor;}
+  h1{width:100px; height:100%; background-color:#eee; margin-right:20px;  float:left}
+  #gnb{width:800px; height:100%; float:left;}
+  #gnb>ul{width:100%; height:100%;}
+  #gnb>ul>li{width:90px; height:100%; background-color:#ccc; float:left; margin-left:10px;}
+  #gnb a{width:100%; height:100%;}
+  #gnb>ul>li:nth-child(6){float:right;}
+
+
+// #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#contentBox{width: 100%; height:auto;}
+// #searchBox____________________________________________________________________
+  #searchBox{width:100%; height:400px; margin-bottom:100px; 
+            @include paddingAndBoxsizing($p:200px 50px); background-color:#fca;}
+    .search_input{width:850px; height:120px; background-color:$mainColor;}
+
+// #popularityBox____________________________________________________________________
+  #popularityBox{width:100%; height:auto; margin-bottom:100px; background-color:#ffa;}
+    // h3{width:100%; height:100px; margin-bottom:40px; background-color:$mainColor;}              
+    #popularityBox>ul{width:100%; height:100%;}
+    #popularityBox>ul>li{width:440px; height:300px; margin-left:20px; background-color:$mainColor;}
+    #popularityBox>ul>li:nth-child(1){float:left; margin-left:0;}
+    #popularityBox>ul>li:nth-child(2){float:right;}
+
+
+// #eventBox____________________________________________________________________
+  #eventBox{width:100%; height:auto; margin-bottom:100px; background-color:#fca;}
+    // h3{width:100%; height:100px; margin-bottom:40px; background-color:$mainColor;}
+    .eventlist{width:100%; height:500px; background-color:$mainColor;}
+
+
+// #imageBox01____________________________________________________________________
+  #imageBox01{width:100%; height:600px; margin-bottom:100px; background-color:#ffa;}
+
+// #offlineStoreBox____________________________________________________________________
+  #offlineStoreBox{width:100%; height:auto; margin-bottom:100px; 
+                    background-color:#fca;}
+    // h3{width:100%; height:100px; margin-bottom:40px; background-color:$mainColor;}
+    .storeimage{width:600px; height:500px; float:left; margin-right:20px; background-color:$pointColor;}
+    .storebuttom{width:340px; height:500px; float:left;}
+      .storebuttom>ul{width:100%; height:100%;}
+      .storebuttom>ul>li{width:340px; height:154px; margin-bottom:18px; background-color:$pointColor;}
+
+
+
+// #imageBox02____________________________________________________________________
+  #imageBox02{width:100%; height:600px; margin-bottom:100px; background-color:#ffa;}
+
+
+// #homeFurnishingServiceBox____________________________________________________________________
+  #homeFurnishingServiceBox{width:100%; height:auto; margin-bottom:100px; background-color:#fca;}
+    .homefurnishing{width:100%; height:300px; background-color:#eaa;}
+    .planing{width:100%; height:300px; background-color:#aea;}
+
+
+// #membershipBox____________________________________________________________________
+  #membershipBox{width:100%; height:auto; margin-bottom:100px; background-color:#ffa;}
+    // h3{width:100%; height:100px; margin-bottom:40px; background-color:$mainColor;}
+    .membership_image{width:100%; height:500px; background-color:$subColor;}
+
+// #subServiceBox____________________________________________________________________
+  #subServiceBox{width:100%; height:auto; margin-bottom:100px; background-color:#fca;}
+    // h3{width:100%; height:50px; margin-bottom:40px; background-color:$mainColor;}
+    #subServiceBox>ul{width:100%; height:306px; margin-bottom:20px;} 
+    #subServiceBox>ul>li{width:306px; height:306px; border-radius:150px; float:left; margin-left:20px; background-color:#eaa;}
+    #subServiceBox>ul>li:nth-child(1){margin-left:0;}
+
+
+// #footBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#footBox{width: 100%; height:150px; background-color:$mainColor;}

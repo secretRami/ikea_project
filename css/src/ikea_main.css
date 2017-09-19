@@ -1,7 +1,71 @@
-#wrap { width: 960px; height: auto; background-color: #eee; }
+#wrap { width: 960px; height: auto; margin: 0 auto; }
 
-#headBox { width: 100%; height: 60px; background-color: #fee; }
+h3 { width: 100%; height: 50px; margin-bottom: 40px; background-color: #2856a7; }
 
-#contentBox { width: 100%; height: 500px; background-color: #efe; }
+#headBox { width: 100%; height: 60px; padding: 10px; box-sizing: border-box; background-color: #2856a7; }
 
-#footBox { width: 100%; height: 150px; background-color: #eef; }
+h1 { width: 100px; height: 100%; background-color: #eee; margin-right: 20px; float: left; }
+
+#gnb { width: 800px; height: 100%; float: left; }
+
+#gnb > ul { width: 100%; height: 100%; }
+
+#gnb > ul > li { width: 90px; height: 100%; background-color: #ccc; float: left; margin-left: 10px; }
+
+#gnb a { width: 100%; height: 100%; }
+
+#gnb > ul > li:nth-child(6) { float: right; }
+
+#contentBox { width: 100%; height: auto; }
+
+#searchBox { width: 100%; height: 400px; margin-bottom: 100px; padding: 200px 50px; box-sizing: border-box; background-color: #fca; }
+
+.search_input { width: 850px; height: 120px; background-color: #2856a7; }
+
+#popularityBox { width: 100%; height: auto; margin-bottom: 100px; background-color: #ffa; }
+
+#popularityBox > ul { width: 100%; height: 100%; }
+
+#popularityBox > ul > li { width: 440px; height: 300px; margin-left: 20px; background-color: #2856a7; }
+
+#popularityBox > ul > li:nth-child(1) { float: left; margin-left: 0; }
+
+#popularityBox > ul > li:nth-child(2) { float: right; }
+
+#eventBox { width: 100%; height: auto; margin-bottom: 100px; background-color: #fca; }
+
+.eventlist { width: 100%; height: 500px; background-color: #2856a7; }
+
+#imageBox01 { width: 100%; height: 600px; margin-bottom: 100px; background-color: #ffa; }
+
+#offlineStoreBox { width: 100%; height: auto; margin-bottom: 100px; background-color: #fca; }
+
+.storeimage { width: 600px; height: 500px; float: left; margin-right: 20px; background-color: #f26722; }
+
+.storebuttom { width: 340px; height: 500px; float: left; }
+
+.storebuttom > ul { width: 100%; height: 100%; }
+
+.storebuttom > ul > li { width: 340px; height: 154px; margin-bottom: 18px; background-color: #f26722; }
+
+#imageBox02 { width: 100%; height: 600px; margin-bottom: 100px; background-color: #ffa; }
+
+#homeFurnishingServiceBox { width: 100%; height: auto; margin-bottom: 100px; background-color: #fca; }
+
+.homefurnishing { width: 100%; height: 300px; background-color: #eaa; }
+
+.planing { width: 100%; height: 300px; background-color: #aea; }
+
+#membershipBox { width: 100%; height: auto; margin-bottom: 100px; background-color: #ffa; }
+
+.membership_image { width: 100%; height: 500px; background-color: #ffea02; }
+
+#subServiceBox { width: 100%; height: auto; margin-bottom: 100px; background-color: #fca; }
+
+#subServiceBox > ul { width: 100%; height: 306px; margin-bottom: 20px; }
+
+#subServiceBox > ul > li { width: 306px; height: 306px; border-radius: 150px; float: left; margin-left: 20px; background-color: #eaa; }
+
+#subServiceBox > ul > li:nth-child(1) { margin-left: 0; }
+
+#footBox { width: 100%; height: 150px; background-color: #2856a7; }
