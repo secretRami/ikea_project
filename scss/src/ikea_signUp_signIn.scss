@@ -1,0 +1,74 @@
+@import "../_setting/_base.scss";
+@import "../_setting/_mixin.scss";
+
+#wrap{width: 960px; height:auto; margin:0 auto;}
+
+h3{width:500px; height:50px;  margin:0 auto; margin-bottom:40px; 
+   color:$blackColor; font-size:2rem; line-height:50px; text-align:center;}
+h3:before{content:" | "; color:$mainColor; font-weight:bold;}
+h3:after{content:" | "; color:$mainColor; font-weight:bold;}
+
+// #headBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#headBox{width: 100%; height:60px; 
+        @include paddingAndBoxsizing(); background-color:$mainColor;}
+  h1{width:100px; height:100%; margin-right:20px;  float:left;
+      @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");}
+  #gnb{width:800px; height:100%; float:left;}
+  #gnb>ul{width:100%; height:100%;}
+  #gnb>ul>li{height:100%; float:left; margin-left:10px;
+            @include fontSet_Gnb($lh:50px);
+      a{width:100%; height:100%;}
+    }// #gnb>ul>li
+  #gnb>ul>li:nth-child(1){width:90px;}
+  #gnb>ul>li:nth-child(2){width:90px;}
+  #gnb>ul>li:nth-child(3){width:110px;}
+  #gnb>ul>li:nth-child(4){width:140px;}
+  #gnb>ul>li:nth-child(5){width:90px;}
+  #gnb>ul>li:nth-child(6){width:30px; float:right; font-size:2rem;}
+  
+
+
+// #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#contentBox{width: 100%; height:auto; @include paddingAndBoxsizing($p:20px);}
+
+#infoBox{width:340px; height:510px; border-radius:30px;  margin-bottom:200px; box-shadow:10px 10px 10px #ddd;}
+  #infoBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:300px 0 0 0 ); margin:0 auto;}
+  #infoBox>ul>li{width:270px; height:45px; margin-bottom:20px; 
+                @include paddingAndBoxsizing($p:0 30px);
+                @include fontSet_SubTitle($c:$whiteColor, $ta:right, $lh:45px);}
+    #infoBox>ul>li:nth-child(1){background-color:$mainColor;}
+    #infoBox>ul>li:nth-child(2){background-color:$subColor;}
+    #infoBox>ul>li:nth-child(3){background-color:$pointColor;}
+    // #infoBox>button{width:100%; height:100%; color:$whiteColor;}
+  
+#signInBox{width:340px; height:510px; border-radius:30px; margin-bottom:200px; box-shadow:10px 10px 10px #ddd;}
+#signInBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:30px 0 0 0 ); margin:0 auto;}
+  #signInBox>ul>li{width:270px; height:45px; margin-bottom:20px; border-bottom:2px solid $mainColor; box-sizing:border-box;
+                @include fontSet_InfoText($c:$mainColor, $ta:left, $lh:45px);}
+    #signInBox>ul>li:nth-child(1){width:120px; background-color:$subColor; text-align:left;
+                  margin-bottom:100px; border-bottom:0;  
+                  border-top-right-radius:30px; border-bottom-right-radius:30px;}
+
+    #signInBox>ul>li:nth-child(4){background-color:$mainColor;text-align:center;margin-top:150px; border-bottom:0;}
+    
+#signUpBox{width:340px; height:510px; border-radius:30px; margin-bottom:200px; box-shadow:10px 10px 10px #ddd;}
+#signUpBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:30px 0 0 0 ); margin:0 auto;}
+  #signUpBox>ul>li{width:270px; height:45px; margin-bottom:20px; border-bottom:2px solid $mainColor; box-sizing:border-box;
+                @include fontSet_InfoText($c:$mainColor, $ta:left, $lh:45px);}
+    #signUpBox>ul>li:nth-child(1){width:120px; background-color:$mainColor; text-align:left;
+                  margin-bottom:20px; border-bottom:0;  
+                  border-top-right-radius:30px; border-bottom-right-radius:30px;}
+
+    #signUpBox>ul>li:nth-child(7){background-color:$subColor;text-align:center;margin-top:40px; border-bottom:0;}
+    
+
+
+
+
+
+
+
+
+
+// #footBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#footBox{width: 100%; height:150px; background-color:$mainColor;}
