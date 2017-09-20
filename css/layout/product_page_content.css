@@ -1,0 +1,85 @@
+#searchBox { width: 100%; height: 310px; margin-bottom: 100px; padding: 50px; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/ikea_background.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.search_input { width: 850px; height: 120px; background-color: #fff; }
+
+#newItemBox { width: 100%; height: auto; margin-bottom: 200px; }
+
+#newItemBox > ul { width: 100%; height: 100%; }
+
+#newItemBox > ul > li { width: 306px; height: 150px; margin-left: 20px; margin-bottom: 20px; float: left; background-color: #ddd; }
+
+#newItemBox > ul > li:nth-child(1) { margin-left: 0; }
+
+#newItemBox > ul > li:nth-child(4) { width: 100%; height: 150px; margin-left: 0; }
+
+#newItemBox > ul > li:nth-child(5) { margin-left: 0; }
+
+#imageBox01 { width: 100%; height: auto; margin-bottom: 200px; }
+
+#ikeaLogoImage { width: 270px; height: 100px; float: right; background-color: #ffa; }
+
+.image_one { width: 100%; height: 456px; float: right; background-color: #aaf; }
+
+#useTypeCategorizationBox { width: 100%; height: auto; margin-bottom: 200px; }
+
+#useTypeCategorizationBox > .use_type_image { width: 100%; height: 350px; background-color: #ffa; }
+
+#useTypeSubBox { width: 100%; height: auto; margin-bottom: 200px; }
+
+#useTypeSubBox > ul { width: 860px; height: 100%; margin: 0 auto; }
+
+#useTypeSubBox > ul > li { width: 200px; height: 200px; float: left; margin-left: 20px; border-radius: 100px; background-color: #aad; }
+
+#useTypeSubBox > ul > li:nth-child(1) { margin-left: 0; }
+
+#imageBox02 { width: 100%; height: 500px; margin-bottom: 200px; }
+
+#ikeaLogoImage2 { width: 270px; height: 100px; float: right; background-color: #eae; }
+
+.image_two { width: 100%; height: 456px; float: right; background-color: #ffa; }
+
+#roomTypeCategorizationBox { width: 100%; height: auto; margin-bottom: 200px; }
+
+.big_size_image { width: 470px; height: 440px; float: left; margin-right: 20px; background-color: #ffa; }
+
+.small_size_image { width: 470px; height: 440px; float: left; padding: 126px 0 0 0; box-sizing: border-box; background-color: #ffa; }
+
+.small_size_image > ul { width: 100%; height: 100%; }
+
+.small_size_image > ul > li { width: 224px; height: 146px; float: left; margin-left: 20px; margin-bottom: 20px; background-color: #faa; }
+
+.small_size_image > ul > li:nth-child(1) { margin-left: 0; }
+
+.small_size_image > ul > li:nth-child(3) { margin-left: 0; margin-bottom: 0; }
+
+.small_size_image > ul > li:nth-child(4) { margin-bottom: 0; }
+
+#roomTypeSubBox { width: 100%; height: auto; margin-bottom: 200px; }
+
+#roomTypeSubBox > ul { width: 100%; height: 100%; }
+
+#roomTypeSubBox > ul > li { width: 224px; height: 224px; float: left; margin-left: 20px; background-color: #afd; }
+
+#roomTypeSubBox > ul > li:nth-child(1) { margin-left: 0; }
+
+#galleryBox { width: 100%; height: auto; margin-bottom: 200px; }
+
+#galleryBox > ul { width: 100%; height: 100%; }
+
+#galleryBox > ul > li { width: 100%; height: auto; }
+
+.mini_image { width: 470px; height: 320px; float: left; margin-bottom: 20px; background-color: #ffa; }
+
+.big_image { width: 470px; height: 320px; float: left; margin-left: 20px; margin-bottom: 20px; background-color: #ffa; }
+
+.big_image2 { width: 470px; height: 320px; float: left; margin-right: 20px; background-color: #ffa; }
+
+.mini_image > ul { width: 100%; height: 100%; }
+
+.mini_image > ul > li { width: 224px; height: 146px; float: left; margin-left: 20px; margin-bottom: 20px; background-color: #faa; }
+
+.mini_image > ul > li:nth-child(1) { margin-left: 0; }
+
+.mini_image > ul > li:nth-child(3) { margin-left: 0; margin-bottom: 0; }
+
+.mini_image > ul > li:nth-child(4) { margin-bottom: 0; }

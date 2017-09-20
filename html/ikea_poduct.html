@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <!-- 한글사용지정 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 익스플로러 가장 최신 버전으로 끌어올림 -->
+
+  <!--[if lte IE 9]>
+  <script src="../ie/dist/html5shiv/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script>
+  <script src="../ie/css3pie/PIE_IE9.js"></script>
+  <![endif]-->
+  <!-- 조건부주석: 9보다 낮은 버전일 때에 활성화
+    1. html5바디에 구현되는 태그 호환하기 위한 html5shive 
+    2. 선택자 인지하게 만듬.
+    3. css3로 구현되는 
+  -->
+ 
+<!-- css관련 세팅하기 -->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <!-- 코드 초기화 -->
+  
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+  <!-- font를 아이콘화함 -->
+
+  <link rel="stylesheet" type="text/css" href="../css/src/ikea_product.css" />
+  <!-- style 불러옴 -->
+
+<!-- script불러보기.  -->
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <!-- 1. 기본버전 부르고 나서  -->
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <!-- 2. ui를 불러와야 함.  -->
+  
+  
+  <title>ikeaProject</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox" class="clearfix">
+      <h1><span class="me_hidden">Ikea logo</span></h1>
+      <nav id="gnb">
+        <h2 class="me_hidden">h2_title</h2>
+        <ul class="clearfix">
+          <li><a href="#">모든제품</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">카테고리보기</a></li>
+          <li><a href="#">홈 퍼니싱 아이디어</a></li>
+          <li><a href="#">고객지원</a></li>
+          <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a><span class="me_hidden">로그인/회원가입</span></li>  
+        </ul>
+      </nav>
+    </header>
+
+    <article id="contentBox">
+      <h2 class="me_hidden">contentTitle</h2>
+<!-- #searchBox__________________________________ -->
+      <article id="searchBox">
+        <h3 class="me_hidden">검색</h3>
+        <div class="search_input"></div>
+      </article><!-- // #searchBox -->
+
+    
+    <!-- newItem__________________________________ -->
+      <article id="newItemBox" class="clearfix">
+          <h3>새로나온 상품</h3>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>    
+      </article><!-- // newItem -->
+    
+
+    <!-- imageBox01__________________________________ -->
+      <article id="imageBox01" class="clearfix">
+        <h3 id="ikeaLogoImage"><span class="me_hidden">ikea_logo</span></h3>   
+        <div class="image_one"></div> 
+      </article><!-- // imageBox01 -->
+    
+
+    <!-- useTypeCategorization__________________________________ -->
+      <article id="useTypeCategorizationBox">
+        <h3>용도별 제품보기</h3>    
+        <div class="use_type_image"></div>
+      </article><!-- // useTypeCategorization -->
+    
+
+    <!-- useTypeSub__________________________________ -->
+      <article id="useTypeSubBox">  
+        <h3 class="me_hidden">useTypeSubBox_title</h3>  
+        <ul class="clearfix">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </article><!-- // useTypeSub -->
+    
+
+    <!-- imageBox02__________________________________ -->
+      <article id="imageBox02"> 
+        <h3 id="ikeaLogoImage2"><span class="me_hidden">imageBox02"_title</span></h3>   
+        <div class="image_two"></div>
+      </article><!-- // imageBox02 -->
+    
+
+    <!-- roomTypeCategorization__________________________________ -->
+      <article id="roomTypeCategorizationBox" class="clearfix">
+        <h3>공간별 제품</h3>    
+        <div class="big_size_image"></div>
+        <div class="small_size_image clearfix">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </article><!-- // roomTypeCategorization -->
+    
+
+    <!-- roomTypeSub__________________________________ -->
+      <article id="roomTypeSubBox">
+        <h3 class="me_hidden">roomTypeSubBox_title</h3>    
+        <ul class="clearfix">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </article><!-- // roomTypeSub -->
+    
+
+    <!-- gallery__________________________________ -->
+      <article id="galleryBox" class="clearfix">
+        <h3>gallery</h3>  
+        <ul>
+          <li>
+             <div class="mini_image clearfix">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="big_image"></div>
+          </li>
+
+          <li>
+            <div class="big_image2"></div>
+            <div class="mini_image clearfix">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="mini_image clearfix">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="big_image"></div>
+          </li>
+        </ul>  
+        
+      </article><!-- // gallery -->
+    </article>
+
+
+
+
+
+    <footer id="footBox">
+      <h2 class="me_hidden">h2_title</h2></footer>
+  </div>
+
+</body>
+</html>
