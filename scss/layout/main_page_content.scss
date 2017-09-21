@@ -77,7 +77,7 @@
           &>a{width:100%; height:100%; display: block; border-radius:150px;
               @include fontSet_SubTitle($c:$blackColor, $lh:450px); font-weight:bold;
               background-color:rgba(255, 255, 255, 0.2);}
-          &>a:hover{background-color:rgba(000, 000, 000, 0.7);; font-size:2rem; color:$whiteColor;}
+          &>a:hover{background-color:rgba(000, 000, 000, 0.7); font-size:2rem; color:$whiteColor;}
         } // .homefurnishing_img   
         
       .one{@include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_05/05_PH147252.jpg");}
