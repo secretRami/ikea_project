@@ -2,30 +2,34 @@
 // #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #contentBox{width: 100%; height:auto; @include paddingAndBoxsizing($p:20px);}
 
-#infoBox{width:340px; height:510px; border-radius:30px;  margin:0 auto; margin-bottom:200px; box-shadow:10px 10px 10px #ddd;}
+  
+  button{width:100%; height:100%; display:block; @include fontSet_InfoText($lh:45px);}
+  button.font_color_main{width:100%; height:100%; display:block; @include fontSet_InfoText($c:$mainColor,$lh:45px); font-weight:bold;}
+
+#infoBox{width:340px; height:510px; border-radius:30px;  margin:0 auto; margin-bottom:200px; box-shadow:10px 10px 10px #ddd; background-color:#fcfcfc;}
   #infoBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:300px 0 0 0 ); margin:0 auto;}
   #infoBox>ul>li{width:270px; height:45px; margin-bottom:20px; 
                 @include paddingAndBoxsizing($p:0 30px);
-                @include fontSet_SubTitle($c:$whiteColor, $ta:right, $lh:45px);}
+                @include fontSet_SubTitle($c:$whiteColor, $ta:right, $lh:45px);} //#infoBox>ul>li
     #infoBox>ul>li:nth-child(1){background-color:$mainColor;}
     #infoBox>ul>li:nth-child(2){background-color:$subColor;}
     #infoBox>ul>li:nth-child(3){background-color:$pointColor;}
-    // #infoBox>button{width:100%; height:100%; color:$whiteColor;}
+    // #infoBox>button{width:100%; height:100%; display:block; color:$whiteColor;}
   
-#signInBox{width:340px; height:510px; border-radius:30px; margin:0 auto; margin-bottom:200px; box-shadow:10px 10px 10px #ddd;}
+#signInBox{width:340px; height:510px; border-radius:30px; margin:0 auto; margin-bottom:200px; box-shadow:10px 10px 10px #ddd; background-color:#fcfcfc;}
 #signInBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:30px 0 0 0 ); margin:0 auto;}
   #signInBox>ul>li{width:250px; height:45px; margin-bottom:20px; border-bottom:2px solid $mainColor; box-sizing:border-box;
-                @include fontSet_InfoText($c:$mainColor, $ta:left, $lh:45px);}
+                @include fontSet_InfoText($c:$mainColor, $ta:left, $lh:45px);} // #signInBox>ul>li
     #signInBox>ul>li:nth-child(1){width:120px; background-color:$subColor; text-align:left;
                   margin-bottom:100px; border-bottom:0;  
                   border-top-right-radius:30px; border-bottom-right-radius:30px;}
 
     #signInBox>ul>li:nth-child(4){width:270px; background-color:$mainColor;text-align:center;margin-top:150px; border-bottom:0;}
        
-#signUpBox{width:340px; height:510px; border-radius:30px; margin:0 auto; margin-bottom:200px; box-shadow:10px 10px 10px #ddd;}
+#signUpBox{width:340px; height:510px; border-radius:30px; margin:0 auto; margin-bottom:200px; box-shadow:10px 10px 10px #ddd; background-color:#fcfcfc;}
 #signUpBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:30px 0 0 0 ); margin:0 auto;}
   #signUpBox>ul>li{width:250px; height:45px; margin-bottom:20px; border-bottom:2px solid $mainColor; box-sizing:border-box;
-                @include fontSet_InfoText($c:$mainColor, $ta:left, $lh:45px);}
+                @include fontSet_InfoText($c:$mainColor, $ta:left, $lh:45px);} //#signUpBox>ul>li
     #signUpBox>ul>li:nth-child(1){width:120px; background-color:$mainColor; text-align:left;
                   margin-bottom:20px; border-bottom:0;  
                   border-top-right-radius:30px; border-bottom-right-radius:30px;}
