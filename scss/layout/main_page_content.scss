@@ -74,12 +74,11 @@
         .homefurnishing_title>p{@include fontSet_InfoText($c:$blackColor,$ta:center, $lh:0); }
       
       .homefurnishing_img{width:300px; height:300px; float:right; border-radius:150px; background-color:#eff; position:relative;
-        &>a{width:100%; height:100%;}// a태그 사이즈가 없음.. 찾아보기
-                        } // .homefurnishing_img   
-        // .homefurnishing_img:hover{background-color:rgba(777, 777, 777, 0.5);}//이거 왜 안되는지 찾아보기
-        .homefurnishing_img:after{content: "보러가기"; width:300px; height:100px; background-color:rgba(255, 255, 255, 0.6);
-                    @include fontSet_SubTitle($c:$blackColor, $lh:100px); font-weight:bold;
-                    position:absolute; left:0; top:60%; z-index:100;}                     
+          &>a{width:100%; height:100%; display: block; border-radius:150px;
+              @include fontSet_SubTitle($c:$blackColor, $lh:450px); font-weight:bold;
+              background-color:rgba(255, 255, 255, 0.2);}
+          &>a:hover{background-color:rgba(000, 000, 000, 0.7);; font-size:2rem; color:$whiteColor;}
+        } // .homefurnishing_img   
         
       .one{@include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_05/05_PH147252.jpg");}
       .two{@include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_05/05_PH147257.jpg");}
@@ -98,4 +97,13 @@
     #subServiceBox>ul>li{width:200px; height:200px; border-radius:150px; float:left; margin-left:20px; background-color:$mainColor;}
       #subServiceBox>ul>li:nth-child(1){margin-left:0;}
       #subServiceBox>ul>li:hover{border-radius:0; transition:600ms; background-color:$pointColor;}
-    #subServiceBox>ul>li> a{width:100%; height:100%; @include fontSet_SubTitle($c:blackColor, $lh:50px); font-weight:bold;}
+    #subServiceBox>ul>li> a{display:block; width:100%; height:100%; @include fontSet_InfoText($c:$whiteColor, $lh:30px);
+          @include paddingAndBoxsizing(140px 30px 30px 30px);}
+
+
+
+
+
+
+
+
