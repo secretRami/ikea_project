@@ -28,12 +28,6 @@ $url:"../../img/";
     background-repeat: no-repeat;
     background-position:$p;}
 
-// @mixin h3_Style(){
-// #wrap h3{width:500px; height:50px;  margin:0 auto; margin-bottom:40px; 
-//    color:$blackColor; font-size:2rem; line-height:50px; text-align:center;}
-// h3:before{content:" | "; color:$mainColor; font-weight:bold;}
-// h3:after{content:" | "; color:$mainColor; font-weight:bold;}
-// }
 
 @mixin fontSet_Gnb($c:$whiteColor,$ta:center, $lh:0){
 font-size:1rem; 

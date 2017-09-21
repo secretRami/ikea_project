@@ -17,12 +17,15 @@ h3.nobar:after{display:none;}
 #headBox{width: 100%; height:60px; 
         @include paddingAndBoxsizing(); background-color:$mainColor;}
   h1{width:100px; height:100%; margin-right:20px;  float:left;
-      @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png", $s:101px);}
+      @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png", $s:101px);
+    a{width:100%; height:100%; display:block;}
+  }
   #gnb{width:800px; height:100%; float:left;}
   #gnb>ul{width:100%; height:100%;}
   #gnb>ul>li{height:100%; float:left; margin-left:10px;
             @include fontSet_Gnb($lh:50px);
       a{width:100%; height:100%; display:block;}
+      a:hover{color:$subColor;}
     }// #gnb>ul>li
   #gnb>ul>li:nth-child(1){width:90px;}
   #gnb>ul>li:nth-child(2){width:90px;}

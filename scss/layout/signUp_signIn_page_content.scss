@@ -3,8 +3,9 @@
 #contentBox{width: 100%; height:auto; @include paddingAndBoxsizing($p:20px);}
 
   
-  button{width:100%; height:100%; display:block; @include fontSet_InfoText($lh:45px);}
+  button{width:100%; height:100%; display:block; @include fontSet_InfoText($lh:45px);}  
   button.font_color_main{width:100%; height:100%; display:block; @include fontSet_InfoText($c:$mainColor,$lh:45px); font-weight:bold;}
+  
 
 #infoBox{width:340px; height:510px; border-radius:30px;  margin:0 auto; margin-bottom:200px; box-shadow:10px 10px 10px #ddd; background-color:#fcfcfc;}
   #infoBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:300px 0 0 0 ); margin:0 auto;}
