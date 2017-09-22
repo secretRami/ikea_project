@@ -93,8 +93,13 @@
     #subServiceBox>ul>li{width:200px; height:200px; border-radius:150px; float:left; margin-left:20px; background-color:$mainColor;}
       #subServiceBox>ul>li:nth-child(1){margin-left:0;}
       #subServiceBox>ul>li:hover{border-radius:0; transition:600ms; background-color:$pointColor;}
-    #subServiceBox>ul>li> a{display:block; width:100%; height:100%; @include fontSet_InfoText($c:$whiteColor, $lh:30px);
+    #subServiceBox>ul>li> a{display:block; width:100%; height:100%; 
+          @include fontSet_InfoText($c:$whiteColor, $lh:30px);
           @include paddingAndBoxsizing(140px 30px 30px 30px);}
+
+
+
+
 
 
 

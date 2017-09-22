@@ -3,7 +3,7 @@
   padding:$p; box-sizing:$box;
 }
 
-@mixin BoxBorderRadius($w:200px, $h:100px, $br:50px, $bgc:$whiteColor){
+@mixin BoxBorderRadius($w:200px, $h:100px, $bgc:rgba(255,255,255,0.8), $br:50px){
 width:$w; 
 height:$h; 
 border:4px solid $mainColor; 
