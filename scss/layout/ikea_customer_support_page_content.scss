@@ -1,0 +1,65 @@
+@import "../_setting/_base.scss";
+@import "../_setting/_mixin.scss";
+
+// #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#contentBox{width:100%; height:auto;}
+
+
+@import "../layout/content_overlap_search.scss";
+
+
+// #customerSupportCenterBox______________________________________________________________
+#customerSupportCenterBox{width:100%; height:auto; margin-bottom:200px;}
+  #customerSupportCenterBox>ul{width:720px; height:auto; margin:0 auto;}
+
+  #customerSupportCenterBox>ul>li{
+    @include BoxBorderRadius($w:220px, $h:110px, $br:50px);
+    @include fontSet_InfoText($c:$blackColor, $lh:100px); 
+      float:left; margin-left:20px; margin-bottom:20px;
+
+      &:hover{background-color:$mainColor; font-size:17px;}
+
+      &>a{width:100%; height:100%; display:block;}
+      &>a:hover{color:$whiteColor;}
+    }
+    #customerSupportCenterBox>ul>li:nth-child(1){}
+    #customerSupportCenterBox>ul>li:nth-child(2){}
+    #customerSupportCenterBox>ul>li:nth-child(3){}
+    #customerSupportCenterBox>ul>li:nth-child(4){}
+    #customerSupportCenterBox>ul>li:nth-child(5){}
+    #customerSupportCenterBox>ul>li:nth-child(6){}
+
+
+
+
+// #noticeBox______________________________________________________________
+#noticeBox{width:100%; height:auto; margin-bottom:200px;}
+  .notice_image{width:100%; height:500px; background-color:#ffa;}
+  // .notice_list{width:100%; height:500px; background-color:#fee;}
+
+
+// #productInfoBox______________________________________________________________
+#productInfoBox{width:100%; height:auto; margin-bottom:200px;}
+.product_information{width:100%; height:500px; margin-bottom:20px; background-color:#edd;}
+.product_service_check{width:100%; height:500px; background-color:#edd;}
+
+
+// #offlineStorInfoeBox______________________________________________________________
+#offlineStoreInfoeBox{width:100%; height:auto; margin-bottom:200px;}
+.store_image{width:470px; height:500px; float:left; margin-right:20px; background-color:$mainColor;}
+.store_list{width:470px; height:500px; float:left; background-color:$mainColor;}
+
+
+// #imageBox____________________________________________________________________
+  #imageBox{width:100%; height:auto; margin-bottom:200px;}
+      #ikeaLogoImage{width:270px; height:100px; float:right;
+            @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");}
+      .image{width:100%; height:456px; float:right; border-bottom:10px solid $mainColor; box-sizing:border-box;
+        @include backgroundImage($f:"ikea_inside_image/product_kategorie/kid_room/PH145465ps_02.png");}
+
+
+// #ikeaCompanyIntroductionBox______________________________________________________________
+#ikeaCompanyIntroductionBox{width:100%; height:auto; margin-bottom:200px;}
+.ikeaCompany_text{width:470px; height:500px; float:left; margin-right:20px; background-color:$mainColor; }
+.ikeaCompany_image{width:470px; height:500px; float:left; background-color:$mainColor; }
+

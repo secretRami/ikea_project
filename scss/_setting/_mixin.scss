@@ -3,6 +3,16 @@
   padding:$p; box-sizing:$box;
 }
 
+@mixin BoxBorderRadius($w:200px, $h:100px, $br:50px, $bgc:$whiteColor){
+width:$w; 
+height:$h; 
+border:4px solid $mainColor; 
+border-radius:$br;
+box-sizing:border-box;
+background-color:$bgc;
+}//@mixin BoxBorderRadius
+
+
 
 
 // 외부 기본 연결주소 세팅
@@ -30,25 +40,27 @@ $url:"../../img/";
 
 
 @mixin fontSet_Gnb($c:$whiteColor,$ta:center, $lh:0){
-font-size:1rem; 
-color:$c; 
-text-align:$ta; 
-line-height:$lh;
-}
+    font-size:1rem; 
+    color:$c; 
+    text-align:$ta; 
+    line-height:$lh;
+    }
 
 @mixin fontSet_SubTitle($c:$whiteColor,$ta:center, $lh:0){
-font-size:1.7rem; 
-color:$c; 
-text-align:$ta; 
-line-height:$lh;
-}
+  font-size:1.7rem; 
+  color:$c; 
+  text-align:$ta; 
+  line-height:$lh;
+  }
 
 @mixin fontSet_InfoText($c:$whiteColor,$ta:center, $lh:0){
-font-size:0.9rem; 
-color:$c; 
-text-align:$ta; 
-line-height:$lh;
-}
+  font-size:0.9rem; 
+  color:$c; 
+  text-align:$ta; 
+  line-height:$lh;
+  }
+
+
 
 
 

@@ -1,3 +1,5 @@
+#contentBox { width: 100%; height: auto; }
+
 #searchBox { width: 100%; height: 310px; margin-bottom: 100px; padding: 50px; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/ikea_background.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
 .search_input { width: 850px; height: 120px; background-color: #fff; }

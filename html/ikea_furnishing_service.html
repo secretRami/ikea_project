@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <!-- 한글사용지정 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 익스플로러 가장 최신 버전으로 끌어올림 -->
+
+  <!--[if lte IE 9]>
+  <script src="../ie/dist/html5shiv/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script>
+  <script src="../ie/css3pie/PIE_IE9.js"></script>
+  <![endif]-->
+  <!-- 조건부주석: 9보다 낮은 버전일 때에 활성화
+    1. html5바디에 구현되는 태그 호환하기 위한 html5shive 
+    2. 선택자 인지하게 만듬.
+    3. css3로 구현되는 
+  -->
+ 
+<!-- css관련 세팅하기 -->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <!-- 코드 초기화 -->
+  
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+  <!-- font를 아이콘화함 -->
+
+  <link rel="stylesheet" type="text/css" href="../css/src/ikea_furnishing_service.css" />
+  <!-- style 불러옴 -->
+
+<!-- script불러보기.  -->
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <!-- 1. 기본버전 부르고 나서  -->
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <!-- 2. ui를 불러와야 함.  -->
+  
+  
+  <title>ikea furnishing service</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox" class="clearfix">
+      <h1><a href="./ikea_main.html"><span class="me_hidden">Ikea logo</span></a></h1>
+      <nav id="gnb">
+        <h2 class="me_hidden">h2_title</h2>
+        <ul class="clearfix">
+          <li><a href="#">모든제품</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="./ikea_product.html">카테고리보기</a></li>
+          <li><a href="#">홈 퍼니싱 아이디어</a></li>
+          <li><a href="#">고객지원</a></li>
+          <li><a href="./ikea_signUp_signIn.html"><i class="fa fa-sign-in" aria-hidden="true"></i><span class="me_hidden">로그인/회원가입</span></a></li>  
+        </ul>
+      </nav>
+    </header>
+
+    <article id="contentBox">
+      <h2 class="me_hidden">contentTitle</h2>
+<!-- #searchBox__________________________________ -->
+      <article id="searchBox">
+        <h3 class="me_hidden">검색</h3>
+        <div class="search_input"></div>
+      </article><!-- // #searchBox -->
+
+      <article id="furnishingIdeaService">
+        <h3>홈 퍼니싱 아이디어</h3>
+        <div id="furnishingIdeaImage"></div>
+        <div id="furnishingList">
+          <ul>
+            <li><a href="#">Ikea홈 퍼니싱 아이디어</a></li>
+            <li><a href="#">Ikea로 꾸민 우리집</a></li>
+            <li><a href="#">소셜 미디어 #Ikea</a></li>
+          </ul>
+        </div>
+      </article>
+      <article id="planningService">
+        <h3>이케아 플래너</h3>
+        <ul class="clearfix"><!-- me_link있다가 지 -->
+          <li><a href="#"><span>욕실</span></a></li>
+          <li><a href="#"><span>거실</span></a></li>
+          <li><a href="#"><span>오피스</span></a></li>
+          <li><a href="#"><span>주방</span></a></li>
+          <li><a href="#"><span>침실</span></a></li>
+        </ul>
+      </article>
+
+    
+
+    </article>
+
+
+
+
+
+    <footer id="footBox">
+      <h2 class="me_hidden">h2_title</h2></footer>
+  </div>
+
+</body>
+</html>

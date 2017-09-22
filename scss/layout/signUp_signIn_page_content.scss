@@ -1,3 +1,9 @@
+@import "../_setting/_base.scss";
+@import "../_setting/_mixin.scss";
+
+
+
+
 
 // #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #contentBox{width: 100%; height:auto; @include paddingAndBoxsizing($p:20px);}

@@ -1,0 +1,64 @@
+@import "../_setting/_base.scss";
+@import "../_setting/_mixin.scss";
+
+
+// #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#contentBox{width: 100%; height:auto;}
+
+  
+
+@import "../layout/content_overlap_search.scss";
+
+
+
+// #furnishingIdeaService___________________________________________________________
+#furnishingIdeaService{width:100%; height:auto; margin-bottom:200px; position:relative;}
+  #furnishingIdeaImage{width:100%; height:500px; background-color:$subColor; position:relative;
+    @include backgroundImage($f:"ikea_inside_image/product_kategorie/bath_room/20174_coba01a_01_PH141944.jpg");
+    }// #furnishingIdeaImage
+    #furnishingIdeaImage:before{content:" "; width:70%;  border-top:4px solid $mainColor; 
+      position:absolute; top:-20px; right:0;}
+    #furnishingIdeaImage:after{content:" "; width:70%;  border-bottom:4px solid $mainColor; 
+      position:absolute; top:520px; left:0;}
+  
+  #furnishingList{width:260px; height:500px; @include paddingAndBoxsizing($p:100px 0 0 0); position:absolute; top:90px; right:0;}//#furnishingList
+    #furnishingList>ul{width:100%; height:100%;}
+
+    #furnishingList>ul>li{
+      @include BoxBorderRadius($w:200px, $h:100px, $br:50px);
+      @include fontSet_InfoText($c:$blackColor, $lh:100px); 
+      font-weight:bold; margin-bottom:20px;
+
+      &:hover{background-color:$mainColor; font-size:17px;}
+
+      &>a{width:100%; height:100%; display:block;}
+      &>a:hover{color:$whiteColor;}
+    }// #furnishingList>ul>li
+
+
+
+// #planningService___________________________________________________________
+#planningService{width:100%; height:auto;  margin-bottom:100px;}
+#planningService>ul{width:100%; height:auto;}
+#planningService>ul>li{width:306px; height:280px; float:left; margin-left:20px; 
+    @include fontSet_SubTitle($lh:322px); color:transparent;
+        &>a{width:100%; height:100%; display:block;}//a
+        &>a:hover{background-color:rgba(000,000,000,0.8); color:$whiteColor;}
+}//#planningService>ul>li
+
+  #planningService>ul>li:nth-child(1){width:470px; height:280px; margin-left:0; margin-bottom:20px;
+        @include backgroundImage($f:"ikea_inside_image/product_kategorie/bath_room/20174_coba01a_01_PH141944.jpg", $s:500px);
+        
+    }//#planningService>ul>li:nth-child(1)
+
+  #planningService>ul>li:nth-child(2){width:470px; height:280px; margin-bottom:20px;
+        @include backgroundImage($f:"ikea_inside_image/product_kategorie/riving_room/PH145986.jpg");}//#planningService>ul>li:nth-child(2)
+
+  #planningService>ul>li:nth-child(3){margin-left:0;
+        @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144460.jpg");}//#planningService>ul>li:nth-child(3)
+
+  #planningService>ul>li:nth-child(4){
+        @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_07/07_PH146686.jpg");}//#planningService>ul>li:nth-child(4)
+
+  #planningService>ul>li:nth-child(5){
+        @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144463.jpg");}//#planningService>ul>li:nth-child(5)

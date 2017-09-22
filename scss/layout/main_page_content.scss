@@ -4,11 +4,8 @@
 
 // #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #contentBox{width: 100%; height:auto;}
-// #searchBox____________________________________________________________________
-  #searchBox{width:100%; height:310px; margin-bottom:100px; 
-            @include paddingAndBoxsizing($p:50px);
-            @include backgroundImage($f:"ikea_outside_image/ikea_background.jpg"); }
-    .search_input{width:850px; height:120px; background-color:$whiteColor;}
+
+@import "../layout/content_overlap_search.scss";
 
 // #popularityBox____________________________________________________________________
   #popularityBox{width:100%; height:auto; margin-bottom:200px;}
@@ -75,8 +72,7 @@
       
       .homefurnishing_img{width:300px; height:300px; float:right; border-radius:150px; background-color:#eff; position:relative;
           &>a{width:100%; height:100%; display: block; border-radius:150px;
-              @include fontSet_SubTitle($c:$blackColor, $lh:450px); font-weight:bold;
-              background-color:rgba(255, 255, 255, 0.2);}
+              @include fontSet_SubTitle($c:transparent, $lh:450px); font-weight:bold;}
           &>a:hover{background-color:rgba(000, 000, 000, 0.7); font-size:2rem; color:$whiteColor;}
         } // .homefurnishing_img   
         

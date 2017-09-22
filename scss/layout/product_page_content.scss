@@ -2,11 +2,12 @@
 @import "../_setting/_mixin.scss";
 
 
-// #searchBox____________________________________________________________________
-  #searchBox{width:100%; height:310px; margin-bottom:100px; 
-            @include paddingAndBoxsizing($p:50px);
-            @include backgroundImage($f:"ikea_outside_image/ikea_background.jpg"); }
-    .search_input{width:850px; height:120px; background-color:$whiteColor;}
+// #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#contentBox{width: 100%; height:auto;}
+
+  
+
+@import "../layout/content_overlap_search.scss";
 
 
 

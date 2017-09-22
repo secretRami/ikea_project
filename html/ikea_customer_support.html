@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <!-- 한글사용지정 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 익스플로러 가장 최신 버전으로 끌어올림 -->
+
+  <!--[if lte IE 9]>
+  <script src="../ie/dist/html5shiv/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script>
+  <script src="../ie/css3pie/PIE_IE9.js"></script>
+  <![endif]-->
+  <!-- 조건부주석: 9보다 낮은 버전일 때에 활성화
+    1. html5바디에 구현되는 태그 호환하기 위한 html5shive 
+    2. 선택자 인지하게 만듬.
+    3. css3로 구현되는 
+  -->
+ 
+<!-- css관련 세팅하기 -->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <!-- 코드 초기화 -->
+  
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+  <!-- font를 아이콘화함 -->
+
+  <link rel="stylesheet" type="text/css" href="../css/src/ikea_customer_support.css" />
+  <!-- style 불러옴 -->
+
+<!-- script불러보기.  -->
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <!-- 1. 기본버전 부르고 나서  -->
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <!-- 2. ui를 불러와야 함.  -->
+  
+  
+  <title>ikea customer_support</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox" class="clearfix">
+      <h1><a href="./ikea_main.html"><span class="me_hidden">Ikea logo</span></a></h1>
+      <nav id="gnb">
+        <h2 class="me_hidden">h2_title</h2>
+        <ul class="clearfix">
+          <li><a href="#">모든제품</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="./ikea_product.html">카테고리보기</a></li>
+          <li><a href="#">홈 퍼니싱 아이디어</a></li>
+          <li><a href="#">고객지원</a></li>
+          <li><a href="./ikea_signUp_signIn.html"><i class="fa fa-sign-in" aria-hidden="true"></i><span class="me_hidden">로그인/회원가입</span></a></li>  
+        </ul>
+      </nav>
+    </header>
+
+    <article id="contentBox">
+      <h2 class="me_hidden">contentTitle</h2>
+<!-- #searchBox__________________________________ -->
+      <article id="searchBox">
+        <h3 class="me_hidden">검색</h3>
+        <div class="search_input"></div>
+      </article><!-- // #searchBox -->  
+
+    <!-- customerSupportCenterBox_______________________ -->
+      <article id="customerSupportCenterBox">
+        <h3>고객센터</h3>
+        <ul class="clearfix">
+          <li><a href="#">자주하는 질문</a></li>
+          <li><a href="#">F&Q</a></li>
+          <li><a href="#">부가서비스</a></li>
+          <li><a href="#">패밀리 멤버십</a></li>
+          <li><a href="#">모바일 앱</a></li>
+          <li><a href="#">더보기</a></li>
+        </ul>
+      </article>
+
+
+    <!-- noticeBox_______________________ -->
+      <article id="noticeBox">
+        <h3>공지사항</h3>
+        <div class="notice_image"></div>
+        <div class="notice_list"></div>
+      </article>
+
+
+    <!-- productInfoBox_______________________ -->
+      <article id="productInfoBox">
+       <h3>제품안내</h3>
+       <div class="product_information"></div>
+       <div class="product_service_check"></div>
+      </article>
+
+
+    <!-- offlineStorInfoeBox_______________________ -->
+      <article id="offlineStoreInfoeBox" class="clearfix">
+        <h3>오프라인 매장안내</h3>
+        <div class="store_image"></div>
+       <div class="store_list"></div>
+      </article>
+
+
+    <!-- imageBox_______________________ -->
+      <article id="imageBox" class="clearfix">
+        <h3 id="ikeaLogoImage" class="nobar"><span class="me_hidden">imageBox</span></h3>
+        <div class="image"></div>
+      </article>
+
+
+    <!-- ikeaCompanyIntroductionBox_______________________ -->
+      <article id="ikeaCompanyIntroductionBox" class="clearfix">
+        <h3>이케아 기업소개</h3>
+        <div class="ikeaCompany_text"></div>
+        <div class="ikeaCompany_image"></div>
+      </article>
+
+
+
+
+
+    </article>
+    <footer id="footBox">
+      <h2 class="me_hidden">h2_title</h2></footer>
+  </div>
+
+</body>
+</html>
