@@ -12,7 +12,7 @@
 
 
 // #furnishingIdeaService___________________________________________________________
-#furnishingIdeaService{width:100%; height:auto; margin-bottom:200px; position:relative;}
+#furnishingIdeaService{@include contentBox; position:relative;}
   #furnishingIdeaImage{width:100%; height:500px; background-color:$subColor; position:relative;
     @include backgroundImage($f:"ikea_inside_image/product_kategorie/bath_room/20174_coba01a_01_PH141944.jpg");
     }// #furnishingIdeaImage
@@ -30,7 +30,7 @@
       @include fontSet_InfoText($c:$blackColor, $lh:100px); 
       font-weight:bold; margin-bottom:20px;
 
-      &:hover{background-color:$mainColor; font-size:17px;}
+      &:hover{background-color:$mainColor; font-size:17px;} 
 
       &>a{width:100%; height:100%; display:block;}
       &>a:hover{color:$whiteColor;}
@@ -39,7 +39,7 @@
 
 
 // #planningService___________________________________________________________
-#planningService{width:100%; height:auto;  margin-bottom:100px;}
+#planningService{@include contentBox;}
 #planningService>ul{width:100%; height:auto;}
 #planningService>ul>li{width:306px; height:280px; float:left; margin-left:20px; 
     @include fontSet_SubTitle($lh:322px); color:transparent;

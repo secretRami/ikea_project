@@ -1,0 +1,39 @@
+#contentBox { width: 100%; height: auto; padding: 20px; box-sizing: border-box; }
+
+button { width: 100%; height: 100%; display: block; font-size: 0.9rem; color: #fff; text-align: center; line-height: 45px; }
+
+button.font_color_main { width: 100%; height: 100%; display: block; font-size: 0.9rem; color: #003399; text-align: center; line-height: 45px; font-weight: bold; }
+
+button:hover { box-shadow: 0.2rem 0.2rem 0.2rem rgba(50, 50, 50, 0.3) inset; }
+
+#infoBox { width: 340px; height: 510px; border-radius: 30px; margin: 0 auto; margin-bottom: 200px; box-shadow: 10px 10px 10px #ddd; background-color: #fcfcfc; }
+
+#infoBox > ul { width: 270px; height: 100%; padding: 300px 0 0 0; box-sizing: border-box; margin: 0 auto; }
+
+#infoBox > ul > li { width: 270px; height: 45px; margin-bottom: 20px; font-size: 1.7rem; color: #fff; text-align: right; line-height: 45px; }
+
+#infoBox > ul > li:nth-child(1) { background-color: #003399; }
+
+#infoBox > ul > li:nth-child(2) { background-color: #ffcc02; }
+
+#infoBox > ul > li:nth-child(3) { background-color: #f26722; }
+
+#signInBox { width: 340px; height: 510px; border-radius: 30px; margin: 0 auto; margin-bottom: 200px; box-shadow: 10px 10px 10px #ddd; background-color: #fcfcfc; }
+
+#signInBox > ul { width: 270px; height: 100%; padding: 30px 0 0 0; box-sizing: border-box; margin: 0 auto; }
+
+#signInBox > ul > li { width: 250px; height: 45px; margin-bottom: 20px; border-bottom: 2px solid #003399; box-sizing: border-box; font-size: 0.9rem; color: #003399; text-align: left; line-height: 45px; }
+
+#signInBox > ul > li:nth-child(1) { width: 120px; background-color: #ffcc02; text-align: left; margin-bottom: 100px; border-bottom: 0; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
+
+#signInBox > ul > li:nth-child(4) { width: 270px; background-color: #003399; text-align: center; margin-top: 150px; border-bottom: 0; }
+
+#signUpBox { width: 340px; height: 510px; border-radius: 30px; margin: 0 auto; margin-bottom: 200px; box-shadow: 10px 10px 10px #ddd; background-color: #fcfcfc; }
+
+#signUpBox > ul { width: 270px; height: 100%; padding: 30px 0 0 0; box-sizing: border-box; margin: 0 auto; }
+
+#signUpBox > ul > li { width: 250px; height: 45px; margin-bottom: 20px; border-bottom: 2px solid #003399; box-sizing: border-box; font-size: 0.9rem; color: #003399; text-align: left; line-height: 45px; }
+
+#signUpBox > ul > li:nth-child(1) { width: 120px; background-color: #003399; text-align: left; margin-bottom: 20px; border-bottom: 0; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
+
+#signUpBox > ul > li:nth-child(7) { width: 270px; background-color: #ffcc02; text-align: center; margin-top: 40px; border-bottom: 0; }

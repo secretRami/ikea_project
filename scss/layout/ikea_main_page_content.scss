@@ -8,51 +8,81 @@
 @import "../layout/content_overlap_search.scss";
 
 // #popularityBox____________________________________________________________________
-  #popularityBox{width:100%; height:auto; margin-bottom:200px;}
+  #popularityBox{@include contentBox;}
     // h3{@include h3_Style; }
-    #popularityBox>ul{width:100%; height:100%;}
+    #popularityBox>ul{width:100%; height:auto;}
     #popularityBox>ul>li{width:400px; height:200px; float:left; background-color:$mainColor;
-                        @include paddingAndBoxsizing($p:40px);
-                        @include fontSet_SubTitle($ta:left, $lh:50px);}// #popularityBox>ul>li
+                        @include fontSet_SubTitle($ta:left, $lh:60px);
+      &:hover{box-shadow: 10px 10px 10px rgba(000,000,000,0.3);}                        
+        &>a{width:320px; height:120px; display:block; padding:40px;}
+        &>a:hover{color:$whiteColor;}
+    }// #popularityBox>ul>li
+
     #popularityBox>ul>li:nth-child(1){margin-top: 80px;}
     #popularityBox>ul>li:nth-child(2){margin-top: 160px; margin-left:120px;} 
 
+    #popularityBox>ul>li span{display:block; width:130px; height:50px; 
+      border:4px solid $whiteColor; text-align:center; }
+
 
 // #eventBox____________________________________________________________________
-  #eventBox{width:100%; height:auto; margin-bottom:200px;}
+  #eventBox{@include contentBox;}
     // h3{@include h3_Style; }
-    .event_list{width:30%; height:415px; background-color:$whiteColor; float:left;}
-    .event_image{width:70%; height:415px; float:left;
-                @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144472.jpg");}
+    .event_list{width:186px; height:500px; background-color:$whiteColor; float:left; position:relative;}
+      .event_text{width:400px; height:200px; @include paddingAndBoxsizing($p:30px);
+          @include fontSet_SubTitle($ta:left, $c:$blackColor, $lh:60px); font-weight:bold; 
+          background-color:$whiteColor; position:absolute; top:100px; right:-200px;
+        &>span{font-size:70px; color:$pointColor;}
+      }//.event_text
+      
+      .indicate{width:140px; height:20px; padding:470px 136px 10px 10px;}//.indicate
+        .indicate>ul{width:100%; height:100%;}
+        .indicate>ul>li{width:20px; height:20px; float:left; margin-left:10px; 
+            border-radius:10px; background-color:$mainColor;
+          
+            &:hover{background-color:$pointColor;}
+          }//.indicate>ul>li
+
+        .indicate>ul>li:nth-child(1){margin-left:0;}
+
+    .event_image{width:672px; height:500px; float:right;
+                @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144472.jpg", $s:1000px);}
 
 
 // #imageBox01____________________________________________________________________
-  #imageBox01{width:100%; height:auto; margin-bottom:200px;}
+  #imageBox01{@include contentBox;}
       #ikeaLogoImage{width:270px; height:100px; float:right;
             @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");}
-      .image_one{width:100%; height:456px; float:right; border-bottom:10px solid $mainColor; box-sizing:border-box;
+      .image_one{width:100%; height:456px; float:right;
         @include backgroundImage($f:"ikea_inside_image/product_kategorie/kid_room/PH145465ps_02.png");}
 
+
 // #offlineStoreBox____________________________________________________________________
-  #offlineStoreBox{width:100%; height:auto; margin-bottom:200px;}
+  #offlineStoreBox{@include contentBox;}
     // h3{@include h3_Style; }
-    .storeimage{width:600px; height:500px; float:left; margin-right:20px; border-bottom:5px solid $pointColor; box-sizing:border-Box;
+    .storeimage{width:600px; height:500px; float:left; margin-right:20px;
                 @include backgroundImage($f:"ikea_outside_image/ikea_logo_photo_01_3.png", $s:600px, $p:bottom center);}
   
-    .storebuttom{width:340px; height:500px; float:left;}
-      .storebuttom>ul{width:100%; height:100%;}
-      .storebuttom>ul>li{width:340px; height:154px; margin-bottom:18px; background-color:$pointColor;
-                        @include paddingAndBoxsizing($p:40px);
+
+    .store_buttom{width:340px; height:500px; float:left;}
+      .store_buttom>ul{width:100%; height:100%;}
+      .store_buttom>ul>li{width:340px; height:154px; margin-bottom:18px; 
+                        background-color:$pointColor; transition:all 600ms ease-in;
                         @include fontSet_SubTitle($lh:60px);
-                & p{@include fontSet_InfoText($c:$whiteColor,$ta:center, $lh:0);}
-                &:hover{border-radius:30px; transition:600ms; background-color:$mainColor; color:$subColor;}
+
+                &:hover{border-radius:30px; background-color:$mainColor;}
+
+                & a{width:260px; height:74px; display:block; padding:40px;}//& a
+                & a:hover{color:$subColor;}//& a
+                & span{@include fontSet_InfoText($c:$whiteColor,$ta:center, $lh:0);}
+                
                 //여긴 hover풀릴때 더 부드럽게 만들자 
         }//.storebuttom>ul>li
 
 
 
 // #imageBox02____________________________________________________________________
-  #imageBox02{width:100%; height:auto; margin-bottom:200px;}
+  #imageBox02{@include contentBox;}
     #ikeaLogoImage2{width:270px; height:100px; float:left;
       @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");}
     .image_two{width:400px; height:650px; float:right;
@@ -61,19 +91,20 @@
 
 
 // #homeFurnishingServiceBox____________________________________________________________________
-  #homeFurnishingServiceBox{width:100%; height:auto; margin-bottom:200px;}
+  #homeFurnishingServiceBox{@include contentBox;}
     .homefurnishing{width:100%; height:300px; margin-bottom:20px;}
     .homefurnishing:after{content:" "; width:80%; height:10px; border-bottom:2px solid #777; margin:0 auto;}
     .planing{width:100%; height:300px;}
-      .homefurnishing_title{width:620px; height:inherit; float:left;
-                            @include paddingAndBoxsizing($p:100px 50px);}
+      .homefurnishing_title{width:620px; height:inherit; float:left; @include paddingAndBoxsizing($p:100px 50px);}
+        
         .homefurnishing_title>h4{@include fontSet_SubTitle($c:$blackColor, $lh:40px); margin-bottom:20px;}
         .homefurnishing_title>p{@include fontSet_InfoText($c:$blackColor,$ta:center, $lh:0); }
       
       .homefurnishing_img{width:300px; height:300px; float:right; border-radius:150px; background-color:#eff; position:relative;
-          &>a{width:100%; height:100%; display: block; border-radius:150px;
-              @include fontSet_SubTitle($c:transparent, $lh:450px); font-weight:bold;}
-          &>a:hover{background-color:rgba(000, 000, 000, 0.7); font-size:2rem; color:$whiteColor;}
+
+          &>a{width:100%; height:100%; display: block; border-radius:150px; transition:all 300ms ease-in;
+              @include fontSet_SubTitle($c:transparent, $lh:310px); font-weight:bold;}// &>a
+          &>a:hover{background-color:rgba(000, 000, 000, 0.7); font-size:2rem; color:$whiteColor;}//&>a:hover
         } // .homefurnishing_img   
         
       .one{@include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_05/05_PH147252.jpg");}
@@ -81,18 +112,21 @@
 
 
 // #membershipBox____________________________________________________________________
-  #membershipBox{width:100%; height:auto; margin-bottom:200px;}
+  #membershipBox{@include contentBox; position:relative;}
     // h3{@include h3_Style; }
     .membership_image{width:100%; height:500px; 
             @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_03/03_PH145001.jpg");}
+    .membership_text{width:420px; height:500px; 
+            position:absolute; bottom:0; left:0; background-color:$pointColor;}
 
 // #subServiceBox____________________________________________________________________
-  #subServiceBox{width:100%; height:auto; margin-bottom:200px;}
+  #subServiceBox{@include contentBox;}
     // h3{@include h3_Style; }
     #subServiceBox>ul{width:650px; height:200px; margin:0 auto; margin-bottom:20px;} 
-    #subServiceBox>ul>li{width:200px; height:200px; border-radius:150px; float:left; margin-left:20px; background-color:$mainColor;}
+    #subServiceBox>ul>li{width:200px; height:200px; border-radius:150px; float:left; margin-left:20px; background-color:$mainColor;
+                        transition:all 300ms ease-in;}
       #subServiceBox>ul>li:nth-child(1){margin-left:0;}
-      #subServiceBox>ul>li:hover{border-radius:0; transition:600ms; background-color:$pointColor;}
+      #subServiceBox>ul>li:hover{border-radius:10px; transition:600ms; background-color:$pointColor;}
     #subServiceBox>ul>li> a{display:block; width:100%; height:100%; 
           @include fontSet_InfoText($c:$whiteColor, $lh:30px);
           @include paddingAndBoxsizing(140px 30px 30px 30px);}

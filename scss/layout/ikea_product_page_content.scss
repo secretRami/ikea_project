@@ -12,7 +12,7 @@
 
 
 // #newItemBox___________________________________________
-#newItemBox{width:100%; height:auto; margin-bottom:200px;}
+#newItemBox{@include contentBox;}
   #newItemBox>ul{width:100%; height:100%;}        
   #newItemBox>ul>li{width:306px; height:150px; margin-left:20px; margin-bottom:20px; float:left;}
 
@@ -55,7 +55,7 @@
 
 
 // #imageBox01____________________________________________________________________
-  #imageBox01{width:100%; height:auto; margin-bottom:200px;}
+  #imageBox01{@include contentBox;}
       #ikeaLogoImage{width:270px; height:100px; float:right;
             @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");}
       .image_one{width:100%; height:456px; float:right; border-bottom:10px solid $mainColor; box-sizing:border-box;
@@ -63,13 +63,13 @@
 
 
 // #useTypeCategorizationBox___________________________________________
-#useTypeCategorizationBox{width:100%; height:auto; margin-bottom:70px;}
+#useTypeCategorizationBox{@include contentBox;}
   #useTypeCategorizationBox>.use_type_image{width:100%; height:500px; 
     @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_07/07_PH146689.jpg", $s:960px, $p:center -656px);}  
 
 
 // #useTypeSubBox___________________________________________
-#useTypeSubBox{width:100%; height:auto; margin-bottom:200px;}
+#useTypeSubBox{@include contentBox;}
   #useTypeSubBox>ul{width:860px; height:100%; margin:0 auto; }        
   #useTypeSubBox>ul>li{width:200px; height:200px; float:left; margin-left:20px; border-radius:100px; background-color:$subColor;}             
     
@@ -96,7 +96,7 @@
 
 
 // #imageBox02___________________________________________
-#imageBox02{width:100%; height:auto; margin-bottom:200px;}
+#imageBox02{@include contentBox;}
     #ikeaLogoImage2{width:270px; height:100px; float:right;
           @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");}
     .image_two{width:100%; height:456px; float:right; border-bottom:10px solid $mainColor; box-sizing:border-box;
@@ -104,7 +104,7 @@
 
 
 // #roomTypeCategorizationBox___________________________________________
-#roomTypeCategorizationBox{width:100%; height:auto; margin-bottom:200px;}
+#roomTypeCategorizationBox{@include contentBox;}
   .big_size_image{width:470px; height:440px; float:left; margin-right:20px; border-top-left-radius:70px;
     @include backgroundImage($f:"ikea_inside_image/product_kategorie/kid_room/PH145465ps_03.png", $s:1050px);}
 
@@ -122,7 +122,7 @@
 
 
 // #roomTypeSubBox___________________________________________
-#roomTypeSubBox{width:100%; height:auto; margin-bottom:200px;}
+#roomTypeSubBox{@include contentBox;}
   #roomTypeSubBox>ul{width:100%; height:100%;}        
   #roomTypeSubBox>ul>li{width:224px; height:224px; float:left; margin-left:20px;
     &>a:hover{border-radius:50px; background-color:rgba(000, 000, 000, 0.7);}
@@ -143,7 +143,7 @@
 
 
 // #galleryBox___________________________________________
-#galleryBox{width:100%; height:auto; margin-bottom:200px;}
+#galleryBox{@include contentBox;}
   #galleryBox>ul{width:100%; height:100%;}
   #galleryBox>ul>li{width:100%; height:auto;}
 

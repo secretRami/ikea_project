@@ -1,7 +1,14 @@
 
+@mixin contentBox($w:100%, $h:auto, $mb:350px){
+  width:$w;
+  height:$h;
+  margin-bottom:$mb;
+}
+
+
 @mixin paddingAndBoxsizing($p:10px, $box:border-box){
   padding:$p; box-sizing:$box;
-}
+}//@mixin paddingAndBoxsizing
 
 @mixin BoxBorderRadius($w:200px, $h:100px, $bgc:rgba(255,255,255,0.8), $br:50px){
 width:$w; 

@@ -9,7 +9,7 @@
 
 
 // #customerSupportCenterBox______________________________________________________________
-#customerSupportCenterBox{width:100%; height:auto; margin-bottom:200px;}
+#customerSupportCenterBox{@include contentBox;}
   #customerSupportCenterBox>ul{width:720px; height:auto; margin:0 auto;}
 
   #customerSupportCenterBox>ul>li{
@@ -33,7 +33,7 @@
 
 
 // #noticeBox______________________________________________________________
-#noticeBox{width:100%; height:auto; margin-bottom:200px; position:relative;}
+#noticeBox{@include contentBox; position:relative;}
   .notice_image{width:100%; height:500px; background-color:#ffa; position:relative;
         @include backgroundImage($f:"ikea_inside_image/product_kategorie/bath_room/20174_coba01a_01_PH141944.jpg");}
   .notice_image:before{content:" "; width:70%; border-top: 4px solid $mainColor; 
@@ -42,7 +42,7 @@
         position:absolute; bottom:-20px; left:0;}
 
   .notice_list{width:260px; height:500px;
-        @include paddingAndBoxsizing($p:100px 0 0 0);
+        @include paddingAndBoxsizing($p:220px 0 20px 50px);
         position:absolute; bottom:0; right:0; }// .notice_list
   .notice_list>ul{width:100%; height:100%;}
   .notice_list>ul>li{
@@ -58,7 +58,7 @@
 
 
 // #productInfoBox______________________________________________________________
-#productInfoBox{width:100%; height:auto; margin-bottom:200px;
+#productInfoBox{@include contentBox;
   & ul{width:100%; height:100%; @include paddingAndBoxsizing($p:40px 20px);}
   & ul>li{width:100%; height:50px; margin-bottom:20px;
       @include fontSet_SubTitle($c:$blackColor, $lh:50px); font-weight: bold;}
@@ -82,7 +82,7 @@
 
 
 // #offlineStorInfoeBox______________________________________________________________
-#offlineStoreInfoeBox{width:100%; height:auto; margin-bottom:200px;}
+#offlineStoreInfoeBox{@include contentBox;}
 .store_image{width:670px; height:400px; float:left; margin-right:20px; background-color:$mainColor;
     @include backgroundImage($f:"ikea_outside_image/ikea_building_03.png");
   }// .store_image
@@ -102,7 +102,7 @@
 
 
 // #imageBox____________________________________________________________________
-  #imageBox{width:100%; height:auto; margin-bottom:200px;}
+  #imageBox{@include contentBox;}
       #ikeaLogoImage{width:270px; height:100px; float:right;
             @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");}
       .image{width:100%; height:456px; float:right; border-bottom:10px solid $mainColor; box-sizing:border-box;
@@ -110,7 +110,7 @@
 
 
 // #ikeaCompanyIntroductionBox______________________________________________________________
-#ikeaCompanyIntroductionBox{width:100%; height:auto; margin-bottom:200px;}
+#ikeaCompanyIntroductionBox{@include contentBox;}
 .ikeaCompany_text{width:470px; height:500px; float:left; margin-right:20px; background-color:$mainColor; }
 .ikeaCompany_image{width:470px; height:500px; float:left; background-color:$whiteColor;}
   .ikeaCompany_image>ul{width:100%; height:100%;}
