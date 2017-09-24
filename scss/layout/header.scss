@@ -1,10 +1,11 @@
 @import "../_setting/_base.scss";
 @import "../_setting/_mixin.scss";
 
-#wrap{width: 960px; height:auto; margin:0 auto;}
+#wrap{width:100%; min-width:960px; height:auto; margin:0 auto;}
 
 h3{width:500px; height:50px;  margin:0 auto; margin-bottom:40px; 
-   color:$blackColor; font-size:2rem; line-height:50px; text-align:center;}
+   @include fontSet_H3($c:blackColor, $lh:50px);}
+
 h3:before{content:" | "; color:$mainColor; font-weight:bold;}
 h3:after{content:" | "; color:$mainColor; font-weight:bold;}
 // class이름 만들어서 따로 적용 추가할것 
@@ -12,10 +13,20 @@ h3:after{content:" | "; color:$mainColor; font-weight:bold;}
 h3.nobar:before{display: none;}
 h3.nobar:after{display:none;}
 
+h3.box_in_h3{width:400px; height:auto; @include fontSet_H3($ta:left); 
+  position:absolute; top:10%; left:5%; z-index:2000;}
+
+
+
 
 // #headBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#headBox{width: 100%; height:60px; 
-        @include paddingAndBoxsizing(); background-color:$mainColor;}
+#headBox{width:960px; height:60px; margin: 0 auto;
+        @include paddingAndBoxsizing(); background-color:$mainColor;
+  &::before{content:" "; width: 100%; height:inherit; 
+    position: absolute;  top: 0; left: 0; z-index:-100;
+    background-color:inherit;   /* background-color를 위해 설정 */}
+      }// #headBox
+
   h1{width:100px; height:100%; margin-right:20px;  float:left;
       @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png", $s:101px);
     a{width:100%; height:100%; display:block;}

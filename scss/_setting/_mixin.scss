@@ -2,6 +2,7 @@
 @mixin contentBox($w:100%, $h:auto, $mb:350px){
   width:$w;
   height:$h;
+  margin:0 auto; 
   margin-bottom:$mb;
 }
 
@@ -46,6 +47,13 @@ $url:"../../img/";
     background-position:$p;}
 
 
+@mixin fontSet_H3($c:$whiteColor,$ta:center, $lh:0){
+    font-size:2rem; 
+    color:$c; 
+    text-align:$ta; 
+    line-height:$lh;
+    }
+
 @mixin fontSet_Gnb($c:$whiteColor,$ta:center, $lh:0){
     font-size:1rem; 
     color:$c; 
@@ -65,6 +73,7 @@ $url:"../../img/";
   color:$c; 
   text-align:$ta; 
   line-height:$lh;
+  
   }
 
 
