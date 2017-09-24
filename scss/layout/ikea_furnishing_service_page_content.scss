@@ -13,7 +13,7 @@
 
 // #furnishingIdeaService___________________________________________________________
 #furnishingIdeaService{@include contentBox; position:relative;}
-  #furnishingIdeaImage{width:100%; height:500px; background-color:$subColor; position:relative;
+  #furnishingIdeaImage{width:100%; height:500px; height:(500 / 960 * 100)+vw; min-height:500px; background-color:$subColor; position:relative;
     @include backgroundImage($f:"ikea_inside_image/product_kategorie/bath_room/20174_coba01a_01_PH141944.jpg");
     }// #furnishingIdeaImage
     #furnishingIdeaImage:before{content:" "; width:70%;  border-top:4px solid $mainColor; 
@@ -41,18 +41,18 @@
 // #planningService___________________________________________________________
 #planningService{@include contentBox;}
 #planningService>ul{width:100%; height:auto;}
-#planningService>ul>li{width:306px; height:280px; float:left; margin-left:20px; 
+#planningService>ul>li{width:31.2%; height:280px; height:(280 / 960 * 100 )+vw; min-height:280px; float:left; margin-left:20px; 
     @include fontSet_SubTitle($lh:322px); color:transparent;
         &>a{width:100%; height:100%; display:block;}//a
         &>a:hover{background-color:rgba(000,000,000,0.8); color:$whiteColor;}
 }//#planningService>ul>li
 
-  #planningService>ul>li:nth-child(1){width:470px; height:280px; margin-left:0; margin-bottom:20px;
-        @include backgroundImage($f:"ikea_inside_image/product_kategorie/bath_room/20174_coba01a_01_PH141944.jpg", $s:500px);
+  #planningService>ul>li:nth-child(1){width:47.5%; margin-left:0; margin-bottom:20px;
+        @include backgroundImage($f:"ikea_inside_image/product_kategorie/bath_room/20174_coba01a_01_PH141944.jpg", $s:cover);
         
     }//#planningService>ul>li:nth-child(1)
 
-  #planningService>ul>li:nth-child(2){width:470px; height:280px; margin-bottom:20px;
+  #planningService>ul>li:nth-child(2){width:47.5%; margin-bottom:20px;
         @include backgroundImage($f:"ikea_inside_image/product_kategorie/riving_room/PH145986.jpg");}//#planningService>ul>li:nth-child(2)
 
   #planningService>ul>li:nth-child(3){margin-left:0;
