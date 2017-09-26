@@ -1,7 +1,7 @@
 @import "../_setting/_base.scss";
 @import "../_setting/_mixin.scss";
 
-#wrap{width:100%; min-width:960px; height:auto; margin:0 auto;}
+#wrap{width:100%; min-width:960px; height:auto; margin:0 auto; position:relative;}
 
 h3{width:500px; height:50px;  margin:0 auto; margin-bottom:40px; 
    @include fontSet_H3($c:blackColor, $lh:50px);}
@@ -20,28 +20,26 @@ h3.box_in_h3{width:400px; height:auto; @include fontSet_H3($ta:left);
 
 
 // #headBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#headBox{width:960px; height:60px; margin: 0 auto;
-        @include paddingAndBoxsizing(); background-color:$mainColor;
-  &::before{content:" "; width: 100%; height:inherit; 
-    position: absolute;  top: 0; left: 0; z-index:-100;
-    background-color:inherit;   /* background-color를 위해 설정 */}
+#headBox{width:960px; height:auto; margin: 0 auto; 
+  background-color: $mainColor; @include paddingAndBoxsizing(30px 0 0 0);
+
+  &::before{content:" "; width: 100%; height:200px; background-color:inherit;
+    position: absolute; top: 0; left: 0; z-index:-100;}
+       /* background-color를 위해 설정 */
       }// #headBox
 
-  h1{width:100px; height:100%; margin-right:20px;  float:left;
-      @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png", $s:101px);
+  h1{width:50%; height:58px; margin:0 auto;
+    @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png",$s:121%);
     a{width:100%; height:100%; display:block;}
   }
-  #gnb{width:800px; height:100%; float:left;}
+  #gnb{width:60%; height:80px; margin:0 auto;}
   #gnb>ul{width:100%; height:100%;}
-  #gnb>ul>li{height:100%; float:left; margin-left:10px;
-            @include fontSet_Gnb($lh:50px);
-      a{width:100%; height:100%; display:block;}
-      a:hover{color:$subColor;}
+  #gnb>ul>li{width:auto; height:100%; float:left; margin-left:5%; 
+    @include fontSet_Gnb( $lh:85px); font-weight:400;
+      a{width:100%; height:100%; display:block; @include paddingAndBoxsizing(10px 0 0 0);}
+      a:hover{color:$subColor; border-bottom:5px solid $whiteColor;  
+        box-sizing:border-box;}
     }// #gnb>ul>li
-  #gnb>ul>li:nth-child(1){width:90px;}
-  #gnb>ul>li:nth-child(2){width:90px;}
-  #gnb>ul>li:nth-child(3){width:110px;}
-  #gnb>ul>li:nth-child(4){width:140px;}
-  #gnb>ul>li:nth-child(5){width:90px;}
-  #gnb>ul>li:nth-child(6){width:30px; float:right; font-size:2rem;}
+  #gnb>ul>li:nth-child(1){margin-left:0;}
+  #gnb>ul>li:nth-child(6){font-size:2rem; float:right;}
   

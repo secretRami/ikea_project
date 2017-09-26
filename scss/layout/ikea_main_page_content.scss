@@ -11,24 +11,25 @@
   #popularityBox{@include contentBox; position:relative;}
     // h3{@include h3_Style; }
     #popularityBox>ul{width:960px; height:auto; margin:0 auto;}
-    #popularityBox>ul>li{width:400px; height:200px; float:left; background-color:$mainColor;
-                        @include fontSet_SubTitle($ta:left, $lh:60px);
-        
-        &>a{width:320px; height:120px; display:block; padding:40px; position:relative;}
-        &>a:hover{color:$whiteColor; box-shadow: 10px 10px 10px rgba(000,000,000,0.3);}
+    #popularityBox>ul>li{width:400px; height:200px; float:left; border:15px solid #eee; 
+                        box-sizing:border-box; transition:all 700ms;
+                        @include fontSet_SubTitle($c:$blackColor, $ta:left, $lh:50px); font-weight:700;
+        &:hover{border:15px solid $mainColor;}
+
+        &>a{width:300px; height:100px; display:block; padding:40px; position:relative;}
+        &>a:hover{color:$blackColor; 
+                  box-shadow: 20px 20px 20px rgba(000,000,000,0.3);}
     }// #popularityBox>ul>li
 
     #popularityBox>ul>li:nth-child(1){margin-top: 80px;}
     #popularityBox>ul>li:nth-child(2){margin-top: 160px; margin-left:120px;} 
 
-    #popularityBox>ul>li span{display:block; width:130px; height:50px; 
-      border:4px solid $whiteColor; text-align:center; }
 
       .popularity_product_image{width:200px; height:200px;
-          position:absolute; top:-15%; right:-13%; z-index:100;
+          position:absolute; top:-20%; right:-15%; z-index:100;
           @include backgroundImage($f:"ikea_inside_image/product_kategorie/new_item/tvars.png", $s:200px);}
       .search_many_product_image{width:200px; height:300px;
-          position:absolute; top:-30%; right:-13%; z-index:100;
+          position:absolute; top:-60%; right:-14%; z-index:100;
           @include backgroundImage($f:"ikea_inside_image/product_kategorie/popular_item/helmer.png", $s:150px);}
 
 
@@ -63,34 +64,50 @@
 
 
 // #imageBox01____________________________________________________________________
-  #imageBox01{@include contentBox;}
-      #ikeaLogoImage{width:270px; height:100px; float:right; margin-right:100px;
-            @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");}
-      .image_one{width:90%; height:456px; /* ie때문에 남김 px이랑 rem분리할때 따로 빼줄 것 */   height:(456 / 960 * 100) + vw;  min-height:456px; float:left; margin-left:-10%;
-        @include backgroundImage($f:"ikea_inside_image/product_kategorie/kid_room/PH145465ps_02.png");}
+  #imageBox01{@include contentBox;  }
+      #ikeaLogoImage{width:270px; height:100px; float:left; margin-left:100px; /* padding-top:100px;*/
+            @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");
 
+          }
+      .image_one{width:90%; height:456px; /* ie때문에 남김 px이랑 rem분리할때 따로 빼줄 것 */ 
+                height:(456 / 960 * 100) + vw;  min-height:456px;  
+                float:right; margin-right:-10%;  position:relative;}
+
+      .image_one_01{width:50%; height:150%; position:absolute; bottom:0; left:15%; z-index:2000;/*background-color:#eaf;*/
+        @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_01.png", $s:80%);}
+      .image_one_02{width:30%; height:95%; position:absolute; bottom:0; left:40%; z-index:2000;/*background-color:#aff;*/
+        @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_03.png", $s:80%);}
+      .image_one_03{width:15%; height:40%; position:absolute; top:-40%; right:15%; z-index:1000; /* background-color:#6ad;*/
+        @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_05.png", $s:65%);}
+      .image_one_04{width:15%; height:40%; position:absolute; top:0%; right:20%; z-index:1000; /* background-color:#ede;*/
+        @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_04.png", $s:65%);}
+
+
+// transtorm : 0.8s infineie alternate lenear
 
 // #offlineStoreBox____________________________________________________________________
   #offlineStoreBox{@include contentBox($w:960px); }
-    // h3{@include h3_Style; }
-    .storeimage{width:600px; height:500px; float:left; margin-right:20px;
-                @include backgroundImage($f:"ikea_outside_image/ikea_logo_photo_01_3.png", $s:600px, $p:bottom center);}
-  
 
-    .store_buttom{width:340px; height:500px; float:left;}
-      .store_buttom>ul{width:100%; height:100%;}
-      .store_buttom>ul>li{width:340px; height:154px; margin-bottom:18px; 
-                        background-color:$pointColor; transition:all 600ms ease-in;
-                        @include fontSet_SubTitle($lh:60px);
+    #offlineStoreBox>ul{width:49.5%; height:100%;}
+    #offlineStoreBox>ul>li{width:100%; height:400px; height:(400 / 960 * 50)+vw; min-height:400px; 
+     & a{width:100%; height:100%; display:block; 
+        @include fontSet_SubTitle($c:mainColor, $ta:left, $lh:60px);
+        @include paddingAndBoxsizing(15%); 
+        border:20px solid $mainColor; transition:all 400ms;}//& a
 
-                &:hover{border-radius:30px; background-color:$mainColor;}
+     & a:hover{background-color:$pointColor/*rgba(242,103,34,0.9)*/; color:$whiteColor; border-color:$pointColor;}//a:hover
+     & span{@include fontSet_InfoText($c:mainColor, $lh:0);}
+      }//#offlineStoreBox>ul>li
+       
+      .store_one{float:left;}
+      .store_two{float:right;}
 
-                & a{width:260px; height:74px; display:block; padding:40px;}//& a
-                & a:hover{color:$subColor;}//& a
-                & span{@include fontSet_InfoText($c:$whiteColor,$ta:center, $lh:0);}
-                
-                //여긴 hover풀릴때 더 부드럽게 만들자 
-        }//.storebuttom>ul>li
+      #offlineStoreBox>.store_one>li:nth-child(1){
+        width:220px; height:220px; height:(220 / 960 * 50)+vw; min-height:220px; 
+        margin-left:53%; margin-bottom:2%;}
+      #offlineStoreBox>.store_one>li:nth-child(2){height:580px; height:(580 / 960 * 50)+vw; min-height:580px;}
+
+      #offlineStoreBox>.store_two>li:nth-child(1){margin-bottom:2%;}
 
 
 

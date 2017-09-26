@@ -41,25 +41,25 @@
 // #planningService___________________________________________________________
 #planningService{@include contentBox;}
 #planningService>ul{width:100%; height:auto;}
-#planningService>ul>li{width:31.2%; height:280px; height:(280 / 960 * 100 )+vw; min-height:280px; float:left; margin-left:20px; 
-    @include fontSet_SubTitle($lh:322px); color:transparent;
+#planningService>ul>li{width:32.3%; height:280px; height:(280 / 960 * 100 )+vw; min-height:280px; 
+    float:left; @include fontSet_SubTitle($lh:322px); color:transparent;
         &>a{width:100%; height:100%; display:block;}//a
         &>a:hover{background-color:rgba(000,000,000,0.8); color:$whiteColor;}
 }//#planningService>ul>li
 
-  #planningService>ul>li:nth-child(1){width:47.5%; margin-left:0; margin-bottom:20px;
+  #planningService>ul>li:nth-child(1){width:49%; margin-bottom:20px;
         @include backgroundImage($f:"ikea_inside_image/product_kategorie/bath_room/20174_coba01a_01_PH141944.jpg", $s:cover);
         
     }//#planningService>ul>li:nth-child(1)
 
-  #planningService>ul>li:nth-child(2){width:47.5%; margin-bottom:20px;
+  #planningService>ul>li:nth-child(2){width:49%; margin-bottom:20px; float:right;
         @include backgroundImage($f:"ikea_inside_image/product_kategorie/riving_room/PH145986.jpg");}//#planningService>ul>li:nth-child(2)
 
-  #planningService>ul>li:nth-child(3){margin-left:0;
+  #planningService>ul>li:nth-child(3){
         @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144460.jpg");}//#planningService>ul>li:nth-child(3)
 
-  #planningService>ul>li:nth-child(4){
+  #planningService>ul>li:nth-child(4){margin-left:1.5%;
         @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_07/07_PH146686.jpg");}//#planningService>ul>li:nth-child(4)
 
-  #planningService>ul>li:nth-child(5){
+  #planningService>ul>li:nth-child(5){float:right;margin-left:1.5%;
         @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144463.jpg");}//#planningService>ul>li:nth-child(5)

@@ -61,7 +61,7 @@ $url:"../../img/";
     line-height:$lh;
     }
 
-@mixin fontSet_SubTitle($c:$whiteColor,$ta:center, $lh:0){
+@mixin fontSet_SubTitle($c:$whiteColor,$ta:center, $lh:0, $fw:0){
   font-size:1.7rem; 
   color:$c; 
   text-align:$ta; 
@@ -73,10 +73,6 @@ $url:"../../img/";
   color:$c; 
   text-align:$ta; 
   line-height:$lh;
-  
+
   }
-
-
-
-
 
