@@ -1,5 +1,5 @@
 
-@mixin contentBox($w:100%, $h:auto, $mb:350px){
+@mixin contentBox($w:100%, $h:auto, $mb:300px){
   width:$w;
   height:$h;
   margin:0 auto; 
@@ -47,11 +47,12 @@ $url:"../../img/";
     background-position:$p;}
 
 
-@mixin fontSet_H3($c:$whiteColor,$ta:center, $lh:0){
+@mixin fontSet_H3($c:$whiteColor,$ta:center, $lh:0, $mb:40px){
     font-size:2rem; 
     color:$c; 
     text-align:$ta; 
     line-height:$lh;
+    margin-bottom:$mb
     }
 
 @mixin fontSet_Gnb($c:$whiteColor,$ta:center, $lh:0){
@@ -75,4 +76,10 @@ $url:"../../img/";
   line-height:$lh;
 
   }
+@mixin fontSet_Text($c:$whiteColor,$ta:center, $lh:0){
+  font-size:1.2rem; 
+  color:$c; 
+  text-align:$ta; 
+  line-height:$lh;
+}
 

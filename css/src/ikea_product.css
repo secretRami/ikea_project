@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #wrap { width: 100%; min-width: 960px; height: auto; margin: 0 auto; position: relative; }
 
-h3 { width: 500px; height: 50px; margin: 0 auto; margin-bottom: 40px; font-size: 2rem; color: blackColor; text-align: center; line-height: 50px; }
+h3 { width: 500px; height: 50px; margin: 0 auto; margin-bottom: 40px; font-size: 2rem; color: blackColor; text-align: center; line-height: 50px; margin-bottom: 40px; }
 
 h3:before { content: " | "; color: #003399; font-weight: bold; }
 
@@ -11,13 +11,13 @@ h3.nobar:before { display: none; }
 
 h3.nobar:after { display: none; }
 
-h3.box_in_h3 { width: 400px; height: auto; font-size: 2rem; color: #fff; text-align: left; line-height: 0; position: absolute; top: 10%; left: 5%; z-index: 2000; }
+h3.box_in_h3 { width: 400px; height: auto; font-size: 2rem; color: #fff; text-align: left; line-height: 0; margin-bottom: 40px; position: absolute; top: 10%; left: 5%; z-index: 2000; }
 
 #headBox { width: 960px; height: auto; margin: 0 auto; background-color: #003399; padding: 30px 0 0 0; box-sizing: border-box; /* background-color를 위해 설정 */ }
 
 #headBox::before { content: " "; width: 100%; height: 200px; background-color: inherit; position: absolute; top: 0; left: 0; z-index: -100; }
 
-h1 { width: 50%; height: 58px; margin: 0 auto; background-image: url("../../img/ikea_outside_image/ikea_logo_vector.png"); background-size: 121%; background-repeat: no-repeat; background-position: center; }
+h1 { width: 50%; height: 58px; margin: 0 auto; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_logo_vector.png"); background-size: 121%; background-repeat: no-repeat; background-position: center; }
 
 h1 a { width: 100%; height: 100%; display: block; }
 
@@ -53,99 +53,139 @@ h1 a { width: 100%; height: 100%; display: block; }
 
 #goToTop a:hover { background-color: #f26722; border-radius: 5psx; color: #fff; font-weight: 400; }
 
-#searchBox { width: 100%; height: 400px; margin: 0 auto; margin-bottom: 100px; padding: 10% 0 0 0; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/ikea_background.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+#searchBox { width: 100%; height: 400px; margin: 0 auto; margin-bottom: 300px; padding: 10% 0 0 0; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_background.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
 
 .search_input { width: 60%; height: 60px; height: 9.375vw; min-height: 60px; margin: 0 auto; background-color: #fff; }
 
-#newItemBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; }
+#newItemBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
+
+#newItemBox li { height: 100px; height: 5.20833vw; min-height: 150px; transition: all 800ms ease; }
 
 #newItemBox > .new_item_list_01 { width: 960px; height: auto; margin: 0 auto; }
 
-#newItemBox > .new_item_list_01 > li { width: 306px; height: 150px; height: 12.5vw; min-height: 150px; margin-left: 20px; margin-bottom: 20px; float: left; }
+#newItemBox > .new_item_list_01 > li { width: 306px; margin-left: 20px; margin-bottom: 20px; float: left; }
 
-#newItemBox > .new_item_list_01 > li:nth-child(1) { margin-left: 0; }
+#newItemBox > .new_item_list_01 > li:nth-child(1) { margin-left: 0; background-color: #eee; }
 
-#newItemBox > .new_item_list_01 > li:nth-child(1) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146672.jpg"); background-repeat: no-repeat; background-position: left 13%; background-size: 500%; transition: all 700ms lenear; }
+#newItemBox > .new_item_list_01 > li:nth-child(1):hover { background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/fado.png"); background-size: 240px; background-repeat: no-repeat; background-position: center; }
 
-#newItemBox > .new_item_list_01 > li:nth-child(1) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+#newItemBox > .new_item_list_01 > li:nth-child(2) { background-color: #eee; }
 
-#newItemBox > .new_item_list_01 > li:nth-child(1):hover a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/fado.png"); background-repeat: no-repeat; background-position: center; background-size: 240px; transition: all 700ms lenear; }
+#newItemBox > .new_item_list_01 > li:nth-child(2):hover { background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/odger.png"); background-size: 120px; background-repeat: no-repeat; background-position: top center; }
 
-#newItemBox > .new_item_list_01 > li:nth-child(1):hover a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+#newItemBox > .new_item_list_01 > li:nth-child(3) { background-color: #eee; }
 
-#newItemBox > .new_item_list_01 > li:nth-child(2) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146672.jpg"); background-repeat: no-repeat; background-position: 55% 15%; background-size: 500%; transition: all 700ms lenear; }
-
-#newItemBox > .new_item_list_01 > li:nth-child(2) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#newItemBox > .new_item_list_01 > li:nth-child(2):hover a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/odger.png"); background-repeat: no-repeat; background-position: top center; background-size: 120px; transition: all 700ms lenear; }
-
-#newItemBox > .new_item_list_01 > li:nth-child(2):hover a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#newItemBox > .new_item_list_01 > li:nth-child(3) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146672.jpg"); background-repeat: no-repeat; background-position: 80% 14%; background-size: 500%; transition: all 700ms lenear; }
-
-#newItemBox > .new_item_list_01 > li:nth-child(3) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#newItemBox > .new_item_list_01 > li:nth-child(3):hover a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/slakt-cimdaepeureim.png"); background-repeat: no-repeat; background-position: center; background-size: 260px; transition: all 700ms lenear; }
-
-#newItemBox > .new_item_list_01 > li:nth-child(3):hover a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+#newItemBox > .new_item_list_01 > li:nth-child(3):hover { background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/slakt-cimdaepeureim.png"); background-size: 260px; background-repeat: no-repeat; background-position: center; }
 
 .new_item_list_02 { width: 100%; height: auto; }
 
-.new_item_list_02 > li { width: 100%; height: 250px; margin-left: 0; }
+.new_item_list_02 > li { width: 100%; margin-left: 0; background-color: #eee; }
 
-.new_item_list_02 > li a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146672.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; transition: all 700ms lenear; }
-
-.new_item_list_02 > li a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-.new_item_list_02 > li:hover a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/strandmon.png"); background-repeat: no-repeat; background-position: top center; background-size: 240px; transition: all 700ms lenear; }
-
-.new_item_list_02 > li:hover a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+.new_item_list_02 > li:hover { background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/strandmon.png"); background-size: 10%; background-repeat: no-repeat; background-position: top center; }
 
 #newItemBox > .new_item_list_03 { width: 960px; height: auto; margin: 0 auto; }
 
-#newItemBox > .new_item_list_03 > li { width: 306px; height: 150px; height: 12.5vw; min-height: 150px; margin-left: 20px; margin-top: 20px; float: left; }
+#newItemBox > .new_item_list_03 > li { width: 306px; margin-left: 20px; margin-top: 20px; float: left; }
 
-#newItemBox > .new_item_list_03 > li:nth-child(1) { margin-left: 0; }
+#newItemBox > .new_item_list_03 > li:nth-child(1) { margin-left: 0; background-color: #eee; }
 
-#newItemBox > .new_item_list_03 > li:nth-child(1) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146672.jpg"); background-repeat: no-repeat; background-position: bottom left; background-size: 960px; transition: all 700ms lenear; }
+#newItemBox > .new_item_list_03 > li:nth-child(1):hover { background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/tvars.png"); background-size: 200px; background-repeat: no-repeat; background-position: center; }
 
-#newItemBox > .new_item_list_03 > li:nth-child(1) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+#newItemBox > .new_item_list_03 > li:nth-child(2) { background-color: #eee; }
 
-#newItemBox > .new_item_list_03 > li:nth-child(1):hover a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/tvars.png"); background-repeat: no-repeat; background-position: center; background-size: 200px; transition: all 700ms lenear; }
+#newItemBox > .new_item_list_03 > li:nth-child(2):hover { background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/vangsta.png"); background-size: 200px; background-repeat: no-repeat; background-position: top center; }
 
-#newItemBox > .new_item_list_03 > li:nth-child(1):hover a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+#newItemBox > .new_item_list_03 > li:nth-child(3) { background-color: #eee; }
 
-#newItemBox > .new_item_list_03 > li:nth-child(2) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146672.jpg"); background-repeat: no-repeat; background-position: center -2%; background-size: 500%; transition: all 700ms lenear; }
+#newItemBox > .new_item_list_03 > li:nth-child(3):hover { background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/slakt.png"); background-size: 240px; background-repeat: no-repeat; background-position: center; }
 
-#newItemBox > .new_item_list_03 > li:nth-child(2) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+#imageBox01 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
-#newItemBox > .new_item_list_03 > li:nth-child(2):hover a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/vangsta.png"); background-repeat: no-repeat; background-position: top center; background-size: 200px; transition: all 700ms lenear; }
-
-#newItemBox > .new_item_list_03 > li:nth-child(2):hover a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#newItemBox > .new_item_list_03 > li:nth-child(3) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146672.jpg"); background-repeat: no-repeat; background-position: bottom right; background-size: 960px; transition: all 700ms lenear; }
-
-#newItemBox > .new_item_list_03 > li:nth-child(3) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#newItemBox > .new_item_list_03 > li:nth-child(3):hover a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/new_item/slakt.png"); background-repeat: no-repeat; background-position: center; background-size: 240px; transition: all 700ms lenear; }
-
-#newItemBox > .new_item_list_03 > li:nth-child(3):hover a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#imageBox01 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; }
-
-#ikeaLogoImage { width: 270px; height: 100px; float: right; margin-right: 100px; background-image: url("../../img/ikea_outside_image/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#ikeaLogoImage { width: 270px; height: 100px; float: right; margin-right: 100px; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
 .image_one { width: 80%; height: 400px; /* ie때문에 남김 px이랑 rem분리할때 따로 빼줄 것 */ height: 41.66667vw; min-height: 400px; float: left; margin-left: 1%; background-image: url("../../img/ikea_inside_image/product_kategorie/riving_room/layer_6_copy.png"); background-size: 100%; background-repeat: no-repeat; background-position: left; }
 
-#useTypeCategorizationBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 100px; }
+#roomTypeCategorizationBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
-#useTypeCategorizationBox > .use_type_image { width: 100%; height: 500px; height: 52.08333vw; min-height: 500px; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_07/07_PH146689.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center 90%; }
+.big_size_image { width: 49%; height: 440px; height: 45.83333vw; min-height: 440px; float: left; border-top-left-radius: 70px; background-image: url("../../img/ikea_inside_image/product_kategorie/kid_room/PH145465ps_03.png"); background-size: cover; background-repeat: no-repeat; background-position: center; }
 
-#useTypeSubBox { width: 960px; height: auto; margin: 0 auto; margin-bottom: 350px; }
+.small_size_image { width: 49%; height: 440px; height: 45.83333vw; min-height: 440px; float: right; }
+
+.small_size_image > ul { width: 100%; height: 100%; padding: 30% 0 0 0; box-sizing: border-box; }
+
+.small_size_image > ul > li { width: 49%; height: 146px; height: 15.20833vw; min-height: 146px; float: left; }
+
+.small_size_image > ul > li:nth-child(1) { float: left; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144469.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.small_size_image > ul > li:nth-child(2) { float: right; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146617.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.small_size_image > ul > li:nth-child(3) { float: left; margin-top: 2%; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146661.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.small_size_image > ul > li:nth-child(4) { margin-top: 2%; border-bottom-right-radius: 70px; float: right; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_08/08_PH145519.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+#roomTypeSubBox { width: 960px; height: auto; margin: 0 auto; margin-bottom: 300px; }
+
+#roomTypeSubBox > ul { width: 100%; height: 100%; }
+
+#roomTypeSubBox > ul > li { width: 224px; height: 224px; float: left; margin-left: 20px; }
+
+#roomTypeSubBox > ul > li > a { border-radius: 0; transition: all 700ms; }
+
+#roomTypeSubBox > ul > li > a:hover { border-radius: 50px; }
+
+#roomTypeSubBox > ul > li:nth-child(1) { margin-left: 0; }
+
+#roomTypeSubBox > ul > li:nth-child(1) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/home_office/PH142025_01.png"); background-repeat: no-repeat; background-position: center; background-size: 300px; transition: all 700ms lenear; }
+
+#roomTypeSubBox > ul > li:nth-child(1) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+
+#roomTypeSubBox > ul > li:nth-child(2) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/bath_room/20163_coba04a_01_PH132603.jpg"); background-repeat: no-repeat; background-position: center; background-size: 224px; transition: all 700ms lenear; }
+
+#roomTypeSubBox > ul > li:nth-child(2) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+
+#roomTypeSubBox > ul > li:nth-child(3) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/bed_room/20172_cobh01a_01_PH138771.jpg"); background-repeat: no-repeat; background-position: center; background-size: 360px; transition: all 700ms lenear; }
+
+#roomTypeSubBox > ul > li:nth-child(3) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+
+#roomTypeSubBox > ul > li:nth-child(4) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/dining_room/20164_codi01a_01_PH133769.jpg"); background-repeat: no-repeat; background-position: center; background-size: 224px; transition: all 700ms lenear; }
+
+#roomTypeSubBox > ul > li:nth-child(4) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+
+#imageBox02 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
+
+#ikeaLogoImage2 { width: 270px; height: 100px; float: left; margin-left: 10%; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.image_two { width: 90%; height: 456px; /* ie때문에 남김 px이랑 rem분리할때 따로 빼줄 것 */ height: 47.5vw; min-height: 456px; float: right; margin-right: -10%; position: relative; }
+
+.image_two_01 { width: 50%; height: 100%; position: absolute; top: -10%; left: 25%; z-index: 200; background-image: url("../../img/ikea_inside_image/product_kategorie/kid_room/PH125087ps_01.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.image_two_02 { width: 50%; height: 30%; position: absolute; bottom: 0; left: 15%; z-index: 200; background-image: url("../../img/ikea_inside_image/product_kategorie/kid_room/PH125087ps_02.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+#useTypeCategorizationBox { width: 100%; height: 700px; margin: 0 auto; margin-bottom: 300px; padding: 0 0 10% 0; box-sizing: border-box; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_03/03_PH145001.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+
+#useTypeCategorizationBox > h3 { font-size: 2rem; color: #444; text-align: right; line-height: 0; margin-bottom: 5px; position: relative; top: 20%; }
+
+#useTypeCategorizationBox > .use_type_background { width: 75%; height: 95%; margin: auto; box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); background-color: #fff; }
+
+.use_type_background > .indicator_ul { width: 30px; height: 100%; position: relative; left: -10%; padding: 15% 0 0 0; box-sizing: border-box; }
+
+.indicator_ul > li { width: 30px; height: 30px; margin-bottom: 20px; }
+
+.indicator_ul > li > a { width: 100%; height: 100%; display: block; border: 8px solid #003399; box-sizing: border-box; background-color: #fff; }
+
+.indicator_ul > li > a:hover { border-color: #f26722; }
+
+.use_type_background > .use_type_ul { width: 100%; height: 100%; position: relative; top: -100%; }
+
+.use_type_image { width: 150px; height: 150px; background-color: #eae; position: absolute; top: -10%; left: -5%; }
+
+.use_type_image2 { width: 150px; height: 150px; background-color: #eec; position: absolute; bottom: -5%; right: -10%; }
+
+#useTypeSubBox { width: 960px; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
 #useTypeSubBox > ul { width: 100%; height: 100%; margin: 0 auto; }
 
-#useTypeSubBox > ul > li { width: 23%; height: 230px; float: left; margin-left: 2.6%; border-radius: 50%; background-color: #ffcc02; }
+#useTypeSubBox > ul > li { width: 23%; height: 230px; float: left; margin-left: 2.6%; border-radius: 50%; background-color: #ffcc02; transition: all 500ms; }
 
 #useTypeSubBox > ul > li:hover { background-color: #f26722; }
 
@@ -167,92 +207,32 @@ h1 a { width: 100%; height: 100%; display: block; }
 
 #useTypeSubBox > ul > li:nth-child(4) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
 
-#imageBox02 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; }
+#galleryBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
-#ikeaLogoImage2 { width: 270px; height: 100px; float: right; margin-right: 100px; background-image: url("../../img/ikea_outside_image/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#galleryBox > .gallery_text_box { width: 30%; height: 550px; height: 28.64583vw; min-height: 550px; background-color: #f26722; float: left; }
 
-.image_two { width: 90%; height: 456px; /* ie때문에 남김 px이랑 rem분리할때 따로 빼줄 것 */ height: 47.5vw; min-height: 456px; float: left; margin-left: -10%; background-image: url("../../img/ikea_inside_image/product_kategorie/kid_room/PH145465ps_02.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+.gallery_image_box { width: 70%; height: 550px; height: 28.64583vw; min-height: 550px; float: right; }
 
-#roomTypeCategorizationBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; }
+.gallery_image_box a:hover { background-color: rgba(0, 0, 0, 0.7); }
 
-.big_size_image { width: 49%; height: 440px; height: 45.83333vw; min-height: 440px; float: left; border-top-left-radius: 70px; background-image: url("../../img/ikea_inside_image/product_kategorie/kid_room/PH145465ps_03.png"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.gallery_image_list_01, .gallery_image_list_03 { width: 25%; height: 100%; float: left; }
 
-.small_size_image { width: 49%; height: 440px; height: 45.83333vw; min-height: 440px; float: right; }
+.gallery_image_list_02 { width: 50%; height: 100%; float: left; position: relative; }
 
-.small_size_image > ul { width: 100%; height: 100%; padding: 30% 0 0 0; box-sizing: border-box; }
+.gallery_image_list_01 > li:nth-child(1) { width: 100%; height: 33.3%; background-color: #aae; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144470.jpg"); background-size: 180%; background-repeat: no-repeat; background-position: top left; }
 
-.small_size_image > ul > li { width: 49%; height: 146px; height: 15.20833vw; min-height: 146px; float: left; }
+.gallery_image_list_01 > li:nth-child(2) { width: 100%; height: 66.6%; background-color: #eaa; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_14/14_PH128833.jpg"); background-size: 160%; background-repeat: no-repeat; background-position: center; }
 
-.small_size_image > ul > li:nth-child(1) { float: left; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144469.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+.gallery_image_list_02 > li:nth-child(1) { width: 50%; height: 33.3%; float: left; background-color: #1aa; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_11/11_PH145288.jpg"); background-size: 180%; background-repeat: no-repeat; background-position: center; }
 
-.small_size_image > ul > li:nth-child(2) { float: right; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146617.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+.gallery_image_list_02 > li:nth-child(2) { width: 50%; height: 66.6%; float: left; background-color: #aa7; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144464.jpg"); background-size: 180%; background-repeat: no-repeat; background-position: center; }
 
-.small_size_image > ul > li:nth-child(3) { float: left; margin-top: 2%; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_06/06_PH146661.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+.gallery_image_list_02 > li:nth-child(3) { width: 50%; height: 33.3%; float: left; background-color: #eaf; position: absolute; bottom: 33.4%; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_10/10_PH136652.jpg"); background-size: 180%; background-repeat: no-repeat; background-position: center; }
 
-.small_size_image > ul > li:nth-child(4) { margin-top: 2%; border-bottom-right-radius: 70px; float: right; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_08/08_PH145519.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+.gallery_image_list_02 > li:nth-child(4) { width: 100%; height: 33.3%; float: left; background-color: #eca; position: absolute; bottom: 0; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_13/13_PH134268.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: bottom; }
 
-#roomTypeSubBox { width: 960px; height: auto; margin: 0 auto; margin-bottom: 350px; }
+.gallery_image_list_03 > li:nth-child(1) { width: 100%; height: 33.3%; background-color: #aae; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144473.png"); background-size: 160%; background-repeat: no-repeat; background-position: center; }
 
-#roomTypeSubBox > ul { width: 100%; height: 100%; }
-
-#roomTypeSubBox > ul > li { width: 224px; height: 224px; float: left; margin-left: 20px; }
-
-#roomTypeSubBox > ul > li > a { border-radius: 50px; }
-
-#roomTypeSubBox > ul > li > a:hover { border-radius: 0; background-color: rgba(0, 0, 0, 0.7); }
-
-#roomTypeSubBox > ul > li:nth-child(1) { margin-left: 0; }
-
-#roomTypeSubBox > ul > li:nth-child(1) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/home_office/PH142025_01.png"); background-repeat: no-repeat; background-position: center; background-size: 300px; transition: all 700ms lenear; }
-
-#roomTypeSubBox > ul > li:nth-child(1) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#roomTypeSubBox > ul > li:nth-child(2) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/bath_room/20163_coba04a_01_PH132603.jpg"); background-repeat: no-repeat; background-position: center; background-size: 224px; transition: all 700ms lenear; }
-
-#roomTypeSubBox > ul > li:nth-child(2) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#roomTypeSubBox > ul > li:nth-child(3) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/bed_room/20172_cobh01a_01_PH138771.jpg"); background-repeat: no-repeat; background-position: center; background-size: 360px; transition: all 700ms lenear; }
-
-#roomTypeSubBox > ul > li:nth-child(3) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#roomTypeSubBox > ul > li:nth-child(4) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/dining_room/20164_codi01a_01_PH133769.jpg"); background-repeat: no-repeat; background-position: center; background-size: 224px; transition: all 700ms lenear; }
-
-#roomTypeSubBox > ul > li:nth-child(4) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-#galleryBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; }
-
-#galleryBox > ul { width: 100%; height: 100%; }
-
-#galleryBox > ul > li { width: 100%; height: auto; }
-
-.mini_image { width: 49%; height: 320px; height: 33.33333vw; min-height: 320px; float: left; margin-bottom: 20px; }
-
-.mini_image a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/popular_item/pello.png"); background-repeat: no-repeat; background-position: center; background-size: 100px; transition: all 700ms lenear; }
-
-.mini_image a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-.big_image { width: 49%; height: 320px; height: 33.33333vw; min-height: 320px; float: left; margin-left: 20px; margin-bottom: 20px; }
-
-.big_image a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/popular_item/friheten.png"); background-repeat: no-repeat; background-position: center; background-size: 500px; transition: all 700ms lenear; }
-
-.big_image a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-.big_image2 { width: 49%; height: 320px; height: 33.33333vw; min-height: 320px; float: left; margin-right: 20px; }
-
-.big_image2 a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_inside_image/product_kategorie/popular_item/friheten.png"); background-repeat: no-repeat; background-position: center; background-size: 500px; transition: all 700ms lenear; }
-
-.big_image2 a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
-
-.mini_image > ul { width: 100%; height: 100%; }
-
-.mini_image > ul > li { width: 48%; height: 146px; height: 15.20833vw; min-width: 146px; margin-left: 2%; }
-
-.mini_image > ul > li:nth-child(1) { float: right; margin-bottom: 2%; }
-
-.mini_image > ul > li:nth-child(2) { float: left; margin-bottom: 2%; }
-
-.mini_image > ul > li:nth-child(3) { float: right; }
-
-.mini_image > ul > li:nth-child(4) { float: left; }
+.gallery_image_list_03 > li:nth-child(2) { width: 100%; height: 66.6%; background-color: #eaa; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_10/10_PH136659.jpg"); background-size: 180%; background-repeat: no-repeat; background-position: center; }
 
 #footBox { width: 100%; height: 150px; background-color: #003399; }

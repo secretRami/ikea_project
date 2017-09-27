@@ -17,21 +17,21 @@
 
 #goToTop a:hover { background-color: #f26722; border-radius: 5psx; color: #fff; font-weight: 400; }
 
-#searchBox { width: 100%; height: 400px; margin: 0 auto; margin-bottom: 100px; padding: 10% 0 0 0; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/ikea_background.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+#searchBox { width: 100%; height: 400px; margin: 0 auto; margin-bottom: 300px; padding: 10% 0 0 0; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_background.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
 
 .search_input { width: 60%; height: 60px; height: 9.375vw; min-height: 60px; margin: 0 auto; background-color: #fff; }
 
-#popularityBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; position: relative; }
+#popularityBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; position: relative; }
 
 #popularityBox > ul { width: 960px; height: auto; margin: 0 auto; }
 
-#popularityBox > ul > li { width: 400px; height: 200px; float: left; border: 15px solid #eee; box-sizing: border-box; transition: all 700ms; font-size: 1.7rem; color: #171717; text-align: left; line-height: 50px; font-weight: 700; }
+#popularityBox > ul > li { width: 400px; height: 200px; float: left; border: 15px solid #eee; box-sizing: border-box; transition: all 700ms; font-size: 1.7rem; color: #444; text-align: left; line-height: 50px; font-weight: 700; }
 
 #popularityBox > ul > li:hover { border: 15px solid #003399; }
 
 #popularityBox > ul > li > a { width: 300px; height: 100px; display: block; padding: 40px; position: relative; }
 
-#popularityBox > ul > li > a:hover { color: #171717; box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3); }
+#popularityBox > ul > li > a:hover { color: #444; box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3); }
 
 #popularityBox > ul > li:nth-child(1) { margin-top: 80px; }
 
@@ -41,11 +41,11 @@
 
 .search_many_product_image { width: 200px; height: 300px; position: absolute; top: -60%; right: -14%; z-index: 100; background-image: url("../../img/ikea_inside_image/product_kategorie/popular_item/helmer.png"); background-size: 150px; background-repeat: no-repeat; background-position: center; }
 
-#eventBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; }
+#eventBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
 .event_list { width: 30%; height: 500px; min-height: 500px; height: 52.08333vw; background-color: #fff; float: left; position: relative; }
 
-.event_text { width: 440px; height: 200px; padding: 20px 20px 20px 50px; box-sizing: border-box; font-size: 1.7rem; color: #171717; text-align: right; line-height: 60px; font-weight: bold; background-color: #fff; position: absolute; top: 10%; right: -90px; }
+.event_text { width: 440px; height: 200px; padding: 20px 20px 20px 50px; box-sizing: border-box; font-size: 1.7rem; color: #444; text-align: right; line-height: 60px; font-weight: bold; background-color: #fff; position: absolute; top: 10%; right: -90px; }
 
 .event_text > span { font-size: 70px; color: #f26722; }
 
@@ -61,11 +61,27 @@
 
 .event_image { width: 70%; height: 500px; min-height: 500px; height: 52.08333vw; float: right; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144472.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
 
-#imageBox01 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; }
+#imageBox01 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
-#ikeaLogoImage { width: 270px; height: 100px; float: left; margin-left: 100px; /* padding-top:100px;*/ background-image: url("../../img/ikea_outside_image/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#ikeaLogoImage { width: 270px; height: 100px; float: left; margin-left: 100px; /* padding-top:100px;*/ background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
 .image_one { width: 90%; height: 456px; /* ie때문에 남김 px이랑 rem분리할때 따로 빼줄 것 */ height: 47.5vw; min-height: 456px; float: right; margin-right: -10%; position: relative; }
+
+.image_one > .image_one_01 { transition: all 1000ms ease; }
+
+.image_one > .image_one_02 { transition: all 1200ms ease; }
+
+.image_one > .image_one_03 { transition: all 1200ms ease; }
+
+.image_one > .image_one_04 { transition: all 1000ms ease; }
+
+.image_one.scroll > .image_one_01 { transform: translate(340px, 500px); opacity: 0; }
+
+.image_one.scroll > .image_one_02 { transform: translate(340px, 100px); opacity: 0; }
+
+.image_one.scroll > .image_one_03 { transform: translate(340px, 200px); opacity: 0; }
+
+.image_one.scroll > .image_one_04 { transform: translate(340px, 300px); opacity: 0; }
 
 .image_one_01 { width: 50%; height: 150%; position: absolute; bottom: 0; left: 15%; z-index: 2000; /*background-color:#eaf;*/ background-image: url("../../img/ikea_inside_image/product_kategorie/home_office/PH141867ps_01.png"); background-size: 80%; background-repeat: no-repeat; background-position: center; }
 
@@ -75,7 +91,7 @@
 
 .image_one_04 { width: 15%; height: 40%; position: absolute; top: 0%; right: 20%; z-index: 1000; /* background-color:#ede;*/ background-image: url("../../img/ikea_inside_image/product_kategorie/home_office/PH141867ps_04.png"); background-size: 65%; background-repeat: no-repeat; background-position: center; }
 
-#offlineStoreBox { width: 960px; height: auto; margin: 0 auto; margin-bottom: 350px; }
+#offlineStoreBox { width: 960px; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
 #offlineStoreBox > ul { width: 49.5%; height: 100%; }
 
@@ -97,13 +113,15 @@
 
 #offlineStoreBox > .store_two > li:nth-child(1) { margin-bottom: 2%; }
 
-#imageBox02 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; }
+#imageBox02 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; padding: 5%; box-sizing: border-box; }
 
-#ikeaLogoImage2 { width: 270px; height: 100px; float: left; margin-left: 10%; background-image: url("../../img/ikea_outside_image/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#ikeaLogoImage2 { width: 270px; height: 100px; float: right; margin-right: 10%; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
-.image_two { width: 90%; height: 650px; /* ie때문에 남김 px이랑 rem분리할때 따로 빼줄 것 */ float: right; margin-right: -10%; background-image: url("../../img/ikea_inside_image/product_kategorie/popular_item/helmer.png"); background-size: 350px; background-repeat: no-repeat; background-position: center; }
+.image_two { width: 40%; height: 500px; float: left; margin-left: 5%; margin-top: 10%; background-color: #ffcc02; }
 
-#homeFurnishingServiceBox { width: 960px; height: auto; margin: 0 auto; margin-bottom: 350px; }
+.image_two > .image_two_01 { width: 150%; height: 130%; margin: 0 auto; position: relative; top: -25%; right: 10%; background-image: url("../../img/ikea_inside_image/product_kategorie/popular_item/lerberg.png"); background-size: 35%; background-repeat: no-repeat; background-position: center; }
+
+#homeFurnishingServiceBox { width: 960px; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
 .homefurnishing { width: 100%; height: 300px; margin-bottom: 20px; }
 
@@ -113,9 +131,9 @@
 
 .homefurnishing_title { width: 620px; height: inherit; float: left; padding: 100px 50px; box-sizing: border-box; }
 
-.homefurnishing_title > h4 { font-size: 1.7rem; color: #171717; text-align: center; line-height: 40px; margin-bottom: 20px; }
+.homefurnishing_title > h4 { font-size: 1.7rem; color: #444; text-align: center; line-height: 40px; margin-bottom: 20px; }
 
-.homefurnishing_title > p { font-size: 0.9rem; color: #171717; text-align: center; line-height: 0; }
+.homefurnishing_title > p { font-size: 0.9rem; color: #444; text-align: center; line-height: 0; }
 
 .homefurnishing_img { width: 300px; height: 300px; float: right; border-radius: 150px; background-color: #eff; position: relative; }
 
@@ -127,13 +145,13 @@
 
 .two { background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_05/05_PH147257.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
-#membershipBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; position: relative; }
+#membershipBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; position: relative; }
 
 .membership_image { width: 100%; height: 500px; height: 52.08333vw; min-height: 500px; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_03/03_PH145001.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
 .membership_text { width: 40%; height: 500px; height: 52.08333vw; min-height: 500px; position: absolute; bottom: 0; left: 0; background-color: #f26722; }
 
-#subServiceBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 350px; }
+#subServiceBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
 #subServiceBox > ul { width: 650px; height: 200px; margin: 0 auto; margin-bottom: 20px; }
 

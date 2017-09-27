@@ -21,10 +21,10 @@
 
 
 // #searchBox____________________________________________________________________
-  #searchBox{@include contentBox($h:400px, $mb:100px); 
+  #searchBox{@include contentBox($h:400px); 
             @include paddingAndBoxsizing($p:10% 0 0 0 );
 
-            @include backgroundImage($f:"ikea_outside_image/ikea_background.jpg", $s:cover); }
+            @include backgroundImage($f:"ikea_outside_image/ikea_logo/ikea_background.jpg", $s:cover); }
     .search_input{width:60%; height:60px; height:(60 / 960 *150)+vw; min-height:60px; margin: 0 auto; background-color:$whiteColor;}
 
 

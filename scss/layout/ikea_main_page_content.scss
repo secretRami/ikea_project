@@ -66,12 +66,25 @@
 // #imageBox01____________________________________________________________________
   #imageBox01{@include contentBox;  }
       #ikeaLogoImage{width:270px; height:100px; float:left; margin-left:100px; /* padding-top:100px;*/
-            @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");
+            @include backgroundImage($f:"ikea_outside_image/ikea_logo/ikea_logo_vector.png");
 
           }
       .image_one{width:90%; height:456px; /* ie때문에 남김 px이랑 rem분리할때 따로 빼줄 것 */ 
                 height:(456 / 960 * 100) + vw;  min-height:456px;  
-                float:right; margin-right:-10%;  position:relative;}
+                float:right; margin-right:-10%;  position:relative;
+        
+          >.image_one_01{transition:all 1000ms ease;}
+          >.image_one_02{transition:all 1200ms ease;}
+          >.image_one_03{transition:all 1200ms ease;}
+          >.image_one_04{transition:all 1000ms ease;}
+        
+        &.scroll{
+          >.image_one_01{transform:translate(340px, 500px); opacity:0; }
+          >.image_one_02{transform:translate(340px, 100px); opacity:0; }
+          >.image_one_03{transform:translate(340px, 200px); opacity:0; }
+          >.image_one_04{transform:translate(340px, 300px); opacity:0; }
+        }
+              }// .image_one
 
       .image_one_01{width:50%; height:150%; position:absolute; bottom:0; left:15%; z-index:2000;/*background-color:#eaf;*/
         @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_01.png", $s:80%);}
@@ -81,6 +94,7 @@
         @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_05.png", $s:65%);}
       .image_one_04{width:15%; height:40%; position:absolute; top:0%; right:20%; z-index:1000; /* background-color:#ede;*/
         @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_04.png", $s:65%);}
+
 
 
 // transtorm : 0.8s infineie alternate lenear
@@ -112,13 +126,17 @@
 
 
 // #imageBox02____________________________________________________________________
-  #imageBox02{@include contentBox;}
-    #ikeaLogoImage2{width:270px; height:100px; float:left; margin-left:10%;
-      @include backgroundImage($f:"ikea_outside_image/ikea_logo_vector.png");}
+  #imageBox02{@include contentBox; @include paddingAndBoxsizing($p:5%);}
+    #ikeaLogoImage2{width:270px; height:100px; float:right; margin-right:10%;
+      @include backgroundImage($f:"ikea_outside_image/ikea_logo/ikea_logo_vector.png");}
     
-    .image_two{width:90%; height:650px; /* ie때문에 남김 px이랑 rem분리할때 따로 빼줄 것 */ 
-     float:right; margin-right:-10%;
-      @include backgroundImage($f:"ikea_inside_image/product_kategorie/popular_item/helmer.png", $s:350px);}
+    .image_two{width:40%; height:500px; float:left; margin-left:5%; margin-top:10%;
+     background-color:$subColor; 
+      // border-top:50px solid #eee; box-sizing:border-box;
+      &>.image_two_01{width:150%; height:130%; margin:0 auto; position:relative; top:-25%; right:10%;
+        @include backgroundImage($f:"ikea_inside_image/product_kategorie/popular_item/lerberg.png",$s:35%);
+      }//&.image_two_01
+    }
 
 
 
