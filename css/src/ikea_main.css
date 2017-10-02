@@ -131,31 +131,49 @@ h1 a { width: 100%; height: 100%; display: block; }
 
 #offlineStoreBox > ul { width: 49.5%; height: 100%; }
 
+#offlineStoreBox > ul.store_one { float: left; }
+
+#offlineStoreBox > ul.store_two { float: right; }
+
 #offlineStoreBox > ul > li { width: 100%; height: 400px; height: 20.83333vw; min-height: 400px; }
 
-#offlineStoreBox > ul > li a { width: 100%; height: 100%; display: block; font-size: 1.7rem; color: mainColor; text-align: left; line-height: 60px; padding: 15%; box-sizing: border-box; border: 20px solid #003399; transition: all 400ms; }
+#offlineStoreBox > ul > li a { width: 100%; height: 100%; display: block; font-size: 1.7rem; color: mainColor; text-align: left; line-height: 20px; font-weight: 600; padding: 10%; box-sizing: border-box; border: 10px solid #003399; transition: all 700ms ease; }
 
-#offlineStoreBox > ul > li a:hover { background-color: #f26722; color: #fff; border-color: #f26722; }
+#offlineStoreBox > ul > li a:hover { background-color: #003399; color: #fff; border: 0; }
 
 #offlineStoreBox > ul > li span { font-size: 0.9rem; color: mainColor; text-align: center; line-height: 0; }
 
-.store_one { float: left; }
-
-.store_two { float: right; }
-
 #offlineStoreBox > .store_one > li:nth-child(1) { width: 220px; height: 220px; height: 11.45833vw; min-height: 220px; margin-left: 53%; margin-bottom: 2%; }
+
+#offlineStoreBox > .store_one > li:nth-child(1) > a { background-image: url("../../img/ikea_outside_image/product_kategorie/popular_item/popular_item_600_47_01.png"); background-size: 60%; background-repeat: no-repeat; background-position: bottom right; background-color: #003399; color: #fff; }
+
+#offlineStoreBox > .store_one > li:nth-child(1) > a:hover { background-color: #f26722; color: #fff; }
 
 #offlineStoreBox > .store_one > li:nth-child(2) { height: 580px; height: 30.20833vw; min-height: 580px; }
 
+#offlineStoreBox > .store_one > li:nth-child(2) span.image_out_span { width: 135%; height: 135%; display: block; float: left; margin-left: -40%; background-image: url("../../img/ikea_outside_image/product_kategorie/popular_item/popular_item_700_44_01.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
 #offlineStoreBox > .store_two > li:nth-child(1) { margin-bottom: 2%; }
 
-#imageBox02 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; padding: 5%; box-sizing: border-box; }
+#offlineStoreBox > .store_two > li:nth-child(1) span.image_out_span { width: 120%; height: 120%; display: block; float: left; margin-top: -35%; margin-left: 10%; background-image: url("../../img/ikea_outside_image/product_kategorie/popular_item/popular_item_599_51_01.png"); background-size: 100%; background-repeat: no-repeat; background-position: bottom right; }
 
-#ikeaLogoImage2 { width: 270px; height: 100px; float: right; margin-right: 10%; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+#offlineStoreBox > .store_two > li:nth-child(2) span.image_out_span { width: 115%; height: 115%; display: block; float: right; margin-right: -18%; background-image: url("../../img/ikea_outside_image/product_kategorie/popular_item/popular_item_936_32_01.png"); background-size: 65%; background-repeat: no-repeat; background-position: bottom right; }
 
-.image_two { width: 40%; height: 500px; float: left; margin-left: 5%; margin-top: 10%; background-color: #ffcc02; }
+#imageBox02 { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
-.image_two > .image_two_01 { width: 150%; height: 130%; margin: 0 auto; position: relative; top: -25%; right: 10%; background-image: url("../../img/ikea_inside_image/product_kategorie/popular_item/lerberg.png"); background-size: 35%; background-repeat: no-repeat; background-position: center; }
+#ikeaLogoImage2 { width: 270px; height: 100px; float: right; margin-right: 5%; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_logo_vector.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.image_two { width: 90%; height: 500px; height: 52.08333vw; min-height: 500px; margin-left: -5%; float: left; position: relative; }
+
+.image_two_01 { width: 60%; height: 70%; position: absolute; bottom: -15%; left: 25%; z-index: 500; background-image: url("../../img/ikea_outside_image/product_kategorie/dining_room/dining_1461_07_01.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.image_two_02 { width: 40%; height: 45%; position: absolute; top: -30%; left: 35%; z-index: 200; background-image: url("../../img/ikea_outside_image/product_kategorie/dining_room/dining_1461_07_02.png"); background-size: 70%; background-repeat: no-repeat; background-position: center; }
+
+.image_two_03 { width: 25%; height: 70%; position: absolute; top: 12%; right: -5%; z-index: 50; background-image: url("../../img/ikea_outside_image/product_kategorie/dining_room/dining_1461_07_03.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.image_two_04 { width: 8%; height: 50%; position: absolute; top: 10%; left: 10%; z-index: 100; background-image: url("../../img/ikea_outside_image/product_kategorie/dining_room/dining_1461_07_04.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.image_two_05 { width: 90%; height: 50%; position: absolute; top: -44%; left: 0; z-index: -10; background-image: url("../../img/ikea_outside_image/product_kategorie/dining_room/dining_1461_07_05.png"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
 #homeFurnishingServiceBox { width: 960px; height: auto; margin: 0 auto; margin-bottom: 300px; }
 
@@ -186,6 +204,12 @@ h1 a { width: 100%; height: 100%; display: block; }
 .membership_image { width: 100%; height: 500px; height: 52.08333vw; min-height: 500px; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_03/03_PH145001.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
 .membership_text { width: 40%; height: 500px; height: 52.08333vw; min-height: 500px; position: absolute; bottom: 0; left: 0; background-color: #f26722; }
+
+.membership_text > p { width: 75%; height: 20%; margin: 0 auto; margin-top: 30%; font-size: 1.2rem; color: #fff; text-align: left; line-height: 40px; }
+
+.membership_text > a { width: 75%; height: 15%; margin: 0 auto; margin-top: 40%; display: block; border: 4px solid #fff; font-size: 20px; text-align: center; line-height: 110px; color: #fff; transition: all 700ms ease; }
+
+.membership_text > a:hover { background-color: #fff; color: #444; font-weight: 700; }
 
 #subServiceBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 300px; }
 

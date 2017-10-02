@@ -144,12 +144,12 @@
     <!-- #imageBox01__________________________________ -->
       <article id="imageBox01" class="clearfix">
         <h3 id="ikeaLogoImage" class="nobar"><span class="me_hidden">ikea_logo</span></h3>
-        <div class="image_one scroll">
-          <div class="image_one_01"></div>
-          <div class="image_one_02"></div>
-          <div class="image_one_03"></div>
-          <div class="image_one_04"></div>
-        </div>
+        <ul class="image_one scroll">
+          <li class="image_one_01"></li>
+          <li class="image_one_02"></li>
+          <li class="image_one_03"></li>
+          <li class="image_one_04"></li>
+        </ul>
       </article><!-- // #imageBox01 -->
 
 
@@ -159,32 +159,34 @@
           <ul class="store_one">
             <li>
               <a href="./make_preparations_for_page.html">
-                <p>ikea 홍보<br>
-                  <span>ikea is..</span>
-                </p>
+                ikea 홍보<br><span>ikea is..</span>
+                
               </a>
             </li>
             <li>
               <a href="./make_preparations_for_page.html">
-                <p>Ikea 광명점<br>
+                Ikea 광명점<br>
                   <span>첫 번째 스토어를 소개합니다!</span>
-                </p>
+                 <span class="image_out_span"></span>
               </a>
             </li>
           </ul>
+
           <ul class="store_two">
             <li>
               <a href="./make_preparations_for_page.html">
-                <p>Ikea 고양점<br>
+                Ikea 고양점<br>
                   <span>새로운 고양 스토어를 소개합니다!</span>
-                </p>
+                <span class="image_out_span"></span>
               </a>
             </li>
             <li>
               <a href="./make_preparations_for_page.html">
-                <p>Ikea에서 쇼핑하기<br>
+                Ikea에서 쇼핑하기<br>
                   <span>처음 오셨다면 이쪽으로 오세요</span>
-                </p>
+                <span class="image_out_span"></span>
+                
+                
               </a>
             </li>
           </ul>
@@ -196,9 +198,13 @@
     <!-- #imageBox02__________________________________ -->
       <article id="imageBox02" class="clearfix">
         <h3 id="ikeaLogoImage2" class="nobar"><span class="me_hidden">ikea_logo</span></h3>
-        <div class="image_two">
-          <div class="image_two_01"></div>
-        </div>
+        <ul class="image_two">
+          <li class="image_two_01"></li>
+          <li class="image_two_02"></li>
+          <li class="image_two_03"></li>
+          <li class="image_two_04"></li>
+          <li class="image_two_05"></li>
+        </ul>
       </article><!-- // #imageBox02 -->
 
 
@@ -232,7 +238,10 @@
       <article id="membershipBox">
         <h3 class="box_in_h3 nobar">이케아 멤버십 안내</h3>
         <div class="membership_image"></div>
-        <div class="membership_text"></div>
+        <div class="membership_text">
+          <p>ikea family 회원이 되시면 다양한 즐거움을 <br>더 많이 누리실 수 있어요! </p>
+        <a href="#">membership 혜택 보러가기</a>
+        </div>
       </article><!-- // #membershipBox -->
 
 
@@ -264,7 +273,7 @@
       var winScroll = $(this).scrollTop();
       // console.log(winScroll);
 
-      if( winScroll >= imgOneOffset - 400){     $('.image_one').removeClass('scroll');  }
+      if( winScroll >= imgOneOffset - 400){$('.image_one').removeClass('scroll');  }
     });
 
   })(this.jQuery);
