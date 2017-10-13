@@ -61,7 +61,7 @@
       <h2 class="me_hidden">contentTitle</h2>
 
     <!-- #GoToTop__________________________________ -->
-      <div id="goToTop">
+      <!-- <div id="goToTop">
         <ul>
           <li>
             <button type="button">
@@ -88,47 +88,56 @@
             <i class="fa fa-angle-double-up" aria-hidden="true"></i><p>Go to Top</p></a>
           </li>
         </ul>
-      </div>
+      </div> -->
 
 <!-- #searchBox__________________________________ -->
       <article id="searchBox">
         <h3 class="me_hidden">검색</h3>
-        <div class="search_input"></div>
-      </article><!-- // #searchBox -->  
+        <div class="search_input">
+          <form action="#">
+            <fieldset>
+              <legend for="searchText"><span class="me_hidden">검색</span></legend>
+              <input type="search" id="searchText" name="searchText" placeholder="여기서 검색할 수 있어요">
+              <button type="submit">
+               <i class="fa fa-search" aria-hidden="true">
+                 <span class="me_hidden">검색하기</span>
+               </i>
+             </button>
+            </fieldset>
+          </form>
+        </div>
+      </article><!-- // #searchBox -->
 
     <!-- customerSupportCenterBox_______________________ -->
-      <article id="customerSupportCenterBox">
-        <h3>고객센터</h3>
+      <article id="customerSupportCenterBox" class="clearfix">
+        <h3 class="me_hidden">고객센터</h3>
+        <div><a href="./make_preparations_for_page.html">자주하는 질문</a></div>
         <ul class="clearfix">
-          <li><a href="./make_preparations_for_page.html">자주하는 질문</a></li>
           <li><a href="./make_preparations_for_page.html">F&amp;Q</a></li>
           <li><a href="./make_preparations_for_page.html">부가서비스</a></li>
           <li><a href="./make_preparations_for_page.html">패밀리 멤버십</a></li>
           <li><a href="./make_preparations_for_page.html">모바일 앱</a></li>
-          <li><a href="./make_preparations_for_page.html">더보기</a></li>
         </ul>
       </article>
 
 
     <!-- noticeBox_______________________ -->
       <article id="noticeBox" class="clearfix">
-        <h3 class="me_hidden nobar">공지사항</h3>
-        <div class="notice_image"></div>
-
-        <div class="notice_list clearfix" >
-          <ul>
-            <li>공사항을 보고가세요!</li>
-            <li><a href="./make_preparations_for_page.html">공지안내</a></li>
-            <li><a href="./make_preparations_for_page.html">리콜안내</a></li>
+        <h3 class="me_hidden">공지사항</h3>
+          <ul class="notice_list clearfix">
+            <li class="notice_li">IKEA 코리아 NEWS Room</li>
+            <li class="notice_li">
+              <a href="./make_preparations_for_page.html">기업/제품 NEWS</a></li>
+            <li class="notice_li">
+              <a href="./make_preparations_for_page.html">제품리콜</a></li>
           </ul>
-        </div>
       </article>
 
 
 
     <!-- productInfoBox_______________________ -->
       <article id="productInfoBox">
-       <h3 class="me_hidden nobar">제품안내</h3>
+       <h3 class="me_hidden">제품안내</h3>
 
        <div class="product_information clearfix">
         
@@ -159,7 +168,7 @@
 
     <!-- offlineStorInfoeBox_______________________ -->
       <article id="offlineStoreInfoeBox" class="clearfix">
-        <h3>오프라인 매장안내</h3>
+        <h3 class="me_hidden">오프라인 매장안내</h3>
 
        <div class="store_list">
          <ul>
@@ -189,21 +198,33 @@
 
     <!-- imageBox_______________________ -->
       <article id="imageBox" class="clearfix">
-        <h3 id="ikeaLogoImage" class="nobar"><span class="me_hidden">imageBox</span></h3>
-        <div class="image"></div>
+        <h3 id="ikeaLogoImage" ><span class="me_hidden">imageBox</span></h3>
+        <div class="image"><ul>
+          <li class="image_01"></li>
+          <li class="image_02"></li>
+          <li class="image_03"></li>
+          <li class="image_04"></li>
+          <li class="image_05"></li>
+          <li class="image_06"></li>
+        </ul></div>
       </article>
 
 
     <!-- ikeaCompanyIntroductionBox_______________________ -->
       <article id="ikeaCompanyIntroductionBox" class="clearfix">
-        <h3>이케아 기업소개</h3>
-        <div class="ikeaCompany_text"></div>
-        <div class="ikeaCompany_image">
-          <ul>
-            <li class="logo_box"></li>
-            <li class="image_box"></li>
-          </ul>
-        </div>
+        <h3 class="me_hidden ">이케아 기업소개</h3>
+        <ul class="ikeaCompany_text">
+          <li>The Good Company</li>
+          <li>
+            <div class="scroll_out_box">
+            <div class="scroll_in_box"><p>IKEA는 집에서의 더 나은 생활을 만든다는 열정을 지닌 <strong>가치 지향적 기업입니다.</strong> 우리가 만드는 제품 하나하나에는 집을 보다 살기 좋은 공간으로 만들기 위한 아이디어가 담겨 있습니다. 현재 IKEA 그룹은 전 세계 28개국에서 340개의 매장을 운영하고 있습니다*.<br> * 2016년 8월 31일</p></div><!-- // scroll_out_box -->
+            </div><!-- // scroll_in_box -->
+          </li>
+          <li>
+            <a href="./make_preparations_for_page.html">Ikea 더 알아보기</a>
+          </li>
+        </ul>
+        <div class="ikeaCompany_image"></div>
       </article>
 
 
@@ -219,8 +240,16 @@
 
     </article>
     <footer id="footBox">
-      <h2 class="me_hidden">h2_title</h2></footer>
-  </div>
+      <h2 class="me_hidden">h3_title</h2>
+      <ul>
+        <li><a href="#"> 웹사이트이용약관</a></li>
+        <li><a href="#">IKEA Korea 개인정보처리방침</a></li>
+        <li><a href="#">IKEA FAMILY 개인정보취급처리방침</a></li>
+        <li><a href="#">IKEA 고객지원센터 1670-4532</a></li>
+        <li>© Inter IKEA Systems B.V. 1999 - 2014</li>
+      </ul>
+    </footer>
+  </div><!-- // #wrap -->
 
 </body>
 </html>

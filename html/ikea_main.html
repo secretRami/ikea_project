@@ -62,7 +62,7 @@
       <h2 class="me_hidden">contentTitle</h2>
 
     <!-- #GoToTop__________________________________ -->
-      <div id="goToTop">
+     <!-- <div id="goToTop">
         <ul>
           <li>
             <button type="button">
@@ -92,12 +92,24 @@
             <i class="fa fa-angle-double-up" aria-hidden="true"></i><p>Go to Top</p></a>
           </li>
         </ul>
-      </div>
+      </div> -->
 
     <!-- #searchBox__________________________________ -->
       <article id="searchBox">
         <h3 class="me_hidden">검색</h3>
-        <div class="search_input"></div>
+        <div class="search_input">
+          <form action="#">
+            <fieldset>
+              <legend for="searchText"><span class="me_hidden">검색</span></legend>
+              <input type="search" id="searchText" name="searchText" placeholder="여기서 검색할 수 있어요">
+              <button type="submit">
+               <i class="fa fa-search" aria-hidden="true">
+                 <span class="me_hidden">검색하기</span>
+               </i>
+             </button>
+            </fieldset>
+          </form>
+        </div>
       </article><!-- // #searchBox -->
 
 
@@ -116,6 +128,11 @@
               <div class="search_many_product_image"></div>
             </a>
           </li>
+
+          <li>
+            <a href="./make_preparations_for_page.html">나를 위한 제품<br><span>보러가기</span>
+            <div class="me_product_image"></div>
+            </a>
         </ul>
       </article><!-- // #popularityBox -->
 
@@ -146,9 +163,9 @@
         <h3 id="ikeaLogoImage" class="nobar"><span class="me_hidden">ikea_logo</span></h3>
         <ul class="image_one scroll">
           <li class="image_one_01"></li>
-          <li class="image_one_02"></li>
+          <!-- <li class="image_one_02"></li>
           <li class="image_one_03"></li>
-          <li class="image_one_04"></li>
+          <li class="image_one_04"></li> -->
         </ul>
       </article><!-- // #imageBox01 -->
 
@@ -198,13 +215,7 @@
     <!-- #imageBox02__________________________________ -->
       <article id="imageBox02" class="clearfix">
         <h3 id="ikeaLogoImage2" class="nobar"><span class="me_hidden">ikea_logo</span></h3>
-        <ul class="image_two">
-          <li class="image_two_01"></li>
-          <li class="image_two_02"></li>
-          <li class="image_two_03"></li>
-          <li class="image_two_04"></li>
-          <li class="image_two_05"></li>
-        </ul>
+          <div class="image_two"></div>
       </article><!-- // #imageBox02 -->
 
 
@@ -236,11 +247,12 @@
 
     <!-- #membershipBox__________________________________ -->
       <article id="membershipBox">
-        <h3 class="box_in_h3 nobar">이케아 멤버십 안내</h3>
-        <div class="membership_image"></div>
+        <h3 class="me_hidden">이케아 멤버십 안내</h3>
         <div class="membership_text">
-          <p>ikea family 회원이 되시면 다양한 즐거움을 <br>더 많이 누리실 수 있어요! </p>
-        <a href="#">membership 혜택 보러가기</a>
+          <p>ikea family에 가입하고<br>더 많은 혜택을 누려보세요 </p>
+          <a href="./make_preparations_for_page.html">
+            membership 혜택 보러가기
+          </a>
         </div>
       </article><!-- // #membershipBox -->
 
@@ -248,7 +260,7 @@
 
     <!-- #subServiceBox__________________________________ -->
       <article id="subServiceBox">
-        <h3>부가 서비스</h3>
+        <h3 class="me_hidden">부가 서비스</h3>
         <ul class="service_01">
           <li><a href="./make_preparations_for_page.html">조립서비스</a></li>
           <li><a href="./make_preparations_for_page.html">설치서비스</a></li>
@@ -264,9 +276,18 @@
 
     </article>
     <footer id="footBox">
-      <h2 class="me_hidden">h3_title</h2></footer>
-  </div>
-<script>
+      <h2 class="me_hidden">h3_title</h2>
+      <ul>
+        <li><a href="#"> 웹사이트이용약관</a></li>
+        <li><a href="#">IKEA Korea 개인정보처리방침</a></li>
+        <li><a href="#">IKEA FAMILY 개인정보취급처리방침</a></li>
+        <li><a href="#">IKEA 고객지원센터 1670-4532</a></li>
+        <li>© Inter IKEA Systems B.V. 1999 - 2014</li>
+      </ul>
+    </footer>
+  </div><!-- // #wrap -->
+  
+<!-- <script>
   (function($) {
     var imgOneOffset = $('.image_one').offset().top;
     $(window).on('scroll', function(){
@@ -277,7 +298,7 @@
     });
 
   })(this.jQuery);
-</script>
+</script> -->
 </body>
 </html>
 

@@ -59,8 +59,8 @@
 
     <article id="contentBox">
       <h2 class="me_hidden">contentTitle</h2>
-          <!-- #GoToTop__________________________________ -->
-      <div id="goToTop">
+    <!-- #GoToTop__________________________________ -->
+        <!-- <div id="goToTop">
         <ul>
           <li>
             <button type="button">
@@ -84,43 +84,54 @@
             <i class="fa fa-angle-double-up" aria-hidden="true"></i><p>Go to Top</p></a>
           </li>
         </ul>
-      </div>
+      </div> -->
 
 <!-- #searchBox__________________________________ -->
       <article id="searchBox">
         <h3 class="me_hidden">검색</h3>
-        <div class="search_input"></div>
+        <div class="search_input">
+          <form action="#">
+            <fieldset>
+              <legend for="searchText"><span class="me_hidden">검색</span></legend>
+              <input type="search" id="searchText" name="searchText" placeholder="여기서 검색할 수 있어요">
+              <button type="submit">
+               <i class="fa fa-search" aria-hidden="true">
+                 <span class="me_hidden">검색하기</span>
+               </i>
+             </button>
+            </fieldset>
+          </form>
+        </div>
       </article><!-- // #searchBox -->
-
     
     <!-- newItem__________________________________ -->
       <article id="newItemBox" >
-          <h3>새로나온 상품</h3>
-        <ul class="new_item_list_01 me_link clearfix">
+          <h3 class="me_hidden">새로나온 상품</h3>
+        <ul class="new_item_list me_link clearfix">
             <li>
               <a href="./make_preparations_for_page.html"><span>새로운 상품1</span></a>
             </li>
+            
             <li>
               <a href="./make_preparations_for_page.html"><span>새로운 상품2</span></a>
             </li>
+            
             <li>
               <a href="./make_preparations_for_page.html"><span>새로운 상품3</span></a>
             </li>
-         </ul>
 
-         <ul class="new_item_list_02 me_link" >
             <li>
               <a href="./make_preparations_for_page.html"><span>새로운 상품4</span></a>
             </li>
-          </ul>
-
-          <ul class="new_item_list_03 me_link clearfix" >
+          
             <li>
               <a href="./make_preparations_for_page.html"><span>새로운 상품5</span></a>
             </li>
+          
             <li>
               <a href="./make_preparations_for_page.html"><span>새로운 상품6</span></a>
             </li>
+          
             <li>
               <a href="./make_preparations_for_page.html"><span>새로운 상품7</span></a>
             </li>
@@ -128,24 +139,29 @@
       </article><!-- // newItem -->
     
 
+
     <!-- imageBox01__________________________________ -->
-      <article id="imageBox01" class="clearfix">
-        <h3 id="ikeaLogoImage" class="nobar"><span class="me_hidden">ikea_logo</span></h3>   
-        <div class="image_one"></div> 
-      </article><!-- // imageBox01 -->
+      <article id="imageBox01" > 
+        <h3 id="ikeaLogoImage1" ><span class="me_hidden">imageBox01_title</span></h3>   
+        <div class="image_one">
+          <div class="image_one_01"></div>
+          <div class="image_one_02"></div>
+          <div class="image_one_03"></div>
+        </div>
+      </article><!-- // imageBox02 -->
     
+
+
     <!-- roomTypeCategorization__________________________________ -->
       <article id="roomTypeCategorizationBox" class="clearfix">
-        <h3>공간별 제품</h3>    
-        <div class="big_size_image"></div>
-        <div class="small_size_image clearfix">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <h3 class="me_hidden">공간별 제품</h3>    
+          <ul class="clearfix me_link">
+            <li><a href="./make_preparations_for_page.html"><span></span></a></li>
+            <li><a href="./make_preparations_for_page.html"><span></span></a></li>
+            <li><a href="./make_preparations_for_page.html"><span></span></a></li>
+            <li><a href="./make_preparations_for_page.html"><span></span></a></li>
           </ul>
-        </div>
+        
       </article><!-- // roomTypeCategorization -->
     
 
@@ -163,71 +179,71 @@
 
 
 
+
+
+
+
+
     <!-- imageBox02__________________________________ -->
-      <article id="imageBox02" class="clearfix"> 
-        <h3 id="ikeaLogoImage2" class="nobar"><span class="me_hidden">imageBox02_title</span></h3>   
-        <div class="image_two">
-          <div class="image_two_01"></div>
-          <div class="image_two_02"></div>
-        </div>
-      </article><!-- // imageBox02 -->
+      <article id="imageBox02" class="clearfix">
+        <h3 id="ikeaLogoImage2" ><span class="me_hidden">ikea_logo</span></h3>   
+        <div class="image_two"></div> 
+      </article><!-- // imageBox01 -->
     
+
 
 
     <!-- useTypeCategorization__________________________________ -->
       <article id="useTypeCategorizationBox">
-        <h3>용도별 제품보기</h3>    
-        <div class="use_type_background">
+        <h3 class="me_hidden">용도별 제품보기</h3>    
+          <ul class="use_product_ul clearfix">
+            <li class="use_product_in_li">
+              용도에 따라 <br>제품을 선택하세요
+            </li><!-- //use_product_in_li_1  -->
 
-          <ul class="indicator_ul">
-            <li class="indicator_li"><a href="#">
-              <span class="me_hidden">이미지 바뀔거다</span></a></li>
-            <li class="indicator_li"><a href="#">
-              <span class="me_hidden">이미지 바뀔거다</span></a></li>
-            <li class="indicator_li"><a href="#">
-              <span class="me_hidden">이미지 바뀔거다</span></a></li>
-            <li class="indicator_li"><a href="#">
-              <span class="me_hidden">이미지 바뀔거다</span></a></li>
-            <li class="indicator_li"><a href="#">
-              <span class="me_hidden">이미지 바뀔거다</span></a></li>
-          </ul>
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html"></a>
+            </li><!-- //use_product_in_li_2  -->
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html"></a>
+            </li><!-- //use_product_in_li_3  -->
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html"></a>
+            </li><!-- //use_product_in_li_4  -->
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html"></a>
+            </li><!-- //use_product_in_li_5  -->
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html"></a>
+            </li><!-- //use_product_in_li_6  -->
 
-          <ul class="use_type_ul">
-            <li class="use_type_image"></li>
-            <li class="use_type_image2"></li>
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html"></a>
+            </li><!-- //use_product_in_li_7  -->
+
+            <li class="use_product_in_li">
+              낮은 가격으로 <br>최고의 품질을!
+            </li><!-- //use_product_in_li_8  -->
+
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html"></a>
+            </li><!-- //use_product_in_li_9  -->
+            <li class="use_product_in_li">
+            <a href="./make_preparations_for_page.html">더 많은 제품을 만나보세요!</a>
+            </li><!-- //use_product_in_li_10  -->
+
           </ul>
-        </div>
       </article><!-- // useTypeCategorization -->
     
 
 
 
-    <!-- useTypeSub__________________________________ -->
-      <article id="useTypeSubBox">  
-        <h3 class="me_hidden">useTypeSubBox_title</h3>  
-        <ul class="clearfix me_link">
-          <li>
-            <a href="./make_preparations_for_page.html"><span>용도별 제품보기 list_01</span></a>
-          </li>
-          <li>
-            <a href="./make_preparations_for_page.html"><span>용도별 제품보기 list_02</span></a>
-          </li>
-          <li>
-            <a href="./make_preparations_for_page.html"><span>용도별 제품보기 list_03</span></a>
-          </li>
-          <li>
-            <a href="./make_preparations_for_page.html"><span>용도별 제품보기 list_04</span></a>
-          </li>
-        </ul>
-      </article><!-- // useTypeSub -->
-    
-
-
 
     <!-- gallery__________________________________ -->
       <article id="galleryBox" class="clearfix">
-        <h3 class="me_hidden nobar">gallery</h3>  
+        <h3 class="me_hidden">gallery</h3>  
         <div class="gallery_text_box"></div>
+        
         <div class="gallery_image_box me_link">
           <ul class="gallery_image_list_01 ">
             <li><a href="./make_preparations_for_page.html">
@@ -264,12 +280,20 @@
     </article>
 
 
-
+    <div class="last_image_box"></div>
 
 
     <footer id="footBox">
-      <h2 class="me_hidden">h2_title</h2></footer>
-  </div>
+      <h2 class="me_hidden">h3_title</h2>
+      <ul>
+        <li><a href="#"> 웹사이트이용약관</a></li>
+        <li><a href="#">IKEA Korea 개인정보처리방침</a></li>
+        <li><a href="#">IKEA FAMILY 개인정보취급처리방침</a></li>
+        <li><a href="#">IKEA 고객지원센터 1670-4532</a></li>
+        <li>© Inter IKEA Systems B.V. 1999 - 2014</li>
+      </ul>
+    </footer>
+  </div><!-- // #wrap -->
 
 </body>
 </html>

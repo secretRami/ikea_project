@@ -3,20 +3,8 @@
 
 #wrap{width:100%; min-width:960px; height:auto; margin:0 auto; position:relative;}
 
-h3{width:500px; height:50px;  margin:0 auto; margin-bottom:40px; 
-   @include fontSet_H3($c:blackColor, $lh:50px);}
-
-h3:before{content:" | "; color:$mainColor; font-weight:bold;}
-h3:after{content:" | "; color:$mainColor; font-weight:bold;}
-// class이름 만들어서 따로 적용 추가할것 
-// h3.nobar{}
-h3.nobar:before{display: none;}
-h3.nobar:after{display:none;}
-
-h3.box_in_h3{width:400px; height:auto; @include fontSet_H3($ta:left); 
-  position:absolute; top:10%; left:5%; z-index:2000;}
-
-
+h3{width:500px; height:50px;  margin:0 auto; margin-bottom:50px; 
+   @include fontSet($fs:map-get($fontSize, small));}
 
 
 // #headBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -31,15 +19,17 @@ h3.box_in_h3{width:400px; height:auto; @include fontSet_H3($ta:left);
   h1{width:50%; height:58px; margin:0 auto;
     @include backgroundImage($f:"ikea_outside_image/ikea_logo/ikea_logo_vector.png",$s:121%);
     a{width:100%; height:100%; display:block;}
-  }
-  #gnb{width:60%; height:80px; margin:0 auto;}
+  }//h1
+
+  #gnb{width:60%; height:80px; margin:0 auto; @include paddingAndBoxsizing(4% 0 0 0);}
   #gnb>ul{width:100%; height:100%;}
-  #gnb>ul>li{width:auto; height:100%; float:left; margin-left:5%; 
-    @include fontSet_Gnb( $lh:85px); font-weight:400;
-      a{width:100%; height:100%; display:block; @include paddingAndBoxsizing(10px 0 0 0);}
-      a:hover{color:$subColor; border-bottom:5px solid $whiteColor;  
+  #gnb>ul>li{width:auto; height:100%; float:left; margin-left:4%; 
+    @include fontSet($fs:map-get($fontSize, menuTitle),$c:map-get($color, font3), $lh:20px);
+
+      a{width:100%; height:100%; display:block;}
+      a:hover{color:$subColor; border-bottom:map-get($line,lwhite_4);  
         box-sizing:border-box;}
     }// #gnb>ul>li
   #gnb>ul>li:nth-child(1){margin-left:0;}
-  #gnb>ul>li:nth-child(6){font-size:2rem; float:right;}
+  #gnb>ul>li:nth-child(6){float:right; @include fontSet($fs:map-get($fontSize, middle2),$c:map-get($color, font3), $lh:10px);}
   

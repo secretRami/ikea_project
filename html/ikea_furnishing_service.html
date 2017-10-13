@@ -59,55 +59,92 @@
 
     <article id="contentBox">
       <h2 class="me_hidden">contentTitle</h2>
+      
 <!-- #searchBox__________________________________ -->
       <article id="searchBox">
         <h3 class="me_hidden">검색</h3>
-        <div class="search_input"></div>
+        <div class="search_input">
+          <form action="#">
+            <fieldset>
+              <legend for="searchText"><span class="me_hidden">검색</span></legend>
+              <input type="search" id="searchText" name="searchText" placeholder="여기서 검색할 수 있어요">
+              <button type="submit">
+               <i class="fa fa-search" aria-hidden="true">
+                 <span class="me_hidden">검색하기</span>
+               </i>
+             </button>
+            </fieldset>
+          </form>
+        </div>
       </article><!-- // #searchBox -->
 
 <!-- furnishingIdeaService_______________________ -->
       <article id="furnishingIdeaService" class="clearfix">
         <h3 class="me_hidden nobar">홈 퍼니싱 아이디어</h3>
+          <dl class="furnishing_dl clearfix">
+            <dt class="image_dt furnishing_dt_01 me_link">
+              <a href="./make_preparations_for_page.html"><span></span></a>
+            </dt>
+            <dd class="text_dd furnishing_dd_01">
+              <span>소셜 미디어</span><br> #Ikea
+              <a href="./make_preparations_for_page.html">
+                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+              </a>
+            </dd>
 
-        <div class="furnishingIdeaImage"></div>
-        
-        <div class="furnishingList">
-          <div class="furnishing_content"></div>
-          <ul class="furnishing_button_ul clearfix">
-              
-            <li><button>
-              <i class="fa fa-angle-up" aria-hidden="true"></i>
-            </button></li>
-            <li><button>
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button></li>
-          </ul>
-        </div>
+            <dt class="image_dt furnishing_dt_02 me_link">
+              <a href="./make_preparations_for_page.html"><span></span></a>
+            </dt>
+            <dd class="text_dd furnishing_dd_02">
+              <span>Ikea 홈 퍼니싱</span><br> Idea
+              <a href="./make_preparations_for_page.html">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </a>
+            </dd>
+
+            <dt class="image_dt furnishing_dt_03 me_link">
+              <a href="./make_preparations_for_page.html"><span></span></a>
+            </dt>
+            <dd class="text_dd furnishing_dd_03">
+              <span>Ikea로 꾸민</span><br> My home
+              <a href="./make_preparations_for_page.html">
+                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+              </a>
+            </dd>
+          </dl>
       </article><!-- // #searchBox -->
 
     <!-- planningService____________________________ -->
       <article id="planningService">
         <h3 class="me_hidden nobar">이케아 플래너</h3>
-        <ul class="clearfix"><!-- me_link있다가 지 -->
-          <li><a href="./make_preparations_for_page.html"><p>욕실 <br>planning</p> </a></li>
-          <li><a href="./make_preparations_for_page.html"><p>거실 <br>planning</p> </a></li>
-          <li><a href="./make_preparations_for_page.html"><p>오피스 <br>planning</p> </a></li>
-          <li><a href="./make_preparations_for_page.html"><p>주방 <br>planning</p> </a></li>
-          <li><a href="./make_preparations_for_page.html"><p>침실 <br>planning</p> </a></li>
-        </ul>
+        <div>
+          <ul class="planning_box_01 clearfix"><!-- me_link있다가 지 -->
+            <li><a href="./make_preparations_for_page.html"><p>오피스 <br>planning</p> </a></li>
+            <li><a href="./make_preparations_for_page.html"><p>거실 <br>planning</p> </a></li>
+          </ul>
+          
+          <ul class="planning_box_02 clearfix">
+            <li><a href="./make_preparations_for_page.html"><p>욕실 <br>planning</p> </a></li>
+            <li><a href="./make_preparations_for_page.html"><p>주방 <br>planning</p> </a></li>
+            <li><a href="./make_preparations_for_page.html"><p>침실 <br>planning</p> </a></li>
+          </ul>
+        </div>
       </article><!-- // planningService -->
-
+    </article><!-- // #contentBox -->
     
-
-    </article>
-
-
-
-
+    <div class="image_box"></div>
 
     <footer id="footBox">
-      <h2 class="me_hidden">h2_title</h2></footer>
-  </div>
+      <h2 class="me_hidden">h3_title</h2>
+      <ul class="clearfix">
+        <li><a href="#"> 웹사이트이용약관</a></li>
+        <li><a href="#">IKEA Korea 개인정보처리방침</a></li>
+        <li><a href="#">IKEA FAMILY 개인정보취급처리방침</a></li>
+        <li><a href="#">IKEA 고객지원센터 1670-4532</a></li>
+        <li>© Inter IKEA Systems B.V. 1999 - 2014</li>
+      </ul>
+    </footer>
+  </div><!-- // #wrap -->
 
 </body>
 </html>

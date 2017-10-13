@@ -1,19 +1,15 @@
-#goToTop { width: 100px; height: auto; border-radius: 5px; padding: 5px; background-color: rgba(0, 51, 153, 0.9); position: fixed; right: -10px; bottom: 5%; z-index: 2000; }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+#searchBox { width: 100%; height: 400px; margin: 0 auto; margin-bottom: 150px; padding: 10% 0 0 0; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/product_kategorie/riving_room/riving_5000_02.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
-#goToTop > ul { width: 100%; height: 100%; border: 1px solid #fff; box-sizing: border-box; }
+.search_input { width: 60%; height: 30px; height: 4.6875vw; min-height: 30px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.8); border-radius: 2rem; padding: 0.8%; box-sizing: border-box; }
 
-#goToTop > ul > li { width: 100%; height: auto; margin: 0 auto; }
+#searchBox > .search_input > form { width: 100%; height: 100%; background-color: transparent; }
 
-#goToTop > ul > li:first-child > button { font-size: 0.9rem; color: #fff; text-align: center; line-height: 0; }
+#searchBox > .search_input > form > fieldset { width: 100%; height: 100%; margin: 0; padding: 0; border: 0; background-color: transparent; padding: 0 0 0 4%; box-sizing: border-box; }
 
-#goToTop > ul > li:last-child { border-top: 2px solid #fff; box-sizing: border-box; }
+#searchText { width: 90%; height: 100%; background-color: transparent; float: left; border: 0; font-size: 1.25rem; color: #656565; text-align: left; line-height: 10px; margin-bottom: 0; }
 
-#goToTop a { width: 100%; height: 100%; display: block; font-size: 1.7rem; color: #fff; text-align: center; line-height: 0; padding: 12px 0 12px 0; }
+#searchText:focus { outline: 0; border-bottom: 4px solid rgba(30, 30, 30, 0.2); }
 
-#goToTop a > p { font-size: 15px; }
-
-#goToTop a:hover { background-color: #f26722; border-radius: 5psx; color: #fff; font-weight: 400; }
-
-#searchBox { width: 100%; height: 400px; margin: 0 auto; margin-bottom: 300px; padding: 10% 0 0 0; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_background.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
-
-.search_input { width: 60%; height: 60px; height: 9.375vw; min-height: 60px; margin: 0 auto; background-color: #fff; }
+#searchBox > .search_input button { width: 10%; height: 100%; float: right; background-color: transparent; font-size: 1.875rem; color: #656565; text-align: center; line-height: 10px; margin-bottom: 0; }
