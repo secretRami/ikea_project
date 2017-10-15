@@ -4,7 +4,11 @@ const touch = require('write');
 const del   = require('del');
 
 const sass = require('gulp-sass');
-const browserSync = require('browser-sync').create();
+const cached = require('gulp-cached');
+const watch = require('gulp-watch');
+
+const browserSync = require('browser-sync');
+// .create()
 
 
 // base dir setting
@@ -57,10 +61,18 @@ gulp.task('browserSync',['sassCompile'], function(){
 // sass/scss -> css로 변환__________________________________
 gulp.task('sassCompile', function(){
   gulp.src(dir.before + 'scss/**/*.scss')
+      .pipe(cached('sassFiles'))
       .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest(dir.after+'css'))
       .pipe(browserSync.stream());
 });
+
+// sass/scss변환시 자동으로 바꿔줌__________________________________
+gulp.task('sassWatch', function(){
+  watch(dir.before + 'scss/**/*.scss', function(){gulp.start('sassCompile')});
+});
+
+
 
 
 // 코드에러나 기타등등 표기를 다르게
@@ -80,7 +92,7 @@ gulp.task('delDist', function(){
 
 
 gulp.task('set', ['makeFolder', 'touchFile']);
-gulp.task('default', ['sassCompile', 'browserSync']);
+gulp.task('default', ['sassCompile','sassWatch', 'browserSync']);
 
 
 

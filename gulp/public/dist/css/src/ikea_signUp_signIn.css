@@ -7,90 +7,295 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-#wrap { width: 100%; min-width: 960px; height: auto; margin: 0 auto; position: relative; }
+#wrap {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
 
-h3 { width: 500px; height: 50px; margin: 0 auto; margin-bottom: 50px; font-size: 0.75rem; color: #171717; text-align: center; line-height: 0; margin-bottom: 0; }
+h3 {
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-size: 0.75rem;
+  color: #171717;
+  text-align: center;
+  line-height: 0;
+  margin-bottom: 0; }
 
-#headBox { width: 960px; height: auto; margin: 0 auto; background-color: #003399; padding: 30px 0 0 0; box-sizing: border-box; /* background-color를 위해 설정 */ }
+#headBox {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #003399;
+  padding: 30px 0 0 0;
+  box-sizing: border-box;
+  /* background-color를 위해 설정 */ }
+  #headBox::before {
+    content: " ";
+    width: 100%;
+    height: 200px;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100; }
 
-#headBox::before { content: " "; width: 100%; height: 200px; background-color: inherit; position: absolute; top: 0; left: 0; z-index: -100; }
+h1 {
+  width: 50%;
+  height: 58px;
+  margin: 0 auto;
+  background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_logo_vector.png");
+  background-size: 121%;
+  background-repeat: no-repeat;
+  background-position: center; }
+  h1 a {
+    width: 100%;
+    height: 100%;
+    display: block; }
 
-h1 { width: 50%; height: 58px; margin: 0 auto; background-image: url("../../img/ikea_outside_image/ikea_logo/ikea_logo_vector.png"); background-size: 121%; background-repeat: no-repeat; background-position: center; }
+#gnb {
+  width: 60%;
+  height: 80px;
+  margin: 0 auto;
+  padding: 4% 0 0 0;
+  box-sizing: border-box; }
 
-h1 a { width: 100%; height: 100%; display: block; }
+#gnb > ul {
+  width: 100%;
+  height: 100%; }
 
-#gnb { width: 60%; height: 80px; margin: 0 auto; padding: 4% 0 0 0; box-sizing: border-box; }
+#gnb > ul > li {
+  width: auto;
+  height: 100%;
+  float: left;
+  margin-left: 4%;
+  font-size: 1.125rem;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 0; }
+  #gnb > ul > li a {
+    width: 100%;
+    height: 100%;
+    display: block; }
+  #gnb > ul > li a:hover {
+    color: #ffcc02;
+    border-bottom: 4px solid #fff;
+    box-sizing: border-box; }
 
-#gnb > ul { width: 100%; height: 100%; }
+#gnb > ul > li:nth-child(1) {
+  margin-left: 0; }
 
-#gnb > ul > li { width: auto; height: 100%; float: left; margin-left: 4%; font-size: 1.125rem; color: #fff; text-align: center; line-height: 20px; margin-bottom: 0; }
+#gnb > ul > li:nth-child(6) {
+  float: right;
+  font-size: 1.875rem;
+  color: #fff;
+  text-align: center;
+  line-height: 10px;
+  margin-bottom: 0; }
 
-#gnb > ul > li a { width: 100%; height: 100%; display: block; }
+#contentBox {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding: 5%;
+  box-sizing: border-box;
+  background-image: url("../../img/ikea_outside_image/product_kategorie/ikea_ydholm_opener.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  z-index: 1000;
+  top: -10%; }
 
-#gnb > ul > li a:hover { color: #ffcc02; border-bottom: 4px solid #fff; box-sizing: border-box; }
+button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0.875rem;
+  color: #171717;
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 0; }
 
-#gnb > ul > li:nth-child(1) { margin-left: 0; }
+button.font_color_main {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0.875rem;
+  color: #003399;
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 0;
+  font-weight: bold; }
 
-#gnb > ul > li:nth-child(6) { float: right; font-size: 1.875rem; color: #fff; text-align: center; line-height: 10px; margin-bottom: 0; }
+button:hover {
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(50, 50, 50, 0.3) inset; }
 
-#contentBox { width: 100%; height: auto; margin: 0 auto; margin-bottom: 0; padding: 5%; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/product_kategorie/ikea_ydholm_opener.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: top; position: relative; z-index: 1000; top: -10%; }
+#infoBox {
+  width: 340px;
+  height: 510px;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  background-color: #fbfbfb; }
 
-button { width: 100%; height: 100%; display: block; font-size: 0.875rem; color: #171717; text-align: center; line-height: 45px; margin-bottom: 0; }
+#infoBox > ul {
+  width: 270px;
+  height: 100%;
+  padding: 300px 0 0 0;
+  box-sizing: border-box;
+  margin: 0 auto; }
 
-button.font_color_main { width: 100%; height: 100%; display: block; font-size: 0.875rem; color: #003399; text-align: center; line-height: 45px; margin-bottom: 0; font-weight: bold; }
+#infoBox > ul > li {
+  width: 270px;
+  height: 45px;
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+  color: #fff;
+  text-align: right;
+  line-height: 45px;
+  margin-bottom: 0; }
 
-button:hover { box-shadow: 0.2rem 0.2rem 0.2rem rgba(50, 50, 50, 0.3) inset; }
+#infoBox > ul > li:nth-child(1) {
+  background-color: #003399; }
 
-#infoBox { width: 340px; height: 510px; border-radius: 30px; margin: 0 auto; margin-bottom: 200px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4); background-color: #fbfbfb; }
+#infoBox > ul > li:nth-child(2) {
+  background-color: #ffcc02; }
 
-#infoBox > ul { width: 270px; height: 100%; padding: 300px 0 0 0; box-sizing: border-box; margin: 0 auto; }
+#infoBox > ul > li:nth-child(3) {
+  background-color: #f26722; }
 
-#infoBox > ul > li { width: 270px; height: 45px; margin-bottom: 20px; font-size: 0.875rem; color: #fff; text-align: right; line-height: 45px; margin-bottom: 0; }
+#signInBox {
+  width: 340px;
+  height: 510px;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  background-color: #fbfbfb; }
 
-#infoBox > ul > li:nth-child(1) { background-color: #003399; }
+#signInBox > ul {
+  width: 270px;
+  height: 100%;
+  padding: 30px 0 0 0;
+  box-sizing: border-box;
+  margin: 0 auto; }
 
-#infoBox > ul > li:nth-child(2) { background-color: #ffcc02; }
+#signInBox > ul > li {
+  width: 250px;
+  height: 45px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #003399;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  color: #003399;
+  text-align: left;
+  line-height: 45px;
+  margin-bottom: 0; }
 
-#infoBox > ul > li:nth-child(3) { background-color: #f26722; }
+#signInBox > ul > li:nth-child(1) {
+  width: 120px;
+  background-color: #ffcc02;
+  text-align: left;
+  margin-bottom: 100px;
+  border-bottom: 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px; }
 
-#signInBox { width: 340px; height: 510px; border-radius: 30px; margin: 0 auto; margin-bottom: 200px; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4); background-color: #fbfbfb; }
+#signInBox > ul > li:nth-child(4) {
+  width: 270px;
+  background-color: #003399;
+  text-align: center;
+  margin-top: 150px;
+  border-bottom: 0; }
 
-#signInBox > ul { width: 270px; height: 100%; padding: 30px 0 0 0; box-sizing: border-box; margin: 0 auto; }
+#signUpBox {
+  width: 340px;
+  height: 510px;
+  border-radius: 30px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  background-color: #fbfbfb; }
 
-#signInBox > ul > li { width: 250px; height: 45px; margin-bottom: 20px; border-bottom: 2px solid #003399; box-sizing: border-box; font-size: 0.875rem; color: #003399; text-align: left; line-height: 45px; margin-bottom: 0; }
+#signUpBox > ul {
+  width: 270px;
+  height: 100%;
+  padding: 30px 0 0 0;
+  box-sizing: border-box;
+  margin: 0 auto; }
 
-#signInBox > ul > li:nth-child(1) { width: 120px; background-color: #ffcc02; text-align: left; margin-bottom: 100px; border-bottom: 0; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
+#signUpBox > ul > li {
+  width: 250px;
+  height: 45px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #003399;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  color: #003399;
+  text-align: left;
+  line-height: 45px;
+  margin-bottom: 0; }
 
-#signInBox > ul > li:nth-child(4) { width: 270px; background-color: #003399; text-align: center; margin-top: 150px; border-bottom: 0; }
+#signUpBox > ul > li:nth-child(1) {
+  width: 120px;
+  background-color: #003399;
+  text-align: left;
+  margin-bottom: 20px;
+  border-bottom: 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px; }
 
-#signUpBox { width: 340px; height: 510px; border-radius: 30px; margin: 0 auto; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4); background-color: #fbfbfb; }
+#signUpBox > ul > li:nth-child(7) {
+  width: 270px;
+  background-color: #ffcc02;
+  text-align: center;
+  margin-top: 40px;
+  border-bottom: 0; }
 
-#signUpBox > ul { width: 270px; height: 100%; padding: 30px 0 0 0; box-sizing: border-box; margin: 0 auto; }
+#footBox {
+  width: 100%;
+  height: 200px;
+  background-color: #003399;
+  padding: 60px 0 0 0;
+  box-sizing: border-box; }
+  #footBox > ul {
+    width: 960px;
+    height: 90%;
+    margin: 0 auto; }
+  #footBox > ul > li {
+    height: 40%;
+    float: left;
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 0; }
+    #footBox > ul > li:before {
+      content: "|";
+      margin-right: 10%; }
 
-#signUpBox > ul > li { width: 250px; height: 45px; margin-bottom: 20px; border-bottom: 2px solid #003399; box-sizing: border-box; font-size: 0.875rem; color: #003399; text-align: left; line-height: 45px; margin-bottom: 0; }
+#footBox > ul > li:nth-child(1) {
+  width: 15%; }
+  #footBox > ul > li:nth-child(1):before {
+    content: ""; }
 
-#signUpBox > ul > li:nth-child(1) { width: 120px; background-color: #003399; text-align: left; margin-bottom: 20px; border-bottom: 0; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
+#footBox > ul > li:nth-child(2) {
+  width: 25%; }
 
-#signUpBox > ul > li:nth-child(7) { width: 270px; background-color: #ffcc02; text-align: center; margin-top: 40px; border-bottom: 0; }
+#footBox > ul > li:nth-child(3) {
+  width: 30%; }
 
-#footBox { width: 100%; height: 200px; background-color: #003399; padding: 60px 0 0 0; box-sizing: border-box; }
+#footBox > ul > li:nth-child(4) {
+  width: 25%; }
 
-#footBox > ul { width: 960px; height: 90%; margin: 0 auto; }
-
-#footBox > ul > li { height: 40%; float: left; margin-bottom: 30px; font-size: 0.875rem; color: #fff; text-align: center; line-height: 40px; margin-bottom: 0; }
-
-#footBox > ul > li:before { content: "|"; margin-right: 10%; }
-
-#footBox > ul > li:nth-child(1) { width: 15%; }
-
-#footBox > ul > li:nth-child(1):before { content: ""; }
-
-#footBox > ul > li:nth-child(2) { width: 25%; }
-
-#footBox > ul > li:nth-child(3) { width: 30%; }
-
-#footBox > ul > li:nth-child(4) { width: 25%; }
-
-#footBox > ul > li:nth-child(5) { width: 100%; }
-
-#footBox > ul > li:nth-child(5):before { content: ""; }
+#footBox > ul > li:nth-child(5) {
+  width: 100%; }
+  #footBox > ul > li:nth-child(5):before {
+    content: ""; }
