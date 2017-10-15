@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <!-- 한글사용지정 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 익스플로러 가장 최신 버전으로 끌어올림 -->
+
+  <!--[if lte IE 9]>
+  <script src="../ie/dist/html5shiv/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script>
+  <script src="../ie/css3pie/PIE_IE9.js"></script>
+  <![endif]-->
+  <!-- 조건부주석: 9보다 낮은 버전일 때에 활성화
+    1. html5바디에 구현되는 태그 호환하기 위한 html5shive 
+    2. 선택자 인지하게 만듬.
+    3. css3로 구현되는 
+  -->
+ 
+<!-- css관련 세팅하기 -->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <!-- 코드 초기화 -->
+  
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+  <!-- font를 아이콘화함 -->
+
+  <link rel="stylesheet" type="text/css" href="../css/src/ikea_customer_support.css" />
+  <!-- style 불러옴 -->
+
+<!-- script불러보기.  -->
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <!-- 1. 기본버전 부르고 나서  -->
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <!-- 2. ui를 불러와야 함.  -->
+  
+  
+  <title>ikea customer_support</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox" class="clearfix">
+      <h1><a href="./ikea_main.html"><span class="me_hidden">Ikea logo</span></a></h1>
+      <nav id="gnb">
+        <h2 class="me_hidden">메뉴 목록</h2>
+        <ul class="clearfix">
+          <li><a href="./make_preparations_for_page.html">모든제품</a></li>
+          <li><a href="./make_preparations_for_page.html">NEW</a></li>
+          <li><a href="./ikea_product.html">카테고리보기</a></li>
+          <li><a href="./ikea_furnishing_service.html">홈 퍼니싱 아이디어</a></li>
+          <li><a href="./ikea_customer_support.html">고객지원</a></li>
+          <li>
+            <a href="./ikea_signUp_signIn.html">
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <span class="me_hidden">로그인/회원가입</span>
+          </a></li>  
+        </ul>
+      </nav>
+    </header>
+
+    <article id="contentBox">
+      <h2 class="me_hidden">contentTitle</h2>
+
+    <!-- #GoToTop__________________________________ -->
+      <!-- <div id="goToTop">
+        <ul>
+          <li>
+            <button type="button">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </li>
+          <li>
+            <a href="#customerSupportCenterBox"><p>고객센터</p></a>
+          </li>
+          <li>
+            <a href="#noticeBox"><p>공지사항</p></a>
+          </li>
+          <li>
+            <a href="#productInfoBox"><p>제품안내</p></a>
+          </li>
+          <li>
+            <a href="#offlineStoreInfoeBox"><p>오프라인 매장</p></a>
+          </li>
+          <li>
+            <a href="#ikeaCompanyIntroductionBox"><p>기업소개</p></a>
+          </li>
+          <li>
+            <a href="#headBox">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i><p>Go to Top</p></a>
+          </li>
+        </ul>
+      </div> -->
+
+<!-- #searchBox__________________________________ -->
+      <article id="searchBox">
+        <h3 class="me_hidden">검색</h3>
+        <div class="search_input">
+          <form action="#">
+            <fieldset>
+              <legend for="searchText"><span class="me_hidden">검색</span></legend>
+              <input type="search" id="searchText" name="searchText" placeholder="여기서 검색할 수 있어요">
+              <button type="submit">
+               <i class="fa fa-search" aria-hidden="true">
+                 <span class="me_hidden">검색하기</span>
+               </i>
+             </button>
+            </fieldset>
+          </form>
+        </div>
+      </article><!-- // #searchBox -->
+
+    <!-- customerSupportCenterBox_______________________ -->
+      <article id="customerSupportCenterBox" class="clearfix">
+        <h3 class="me_hidden">고객센터</h3>
+        <div><a href="./make_preparations_for_page.html">자주하는 질문</a></div>
+        <ul class="clearfix">
+          <li><a href="./make_preparations_for_page.html">F&amp;Q</a></li>
+          <li><a href="./make_preparations_for_page.html">부가서비스</a></li>
+          <li><a href="./make_preparations_for_page.html">패밀리 멤버십</a></li>
+          <li><a href="./make_preparations_for_page.html">모바일 앱</a></li>
+        </ul>
+      </article>
+
+
+    <!-- noticeBox_______________________ -->
+      <article id="noticeBox" class="clearfix">
+        <h3 class="me_hidden">공지사항</h3>
+          <ul class="notice_list clearfix">
+            <li class="notice_li">IKEA 코리아 NEWS Room</li>
+            <li class="notice_li">
+              <a href="./make_preparations_for_page.html">기업/제품 NEWS</a></li>
+            <li class="notice_li">
+              <a href="./make_preparations_for_page.html">제품리콜</a></li>
+          </ul>
+      </article>
+
+
+
+    <!-- productInfoBox_______________________ -->
+      <article id="productInfoBox">
+       <h3 class="me_hidden">제품안내</h3>
+
+       <div class="product_information clearfix">
+        
+         <div class="info_box_image"></div>
+         <div class="info_box_text">
+          <div class="border_line"></div>
+           <ul>
+             <li><a href="./make_preparations_for_page.html">제품구매안내</a></li>
+             <li><a href="./make_preparations_for_page.html">조립하기</a></li>
+             <li><a href="./make_preparations_for_page.html">사고 예방하기</a></li>
+           </ul>
+         </div>
+       </div>
+
+       <div class="product_service_check clearfix">
+         <div class="info_box_image_2"></div>
+         <div class="info_box_text_2">
+
+           <ul>
+             <li><a href="./make_preparations_for_page.html"><span>제품재고확인</span></a></li>
+             <li><a href="./make_preparations_for_page.html"><span>반품정책</span></a></li>
+             <li><a href="./make_preparations_for_page.html"><span>이케아 품질보증</span></a></li>
+             <li><a href="./make_preparations_for_page.html"><span>카달로그/브로슈어</span></a></li>
+           </ul>
+         </div>
+       </div>
+      </article>
+
+    <!-- offlineStorInfoeBox_______________________ -->
+      <article id="offlineStoreInfoeBox" class="clearfix">
+        <h3 class="me_hidden">오프라인 매장안내</h3>
+
+       <div class="store_list">
+         <ul>
+           <li>
+            <a href="./make_preparations_for_page.html">
+              <span class="store_title">광명점</span>
+                <br>영업시간
+                <br><span class="time_text">10:00 - 22:00</span>
+                <br>레스토랑 카페 운영시간
+                <br><span class="time_text">09:30 - 21:00</span>
+            </a>
+           </li>
+
+           <li>
+            <a href="./make_preparations_for_page.html">
+              <span class="store_title">고양점</span>
+                <br>영업시간
+                <br><span class="time_text">10:00 - 22:00</span>
+                <br>레스토랑 카페 운영시간
+                <br><span class="time_text">09:30 - 21:00</span>   
+            </a>
+          </li>
+
+         </ul>
+       </div>
+      </article>
+
+    <!-- imageBox_______________________ -->
+      <article id="imageBox" class="clearfix">
+        <h3 id="ikeaLogoImage" ><span class="me_hidden">imageBox</span></h3>
+        <div class="image"><ul>
+          <li class="image_01"></li>
+          <li class="image_02"></li>
+          <li class="image_03"></li>
+          <li class="image_04"></li>
+          <li class="image_05"></li>
+          <li class="image_06"></li>
+        </ul></div>
+      </article>
+
+
+    <!-- ikeaCompanyIntroductionBox_______________________ -->
+      <article id="ikeaCompanyIntroductionBox" class="clearfix">
+        <h3 class="me_hidden ">이케아 기업소개</h3>
+        <ul class="ikeaCompany_text">
+          <li>The Good Company</li>
+          <li>
+            <div class="scroll_out_box">
+            <div class="scroll_in_box"><p>IKEA는 집에서의 더 나은 생활을 만든다는 열정을 지닌 <strong>가치 지향적 기업입니다.</strong> 우리가 만드는 제품 하나하나에는 집을 보다 살기 좋은 공간으로 만들기 위한 아이디어가 담겨 있습니다. 현재 IKEA 그룹은 전 세계 28개국에서 340개의 매장을 운영하고 있습니다*.<br> * 2016년 8월 31일</p></div><!-- // scroll_out_box -->
+            </div><!-- // scroll_in_box -->
+          </li>
+          <li>
+            <a href="./make_preparations_for_page.html">Ikea 더 알아보기</a>
+          </li>
+        </ul>
+        <div class="ikeaCompany_image"></div>
+      </article>
+
+
+
+
+
+
+
+
+
+
+
+
+    </article>
+    <footer id="footBox">
+      <h2 class="me_hidden">h3_title</h2>
+      <ul>
+        <li><a href="#"> 웹사이트이용약관</a></li>
+        <li><a href="#">IKEA Korea 개인정보처리방침</a></li>
+        <li><a href="#">IKEA FAMILY 개인정보취급처리방침</a></li>
+        <li><a href="#">IKEA 고객지원센터 1670-4532</a></li>
+        <li>© Inter IKEA Systems B.V. 1999 - 2014</li>
+      </ul>
+    </footer>
+  </div><!-- // #wrap -->
+
+</body>
+</html>

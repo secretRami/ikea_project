@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <!-- 한글사용지정 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 익스플로러 가장 최신 버전으로 끌어올림 -->
+
+  <!--[if lte IE 9]>
+  <script src="../ie/dist/html5shiv/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script>
+  <script src="../ie/css3pie/PIE_IE9.js"></script>
+  <![endif]-->
+  <!-- 조건부주석: 9보다 낮은 버전일 때에 활성화
+    1. html5바디에 구현되는 태그 호환하기 위한 html5shive 
+    2. 선택자 인지하게 만듬.
+    3. css3로 구현되는 
+  -->
+ 
+<!-- css관련 세팅하기 -->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <!-- 코드 초기화 -->
+  
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+  <!-- font를 아이콘화함 -->
+
+  <link rel="stylesheet" type="text/css" href="../css/src/ikea_main.css" />
+  <!-- style 불러옴 -->
+
+<!-- script불러보기.  -->
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <!-- 1. 기본버전 부르고 나서  -->
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <!-- 2. ui를 불러와야 함.  -->
+  
+  
+  <title>ikea</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox" class="clearfix">
+      <h1><a href="./ikea_main.html"><span class="me_hidden">Ikea logo</span></a></h1>
+      <nav id="gnb">
+        <h2 class="me_hidden">메뉴 목록</h2>
+        <ul class="clearfix">
+          <li><a href="./make_preparations_for_page.html">모든제품</a></li>
+          <li><a href="./make_preparations_for_page.html">NEW</a></li>
+          <li><a href="./ikea_product.html">카테고리보기</a></li>
+          <li><a href="./ikea_furnishing_service.html">홈 퍼니싱 아이디어</a></li>
+          <li><a href="./ikea_customer_support.html">고객지원</a></li>
+          <li>
+            <a href="./ikea_signUp_signIn.html">
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <span class="me_hidden">로그인/회원가입</span>
+          </a></li>  
+        </ul>
+      </nav>
+    </header>
+
+
+    <article id="contentBox">
+      <h2 class="me_hidden">contentTitle</h2>
+
+    <!-- #GoToTop__________________________________ -->
+     <!-- <div id="goToTop">
+        <ul>
+          <li>
+            <button type="button">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </li>
+          <li>
+            <a href="#popularityBox"><p>추천제품</p></a>
+          </li>
+          <li>
+            <a href="#eventBox"><p>event</p></a>
+          </li>
+          <li>
+            <a href="#offlineStoreBox"><p>오프라인 매장</p></a>
+          </li>
+          <li>
+            <a href="#homeFurnishingServiceBox"><p>홈 퍼니싱/<br>플래닝 안내</p></a>
+          </li>
+          <li>
+            <a href="#membershipBox"><p>멤버십 안내</p></a>
+          </li>
+          <li>
+            <a href="#subServiceBox"><p>부가 서비스</p></a>
+          </li>
+          <li>
+            <a href="#headBox">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i><p>Go to Top</p></a>
+          </li>
+        </ul>
+      </div> -->
+
+    <!-- #searchBox__________________________________ -->
+      <article id="searchBox">
+        <h3 class="me_hidden">검색</h3>
+        <div class="search_input">
+          <form action="#">
+            <fieldset>
+              <legend for="searchText"><span class="me_hidden">검색</span></legend>
+              <input type="search" id="searchText" name="searchText" placeholder="여기서 검색할 수 있어요">
+              <button type="submit">
+               <i class="fa fa-search" aria-hidden="true">
+                 <span class="me_hidden">검색하기</span>
+               </i>
+             </button>
+            </fieldset>
+          </form>
+        </div>
+      </article><!-- // #searchBox -->
+
+
+    <!-- #popularityBox__________________________________ -->
+      <article id="popularityBox">
+        <h3 class="me_hidden nobar">추천 제품</h3>
+        <ul class="clearfix">
+          <li>
+            <a href="./make_preparations_for_page.html">인기있는 제품<br><span>보러가기</span>
+            <div class="popularity_product_image"></div>
+            </a>
+
+          </li>
+          <li>
+            <a href="./make_preparations_for_page.html">많이 검색한 제품<br><span>보러가기</span>
+              <div class="search_many_product_image"></div>
+            </a>
+          </li>
+
+          <li>
+            <a href="./make_preparations_for_page.html">나를 위한 제품<br><span>보러가기</span>
+            <div class="me_product_image"></div>
+            </a>
+        </ul>
+      </article><!-- // #popularityBox -->
+
+
+    <!-- #eventBox__________________________________ -->
+      <article id="eventBox" class="clearfix">
+        <h3 class="me_hidden">event 안내</h3>
+        <div class="event_list">
+          <div class="event_text">날이면 날마다 오는 게 아닌!! 
+            <br><span>EVENT!!</span>
+          </div>
+          <div class="indicate">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="event_image"></div>
+      </article><!-- // #eventBox -->
+
+
+    <!-- #imageBox01__________________________________ -->
+      <article id="imageBox01" class="clearfix">
+        <h3 id="ikeaLogoImage" class="nobar"><span class="me_hidden">ikea_logo</span></h3>
+        <ul class="image_one scroll">
+          <li class="image_one_01"></li>
+          <!-- <li class="image_one_02"></li>
+          <li class="image_one_03"></li>
+          <li class="image_one_04"></li> -->
+        </ul>
+      </article><!-- // #imageBox01 -->
+
+
+    <!-- #offlineStoreBox__________________________________ -->
+      <article id="offlineStoreBox" class="clearfix">
+        <h3 class="me_hidden">이케아 오프라인 매장</h3>
+          <ul class="store_one">
+            <li>
+              <a href="./make_preparations_for_page.html">
+                ikea 홍보<br><span>ikea is..</span>
+                
+              </a>
+            </li>
+            <li>
+              <a href="./make_preparations_for_page.html">
+                Ikea 광명점<br>
+                  <span>첫 번째 스토어를 소개합니다!</span>
+                 <span class="image_out_span"></span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="store_two">
+            <li>
+              <a href="./make_preparations_for_page.html">
+                Ikea 고양점<br>
+                  <span>새로운 고양 스토어를 소개합니다!</span>
+                <span class="image_out_span"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./make_preparations_for_page.html">
+                Ikea에서 쇼핑하기<br>
+                  <span>처음 오셨다면 이쪽으로 오세요</span>
+                <span class="image_out_span"></span>
+                
+                
+              </a>
+            </li>
+          </ul>
+      </article><!-- // #offlineStoreBox -->
+
+
+
+
+    <!-- #imageBox02__________________________________ -->
+      <article id="imageBox02" class="clearfix">
+        <h3 id="ikeaLogoImage2" class="nobar"><span class="me_hidden">ikea_logo</span></h3>
+          <div class="image_two"></div>
+      </article><!-- // #imageBox02 -->
+
+
+    <!-- #homeFurnishingServiceBox__________________________________ -->
+      <article id="homeFurnishingServiceBox">
+        <h3 class="me_hidden">홈 퍼니싱/플래닝 안내</h3>
+        <ul>
+          <li class="homefurnishing clearfix">
+            <div class="homefurnishing_title">
+              <h4>Ikea의 홈 퍼니싱 아이디어를 만나보세요</h4>
+              <p>영감을 받고, 많은 아이디어가 생길거에요</p> 
+            </div>
+            <div class="homefurnishing_img one">
+              <a href="./make_preparations_for_page.html"><span>보러가기</span></a> 
+            </div>
+          </li>
+          <li class="planing clearfix">
+            <div class="homefurnishing_title">
+              <h4>Ikea의 플래닝 서비스를 만나보세요</h4>
+              <p>계획성있는 제품 구입이 가능하답니다</p> 
+            </div>
+            <div class="homefurnishing_img two">
+              <a href="./make_preparations_for_page.html"><span>보러가기</span></a> 
+            </div>
+          </li>
+        </ul>
+      </article><!-- // #homeFurnishingServiceBox -->
+
+
+    <!-- #membershipBox__________________________________ -->
+      <article id="membershipBox">
+        <h3 class="me_hidden">이케아 멤버십 안내</h3>
+        <div class="membership_text">
+          <p>ikea family에 가입하고<br>더 많은 혜택을 누려보세요 </p>
+          <a href="./make_preparations_for_page.html">
+            membership 혜택 보러가기
+          </a>
+        </div>
+      </article><!-- // #membershipBox -->
+
+
+
+    <!-- #subServiceBox__________________________________ -->
+      <article id="subServiceBox">
+        <h3 class="me_hidden">부가 서비스</h3>
+        <ul class="service_01">
+          <li><a href="./make_preparations_for_page.html">조립서비스</a></li>
+          <li><a href="./make_preparations_for_page.html">설치서비스</a></li>
+          <li><a href="./make_preparations_for_page.html">픽업&amp;배송서비스</a></li>
+        </ul>
+        <ul class="service_02">
+          <li><a href="./make_preparations_for_page.html">제품 재고확인</a></li>
+          <li><a href="./make_preparations_for_page.html">할부&amp;결제 옵션</a></li>
+          <li><a href="./make_preparations_for_page.html">기프트카드&amp;기타</a></li>
+        </ul>
+      </article><!-- // #subServiceBox -->
+
+
+    </article>
+    <footer id="footBox">
+      <h2 class="me_hidden">h3_title</h2>
+      <ul>
+        <li><a href="#"> 웹사이트이용약관</a></li>
+        <li><a href="#">IKEA Korea 개인정보처리방침</a></li>
+        <li><a href="#">IKEA FAMILY 개인정보취급처리방침</a></li>
+        <li><a href="#">IKEA 고객지원센터 1670-4532</a></li>
+        <li>© Inter IKEA Systems B.V. 1999 - 2014</li>
+      </ul>
+    </footer>
+  </div><!-- // #wrap -->
+  
+<!-- <script>
+  (function($) {
+    var imgOneOffset = $('.image_one').offset().top;
+    $(window).on('scroll', function(){
+      var winScroll = $(this).scrollTop();
+      // console.log(winScroll);
+
+      if( winScroll >= imgOneOffset - 400){$('.image_one').removeClass('scroll');  }
+    });
+
+  })(this.jQuery);
+</script> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

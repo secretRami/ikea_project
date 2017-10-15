@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <!-- 한글사용지정 -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 익스플로러 가장 최신 버전으로 끌어올림 -->
+
+  <!--[if lte IE 9]>
+  <script src="../ie/dist/html5shiv/html5shiv.min.js"></script>
+  <script src="../ie/ie7/IE9.js"></script>
+  <script src="../ie/css3pie/PIE_IE9.js"></script>
+  <![endif]-->
+  <!-- 조건부주석: 9보다 낮은 버전일 때에 활성화
+    1. html5바디에 구현되는 태그 호환하기 위한 html5shive 
+    2. 선택자 인지하게 만듬.
+    3. css3로 구현되는 
+  -->
+ 
+<!-- css관련 세팅하기 -->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <!-- 코드 초기화 -->
+  
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+  <!-- font를 아이콘화함 -->
+
+  <link rel="stylesheet" type="text/css" href="../css/src/ikea_product.css" />
+  <!-- style 불러옴 -->
+
+<!-- script불러보기.  -->
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <!-- 1. 기본버전 부르고 나서  -->
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <!-- 2. ui를 불러와야 함.  -->
+  
+  
+  <title>ikea product</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox" class="clearfix">
+      <h1><a href="./ikea_main.html"><span class="me_hidden">Ikea logo</span></a></h1>
+      <nav id="gnb">
+        <h2 class="me_hidden">메뉴 목록</h2>
+        <ul class="clearfix">
+          <li><a href="./make_preparations_for_page.html">모든제품</a></li>
+          <li><a href="./make_preparations_for_page.html">NEW</a></li>
+          <li><a href="./ikea_product.html">카테고리보기</a></li>
+          <li><a href="./ikea_furnishing_service.html">홈 퍼니싱 아이디어</a></li>
+          <li><a href="./ikea_customer_support.html">고객지원</a></li>
+          <li>
+            <a href="./ikea_signUp_signIn.html">
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <span class="me_hidden">로그인/회원가입</span>
+          </a></li>  
+        </ul>
+      </nav>
+    </header>
+
+    <article id="contentBox">
+      <h2 class="me_hidden">contentTitle</h2>
+    <!-- #GoToTop__________________________________ -->
+        <!-- <div id="goToTop">
+        <ul>
+          <li>
+            <button type="button">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </li>
+          <li>
+            <a href="#newItemBox"><p>새로나온 상품</p></a>
+          </li>
+          <li>
+            <a href="#roomTypeCategorizationBox"><p>공간별 제품</p></a>
+          </li>
+          <li>
+            <a href="#useTypeCategorizationBox"><p>용도별 제품</p></a>
+          </li>
+          <li>
+            <a href="#galleryBox"><p>gallery</p></a>
+          </li>
+          <li>
+            <a href="#headBox">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i><p>Go to Top</p></a>
+          </li>
+        </ul>
+      </div> -->
+
+<!-- #searchBox__________________________________ -->
+      <article id="searchBox">
+        <h3 class="me_hidden">검색</h3>
+        <div class="search_input">
+          <form action="#">
+            <fieldset>
+              <legend for="searchText"><span class="me_hidden">검색</span></legend>
+              <input type="search" id="searchText" name="searchText" placeholder="여기서 검색할 수 있어요">
+              <button type="submit">
+               <i class="fa fa-search" aria-hidden="true">
+                 <span class="me_hidden">검색하기</span>
+               </i>
+             </button>
+            </fieldset>
+          </form>
+        </div>
+      </article><!-- // #searchBox -->
+    
+    <!-- newItem__________________________________ -->
+      <article id="newItemBox" >
+          <h3 class="me_hidden">새로나온 상품</h3>
+        <ul class="new_item_list me_link clearfix">
+            <li>
+              <a href="./make_preparations_for_page.html">새로운 상품1</a>
+            </li>
+            
+            <li>
+              <a href="./make_preparations_for_page.html">새로운 상품2</a>
+            </li>
+            
+            <li>
+              <a href="./make_preparations_for_page.html">새로운 상품3</a>
+            </li>
+
+            <li>
+              <a href="./make_preparations_for_page.html">새로운 상품4</a>
+            </li>
+          
+            <li>
+              <a href="./make_preparations_for_page.html">새로운 상품5</a>
+            </li>
+          
+            <li>
+              <a href="./make_preparations_for_page.html">새로운 상품6</a>
+            </li>
+          
+            <li>
+              <a href="./make_preparations_for_page.html">새로운 상품7</a>
+            </li>
+          </ul>    
+      </article><!-- // newItem -->
+    
+
+
+    <!-- imageBox01__________________________________ -->
+      <article id="imageBox01" > 
+        <h3 id="ikeaLogoImage1" ><span class="me_hidden">imageBox01_title</span></h3>   
+        <div class="image_one">
+          <div class="image_one_01"></div>
+          <div class="image_one_02"></div>
+          <div class="image_one_03"></div>
+        </div>
+      </article><!-- // imageBox02 -->
+    
+
+
+    <!-- roomTypeCategorization__________________________________ -->
+      <article id="roomTypeCategorizationBox" class="clearfix">
+        <h3 class="me_hidden">공간별 제품</h3>    
+          <ul class="clearfix me_link">
+            <li><a href="./make_preparations_for_page.html"></a></li>
+            <li><a href="./make_preparations_for_page.html">거실</a></li>
+            <li><a href="./make_preparations_for_page.html">홈 오피스</a></li>
+            <li><a href="./make_preparations_for_page.html">욕실</a></li>
+          </ul>
+        
+      </article><!-- // roomTypeCategorization -->
+    
+
+    <!-- roomTypeSub__________________________________ -->
+      <article id="roomTypeSubBox">
+        <h3 class="me_hidden">roomTypeSubBox_title</h3>    
+        <ul class="clearfix me_link">
+          <li><a href="./make_preparations_for_page.html"></a></li>
+          <li><a href="./make_preparations_for_page.html">아이방</a></li>
+          <li><a href="./make_preparations_for_page.html">침실</a></li>
+          <li><a href="./make_preparations_for_page.html">다이닝룸</a></li>
+        </ul>
+      </article><!-- // roomTypeSub -->
+    
+
+
+
+
+
+
+
+
+    <!-- imageBox02__________________________________ -->
+      <article id="imageBox02" class="clearfix">
+        <h3 id="ikeaLogoImage2" ><span class="me_hidden">ikea_logo</span></h3>   
+        <div class="image_two"></div> 
+      </article><!-- // imageBox01 -->
+    
+
+
+
+    <!-- useTypeCategorization__________________________________ -->
+      <article id="useTypeCategorizationBox">
+        <h3 class="me_hidden">용도별 제품보기</h3>    
+          <ul class="use_product_ul clearfix">
+            <li class="use_product_in_li">
+              용도에 따라 <br>제품을 선택하세요
+            </li><!-- //use_product_in_li_1  -->
+
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html">01</a>
+            </li><!-- //use_product_in_li_2  -->
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html">02</a>
+            </li><!-- //use_product_in_li_3  -->
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html">03</a>
+            </li><!-- //use_product_in_li_4  -->
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html">04</a>
+            </li><!-- //use_product_in_li_5  -->
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html">05</a>
+            </li><!-- //use_product_in_li_6  -->
+
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html">06</a>
+            </li><!-- //use_product_in_li_7  -->
+
+            <li class="use_product_in_li">
+              낮은 가격으로 <br>최고의 품질을!
+            </li><!-- //use_product_in_li_8  -->
+
+            <li class="use_product_in_li">
+              <a href="./make_preparations_for_page.html">07</a>
+            </li><!-- //use_product_in_li_9  -->
+            <li class="use_product_in_li">
+            <a href="./make_preparations_for_page.html">더 많은 제품을 만나보세요!</a>
+            </li><!-- //use_product_in_li_10  -->
+
+          </ul>
+      </article><!-- // useTypeCategorization -->
+    
+
+
+
+
+    <!-- gallery__________________________________ -->
+      <article id="galleryBox" class="clearfix">
+        <h3 class="me_hidden">gallery</h3>  
+        <div class="gallery_text_box"></div>
+        
+        <div class="gallery_image_box me_link">
+          <ul class="gallery_image_list_01 ">
+            <li><a href="./make_preparations_for_page.html">
+              <span>image 준비중</span>
+            </a></li>
+            <li><a href="./make_preparations_for_page.html">
+              <span>image 준비중</span>
+            </a></li>
+          </ul>
+          <ul class="gallery_image_list_02">
+            <li><a href="./make_preparations_for_page.html">
+              <span>image 준비중</span>
+            </a></li>
+            <li><a href="./make_preparations_for_page.html">
+              <span>image 준비중</span>
+            </a></li>
+            <li><a href="./make_preparations_for_page.html">
+              <span>image 준비중</span>
+            </a></li>
+            <li><a href="./make_preparations_for_page.html">
+              <span>image 준비중</span>
+            </a></li>
+          </ul>
+          <ul class="gallery_image_list_03">
+            <li><a href="./make_preparations_for_page.html">
+              <span>image 준비중</span>
+            </a></li>
+            <li><a href="./make_preparations_for_page.html">
+              <span>image 준비중</span>
+            </a></li>
+          </ul>  
+        </div>
+      </article><!-- // gallery -->
+    </article>
+
+
+    <div class="last_image_box"></div>
+
+
+    <footer id="footBox">
+      <h2 class="me_hidden">h3_title</h2>
+      <ul>
+        <li><a href="#"> 웹사이트이용약관</a></li>
+        <li><a href="#">IKEA Korea 개인정보처리방침</a></li>
+        <li><a href="#">IKEA FAMILY 개인정보취급처리방침</a></li>
+        <li><a href="#">IKEA 고객지원센터 1670-4532</a></li>
+        <li>© Inter IKEA Systems B.V. 1999 - 2014</li>
+      </ul>
+    </footer>
+  </div><!-- // #wrap -->
+
+</body>
+</html>

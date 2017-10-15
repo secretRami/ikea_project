@@ -1,0 +1,52 @@
+@import "../_setting/_base.scss";
+@import "../_setting/_mixin.scss";
+
+
+
+
+// #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#contentBox{@include contentBox($mb:0); @include paddingAndBoxsizing($p:5%);
+@include backgroundImage($f:"ikea_outside_image/product_kategorie/ikea_ydholm_opener.jpg", $p:top); position:relative; z-index:1000; top:-10%;}
+
+  
+  button{width:100%; height:100%; display:block; @include fontSet($lh:45px);}    
+  button.font_color_main{width:100%; height:100%; display:block; 
+    @include fontSet($c:$mainColor,$lh:45px); font-weight:bold;}
+  button:hover{box-shadow:0.2rem 0.2rem 0.2rem rgba(50,50,50,0.3) inset;}  
+
+// kid_1200_08_02.png
+
+#infoBox{width:340px; height:510px; border-radius:30px;  margin:0 auto; 
+          margin-bottom:200px; box-shadow:5px 5px 5px rgba(0,0,0,0.4); background-color:#fbfbfb;
+            }
+  #infoBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:300px 0 0 0 ); margin:0 auto;}
+  #infoBox>ul>li{width:270px; height:45px; margin-bottom:20px; 
+                @include fontSet($c:$whiteColor, $ta:right, $lh:45px);} //#infoBox>ul>li
+
+    #infoBox>ul>li:nth-child(1){background-color:$mainColor;}
+    #infoBox>ul>li:nth-child(2){background-color:$subColor;}
+    #infoBox>ul>li:nth-child(3){background-color:$pointColor;}
+    // #infoBox>button{width:100%; height:100%; display:block; color:$whiteColor;}
+  
+#signInBox{width:340px; height:510px; border-radius:30px; margin:0 auto; margin-bottom:200px; 
+            box-shadow:5px 5px 5px rgba(0,0,0,0.4); background-color:#fbfbfb;}
+#signInBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:30px 0 0 0 ); margin:0 auto;}
+  #signInBox>ul>li{width:250px; height:45px; margin-bottom:20px; border-bottom:2px solid $mainColor; box-sizing:border-box;
+                @include fontSet($c:$mainColor, $ta:left, $lh:45px);} // #signInBox>ul>li
+    #signInBox>ul>li:nth-child(1){width:120px; background-color:$subColor; text-align:left;
+                  margin-bottom:100px; border-bottom:0;  
+                  border-top-right-radius:30px; border-bottom-right-radius:30px;}
+
+    #signInBox>ul>li:nth-child(4){width:270px; background-color:$mainColor;text-align:center;margin-top:150px; border-bottom:0;}
+       
+#signUpBox{width:340px; height:510px; border-radius:30px; margin:0 auto; 
+            box-shadow:5px 5px 5px rgba(0,0,0,0.4); background-color:#fbfbfb;}
+#signUpBox>ul{width:270px; height:100%; @include paddingAndBoxsizing($p:30px 0 0 0 ); margin:0 auto;}
+  #signUpBox>ul>li{width:250px; height:45px; margin-bottom:20px; border-bottom:2px solid $mainColor; box-sizing:border-box;
+                @include fontSet($c:$mainColor, $ta:left, $lh:45px);} //#signUpBox>ul>li
+    #signUpBox>ul>li:nth-child(1){width:120px; background-color:$mainColor; text-align:left;
+                  margin-bottom:20px; border-bottom:0;  
+                  border-top-right-radius:30px; border-bottom-right-radius:30px;}
+
+    #signUpBox>ul>li:nth-child(7){width:270px; background-color:$subColor;text-align:center;margin-top:40px; border-bottom:0;}
+    

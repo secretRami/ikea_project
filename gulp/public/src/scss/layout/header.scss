@@ -1,0 +1,35 @@
+@import "../_setting/_base.scss";
+@import "../_setting/_mixin.scss";
+
+#wrap{width:100%; min-width:960px; height:auto; margin:0 auto; position:relative;}
+
+h3{width:500px; height:50px;  margin:0 auto; margin-bottom:50px; 
+   @include fontSet($fs:map-get($fontSize, small));}
+
+
+// #headBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#headBox{width:960px; height:auto; margin: 0 auto; 
+  background-color: $mainColor; @include paddingAndBoxsizing(30px 0 0 0);
+
+  &::before{content:" "; width: 100%; height:200px; background-color:inherit;
+    position: absolute; top: 0; left: 0; z-index:-100;}
+       /* background-color를 위해 설정 */
+      }// #headBox
+
+  h1{width:50%; height:58px; margin:0 auto;
+    @include backgroundImage($f:"ikea_outside_image/ikea_logo/ikea_logo_vector.png",$s:121%);
+    a{width:100%; height:100%; display:block;}
+  }//h1
+
+  #gnb{width:60%; height:80px; margin:0 auto; @include paddingAndBoxsizing(4% 0 0 0);}
+  #gnb>ul{width:100%; height:100%;}
+  #gnb>ul>li{width:auto; height:100%; float:left; margin-left:4%; 
+    @include fontSet($fs:map-get($fontSize, menuTitle),$c:map-get($color, font3), $lh:20px);
+
+      a{width:100%; height:100%; display:block;}
+      a:hover{color:$subColor; border-bottom:map-get($line,lwhite_4);  
+        box-sizing:border-box;}
+    }// #gnb>ul>li
+  #gnb>ul>li:nth-child(1){margin-left:0;}
+  #gnb>ul>li:nth-child(6){float:right; @include fontSet($fs:map-get($fontSize, middle2),$c:map-get($color, font3), $lh:10px);}
+  

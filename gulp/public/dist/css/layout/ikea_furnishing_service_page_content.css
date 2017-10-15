@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+#contentBox { width: 100%; height: auto; }
+
+#searchBox { width: 100%; height: 400px; margin: 0 auto; margin-bottom: 150px; padding: 10% 0 0 0; box-sizing: border-box; background-image: url("../../img/ikea_outside_image/product_kategorie/riving_room/riving_5000_02.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.search_input { width: 60%; height: 30px; height: 4.6875vw; min-height: 30px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.8); border-radius: 2rem; padding: 0.8%; box-sizing: border-box; }
+
+#searchBox > .search_input > form { width: 100%; height: 100%; background-color: transparent; }
+
+#searchBox > .search_input > form > fieldset { width: 100%; height: 100%; margin: 0; padding: 0; border: 0; background-color: transparent; padding: 0 0 0 4%; box-sizing: border-box; }
+
+#searchText { width: 90%; height: 100%; background-color: transparent; float: left; border: 0; font-size: 1.25rem; color: #656565; text-align: left; line-height: 10px; margin-bottom: 0; }
+
+#searchText:focus { outline: 0; border-bottom: 4px solid rgba(30, 30, 30, 0.2); }
+
+#searchBox > .search_input button { width: 10%; height: 100%; float: right; background-color: transparent; font-size: 1.875rem; color: #656565; text-align: center; line-height: 10px; margin-bottom: 0; }
+
+#furnishingIdeaService { width: 100%; height: auto; margin: 0 auto; margin-bottom: 150px; }
+
+.furnishing_dl { width: 960px; height: auto; margin: 0 auto; }
+
+.image_dt { width: 50%; height: 280px; float: left; }
+
+.image_dt > a { width: 100%; height: 100%; display: block; transition: all 700ms ease-in-out; }
+
+.image_dt > a:hover { background-color: rgba(10, 10, 10, 0.5); }
+
+.text_dd { width: 50%; height: 280px; float: left; padding: 5%; box-sizing: border-box; font-size: 2.1875rem; color: #171717; text-align: center; line-height: 50px; margin-bottom: 0; font-weight: 700; }
+
+.text_dd > a { width: 100%; height: 50px; display: block; margin-top: 10px; }
+
+.text_dd > a > i { width: 150px; height: 50px; border: 10px solid #eee; transition: all 700ms ease-in-out; font-size: 2.5rem; color: #171717; text-align: center; line-height: 50px; margin-bottom: 0; }
+
+.text_dd > a > i:hover { width: 200px; border: 10px solid #aaa; }
+
+.text_dd > span { font-size: 1.25rem; color: #171717; text-align: center; line-height: 20px; margin-bottom: 0; }
+
+.furnishing_dt_01 { background-image: url("../../img/ikea_outside_image/product_kategorie/dining_room/dining_1200_16.jpeg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.furnishing_dt_02 { float: right; background-image: url("../../img/ikea_outside_image/product_kategorie/riving_room/riving_1024_27.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.furnishing_dd_02 { float: right; }
+
+.furnishing_dt_03 { margin-bottom: 0; background-image: url("../../img/ikea_outside_image/product_kategorie/riving_room/riving_1199_19.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+.furnishing_dd_03 { margin-bottom: 0; }
+
+#planningService { width: 100%; height: auto; margin: 0 auto; margin-bottom: 150px; padding-top: 12%; padding-bottom: 12%; background-color: #171717; }
+
+#planningService > div { width: 960px; height: 600px; margin: 0 auto; }
+
+#planningService > div > .planning_box_01 { width: 30%; height: 100%; float: left; }
+
+#planningService > div > .planning_box_02 { width: 67%; height: 100%; float: right; }
+
+#planningService a { width: 100%; height: 100%; display: block; position: relative; box-sizing: border-box; padding-top: 35%; font-size: 1.25rem; color: #fff; text-align: center; line-height: 40px; margin-bottom: 0; }
+
+#planningService a:hover { background-color: rgba(0, 0, 0, 0.3); }
+
+.planning_box_01 > li:nth-child(1) { width: 100%; height: 48.5%; background-image: url("../../img/ikea_outside_image/product_kategorie/home_office/home_office_730_11.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+
+.planning_box_01 > li:nth-child(1) a:after { content: " "; width: 60%; height: 35%; display: block; border: 2px solid #fff; position: absolute; top: 28%; left: 20%; }
+
+.planning_box_01 > li:nth-child(1) > a:hover { color: #171717; }
+
+.planning_box_01 > li:nth-child(2) { width: 100%; height: 48.5%; margin-top: 3%; background-image: url("../../img/ikea_inside_image/product_kategorie/bed_room/20172_cobh01a_01_PH138771.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+
+.planning_box_01 > li:nth-child(2) a:after { content: " "; width: 90%; height: 90%; display: block; border: 10px solid #eee; box-sizing: border-box; position: absolute; top: 5%; left: 5%; }
+
+.planning_box_02 > li:nth-child(1) { width: 48%; height: 100%; float: left; margin-right: 4%; padding: 1%; box-sizing: border-box; border: 2px solid #eee; }
+
+.planning_box_02 > li:nth-child(1) a { width: 100%; height: 100%; display: block; background-image: url("../../img/ikea_outside_image/product_kategorie/riving_room/riving_1060_24.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; transition: all 700ms lenear; }
+
+.planning_box_02 > li:nth-child(1) a > span { display: block; width: 0; height: 0; position: absolute; z-index: -100; overflow: hidden; }
+
+.planning_box_02 > li:nth-child(2) { width: 48%; height: 48.5%; float: left; background-image: url("../../img/ikea_inside_image/product_kategorie/bath_room/20163_coba03a_01_PH132624.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+
+.planning_box_02 > li:nth-child(2) a:after { content: " "; width: 90%; height: 90%; display: block; background-color: rgba(255, 255, 255, 0.1); position: absolute; top: 5%; left: 5%; }
+
+.planning_box_02 > li:nth-child(3) { width: 48%; height: 48.5%; float: left; margin-top: 3%; background-image: url("../../img/ikea_outside_image/product_kategorie/dining_room/dining_1234_10.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+
+.planning_box_02 > li:nth-child(3) a:after { content: " "; width: 60%; height: 60%; display: block; border: 10px solid #eee; box-sizing: border-box; position: absolute; top: 20%; left: 20%; }
+
+.image_box { width: 60%; height: 400px; margin-bottom: 100px; background-image: url("../../img/ikea_inside_image/service_kategorie/home_furnishing/furnishing_14/144_PH128831.jpg"); background-size: 100%; background-repeat: no-repeat; background-position: right bottom; position: relative; right: -40%; z-index: 200; }

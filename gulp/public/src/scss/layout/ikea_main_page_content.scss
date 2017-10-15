@@ -1,0 +1,226 @@
+@import "../_setting/_base.scss";
+@import "../_setting/_mixin.scss";
+
+
+// #contentBox++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#contentBox{width:100%; height:auto;}
+
+@import "../layout/content_overlap_search.scss";
+
+// #popularityBox____________________________________________________________________
+  #popularityBox{@include contentBox($w:960px, $mb:250px); position:relative;}
+    // h3{@include h3_Style; }
+    #popularityBox>ul{width:960px; height:auto; margin:0 auto;}
+    #popularityBox>ul>li{width:28%; height:350px; float:left; border:map-get($line, l2_10); margin-left:8%;
+                        box-sizing:border-box; transition:all 700ms ease;
+                        @include fontSet($fs:map-get($fontSize, middle),$lh:50px, $ta:left); font-weight:700;
+        &:hover{border:map-get($line, l1_10);}
+
+        &>a{width:100%; height:100%; display:block; padding:40px; box-sizing:border-box; position:relative;}
+        &>a:hover{color:$blackColor; 
+                  box-shadow: 20px 20px 20px rgba(000,000,000,0.3);}
+    }// #popularityBox>ul>li
+
+    #popularityBox>ul>li:nth-child(1){margin-left:0;}
+    #popularityBox>ul>li:nth-child(2){} 
+    #popularityBox>ul>li:nth-child(3){float:right;} 
+
+
+      .popularity_product_image{width:200px; height:300px;
+          position:absolute; bottom:-20%; right:-5%; z-index:100;
+          @include backgroundImage($f:"ikea_outside_image/product_kategorie/popular_item/popular_item_936_34_01.png", $s:100%);}
+      .search_many_product_image{width:250px; height:350px;
+          position:absolute; bottom:-30%; right:-14%; z-index:100;
+          @include backgroundImage($f:"ikea_outside_image/product_kategorie/popular_item/popular_item_1896_08_02.png", $s:100%);}
+      .me_product_image{width:230px; height:320px;
+          position:absolute; bottom:-25%; right:-14%; z-index:100;
+          @include backgroundImage($f:"ikea_outside_image/product_kategorie/popular_item/popular_item_1704_13_01.png", $s:100%);}
+
+
+
+
+// #eventBox____________________________________________________________________
+  #eventBox{@include contentBox($mb:450px);}
+    // h3{@include h3_Style; }
+    .event_list{width:30%; height:400px; min-height:400px; 
+      height:(400 / 960 * 100) + vw;
+      background-color:$whiteColor; float:left; position:relative;}
+      .event_text{
+         width:440px; height:200px;
+          @include paddingAndBoxsizing($p:20px 20px 20px 50px);
+          @include fontSet($fs:map-get($fontSize, middle2),$lh:60px, $ta:left);
+          font-weight:bold; background-color:$whiteColor;
+          position:absolute; top:20%; right:-90px;
+
+        &>span{@include fontSet($fs:map-get($fontSize, big3),$c:map-get($color, point),$lh:80px);}
+      }//.event_text
+      
+      .indicate{width:140px; height:20px; position: absolute; top:( 350 / 16 )+ rem; right:2rem;}//.indicate
+        .indicate>ul{width:100%; height:100%;}
+        .indicate>ul>li{width:20px; height:20px; float:left; margin-left:10px; 
+            border-radius:10px; background-color:$mainColor;
+          
+            &:hover{background-color:$pointColor;}
+          }//.indicate>ul>li
+
+        .indicate>ul>li:nth-child(1){margin-left:0;}
+
+
+    .event_image{width:70%; height:400px; min-height:400px; height:(400 / 960 * 100) + vw; float:right;
+                @include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_01/01_PH144472.jpg", $s:cover);}
+
+// #imageBox01____________________________________________________________________
+  #imageBox01{@include contentBox; @include paddingAndBoxsizing($p:50px 50xp 0 0 ); }
+
+      #ikeaLogoImage{width:270px; height:100px; float:right; padding-top:300px; margin-right:5%;
+        @include backgroundImage($f:"ikea_outside_image/ikea_logo/ikea_logo_vector.png");}
+      
+      .image_one{width:950px; height:266px; background-color:map-get($color, line2);
+                height:(326 / 960 * 100) + vw;  min-height:326px;  position:relative;
+                float:left;}
+        
+      //   //     >.image_one_01{transition:all 1000ms ease;}
+      //   //     >.image_one_02{transition:all 1200ms ease;}
+      //   //     >.image_one_03{transition:all 1200ms ease;}
+      //   //     >.image_one_04{transition:all 1000ms ease;}
+          
+      //   //   &.scroll{
+      //   //     >.image_one_01{transform:translate(340px, 500px); opacity:0; }
+      //   //     >.image_one_02{transform:translate(340px, 100px); opacity:0; }
+      //   //     >.image_one_03{transform:translate(340px, 200px); opacity:0; }
+      //   //     >.image_one_04{transform:translate(340px, 300px); opacity:0; }
+      //   // }
+      //         }// .image_one
+
+      .image_one_01{width:104%; height:140%; position:absolute; bottom:0; z-index:200;
+        @include backgroundImage($f:"ikea_outside_image/product_kategorie/home_office/home_office_3784_01_07.png", $s:100%, $p:bottom);}
+      // .image_one_02{width:30%; height:95%; position:absolute; bottom:0; left:40%; z-index:2000;/*background-color:#aff;*/
+      //   @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_03.png", $s:80%);}
+      // .image_one_03{width:15%; height:40%; position:absolute; top:-40%; right:15%; z-index:1000; /* background-color:#6ad;*/
+      //   @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_05.png", $s:65%);}
+      // .image_one_04{width:15%; height:40%; position:absolute; top:0%; right:20%; z-index:1000; /* background-color:#ede;*/
+      //   @include backgroundImage($f:"ikea_inside_image/product_kategorie/home_office/PH141867ps_04.png", $s:65%);}
+
+// #offlineStoreBox____________________________________________________________________
+  #offlineStoreBox{@include contentBox($w:960px);}
+
+    #offlineStoreBox>ul{width:49.5%; height:100%;
+     &.store_one{float:left;}
+     &.store_two{float:right;}
+     
+     &>li{width:100%; height:400px; height:(400 / 960 * 50)+vw; min-height:400px;
+
+       & a{width:100%; height:100%; display:block; 
+                @include fontSet($fs:map-get($fontSize, middle2),$lh:30px, $ta:left ); font-weight:600;
+                @include paddingAndBoxsizing(10%);
+                border:map-get($line,lmain_10); transition:all 700ms ease;}//& a
+
+        & a:hover{background-color:$mainColor/*rgba(242,103,34,0.9)*/; color:$whiteColor; border:0; }//a:hover
+        & span{@include fontSet($fs:map-get($fontSize, base),$c:map-get($color, white),$lh:20px, $ta:left );}
+      }// #offlineStoreBox>ul>li
+    }//#offlineStoreBox>ul
+      
+
+      #offlineStoreBox>.store_one>li:nth-child(1){
+        width:220px; height:220px; height:(220 / 960 * 50)+vw; min-height:220px; margin-left:53%; margin-bottom:2%;
+          &>a{@include backgroundImage($f:"ikea_outside_image/product_kategorie/popular_item/popular_item_600_47_01.png", $p:bottom right, $s:60%);
+              background-color:$mainColor; color:$whiteColor;
+            &:hover{background-color:$pointColor; color:$whiteColor;}
+          }//a:hover
+      } // #offlineStoreBox>.store_one>li:nth-child(1)
+      
+      #offlineStoreBox>.store_one>li:nth-child(2){height:580px; height:(580 / 960 * 50)+vw; min-height:580px;
+        & span.image_out_span{width:135%; height:135%; display:block; float:left; margin-left:-40%;
+          @include backgroundImage($f:"ikea_outside_image/product_kategorie/popular_item/popular_item_700_44_01.png");}
+      } // #offlineStoreBox>.store_one>li:nth-child(2) 
+        
+      #offlineStoreBox>.store_two>li:nth-child(1){margin-bottom:2%;
+        & span.image_out_span{width:120%; height:120%; display:block; float:left; margin-top:-35%; margin-left:10%; @include backgroundImage($f:"ikea_outside_image/product_kategorie/popular_item/popular_item_599_51_01.png", $p:bottom right, $s:100%);}
+      } // #offlineStoreBox>.store_two>li:nth-child(1)
+      
+      #offlineStoreBox>.store_two>li:nth-child(2){
+        & span.image_out_span{width:115%; height:115%; display:block; float:right; margin-right:-18%; @include backgroundImage($f:"ikea_outside_image/product_kategorie/popular_item/popular_item_936_32_01.png", $p:bottom right, $s:65%);}
+        
+      } // #offlineStoreBox>.store_two>li:nth-child(2)
+
+// #imageBox02____________________________________________________________________
+  #imageBox02{@include contentBox; background-color:map-get($color,point); position:relative;}
+    #ikeaLogoImage2{width:270px; height:100px; float:left; margin-left:5%; padding-top:200px;
+      @include backgroundImage($f:"ikea_outside_image/ikea_logo/ikea_logo_vector.png");}
+    
+      .image_two{width:50%; height:520px; position:absolute; right:0; bottom:-5%; z-index:200;
+      @include backgroundImage($f:"ikea_outside_image/product_kategorie/riving_room/riving_2048_10_01.png");}       
+
+
+// #homeFurnishingServiceBox____________________________________________________________________
+  #homeFurnishingServiceBox{@include contentBox($w:960px);}
+    .homefurnishing{width:100%; height:300px; margin-bottom:20px;}
+    .homefurnishing:after{content:" "; width:80%; height:10px; border-bottom:map-get($line,l2_2); margin:0 auto;}
+    .planing{width:100%; height:300px;}
+      .homefurnishing_title{width:620px; height:inherit; float:left; @include paddingAndBoxsizing($p:100px 50px);}
+        
+        .homefurnishing_title>h4{@include fontSet($fs:map-get($fontSize, middle2),$lh:30px); margin-bottom:20px;}
+        .homefurnishing_title>p{@include fontSet($fs:map-get($fontSize, base),$lh:20px);}
+      
+      .homefurnishing_img{width:300px; height:300px; float:right; border-radius:150px; background-color:#eff; position:relative;
+
+          &>a{width:100%; height:100%; display: block; border-radius:150px; color:map-get($color, zero);}// &>a
+          &>a:hover{background-color:rgba(000, 000, 000, 0.7); @include fontSet($fs:map-get($fontSize, middle2),$c:map-get($color, font3), $lh:300px);}//&>a:hover
+        } // .homefurnishing_img   
+        
+      .one{@include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_05/05_PH147252.jpg");}
+      .two{@include backgroundImage($f:"ikea_inside_image/service_kategorie/home_furnishing/furnishing_05/05_PH147257.jpg");}
+
+
+
+
+
+// #membershipBox____________________________________________________________________
+  #membershipBox{@include contentBox($h:550px); @include paddingAndBoxsizing($p:5%);
+  @include backgroundImage($f:"ikea_outside_image/product_kategorie/dining_room/dining_2481_01.jpg");}//#membershipBox
+    
+    .membership_text{width:100%; height:100%; background-color:rgba(255,255,255,0.8); @include paddingAndBoxsizing($p:5%);
+    >p{@include fontSet($fs:map-get($fontSize, middle2),$c:map-get($color, font1), $lh:50px); font-weight:700;}
+    >a{width:50%; height:80px; display:block; border:map-get($line,l3_4);margin:0 auto; margin-top:50px;
+      @include fontSet($fs:map-get($fontSize, middle2),$c:map-get($color, font1), $lh:80px); font-weight:700; transition:all 700ms ;}
+    >a:hover{border:map-get($line,lpoint_10);}
+    }
+    
+
+
+
+
+
+
+// #subServiceBox____________________________________________________________________
+  #subServiceBox{@include contentBox;}
+    // h3{@include h3_Style; }
+    #subServiceBox>ul{width:650px; height:200px; margin:0 auto; margin-bottom:20px;} 
+    #subServiceBox>ul>li{width:200px; height:200px; border-radius:150px; float:left; margin-left:20px; 
+        background-color:$mainColor; transition:all 300ms ease-in;}
+      #subServiceBox>ul>li:nth-child(1){margin-left:0;}
+
+      .service_01>li:nth-child(1){@include backgroundImage($f:"icon_image/ai_white/assembly.png", $p:center 20px, $s:100px);}
+      .service_01>li:nth-child(2){@include backgroundImage($f:"icon_image/ai_white/install.png", $p:center 20px, $s:100px);}
+      .service_01>li:nth-child(3){@include backgroundImage($f:"icon_image/ai_white/pickup.png", $p:center 20px, $s:100px);}
+      
+      
+      .service_02>li:nth-child(1){@include backgroundImage($f:"icon_image/ai_white/inven_check.png", $p:center 20px, $s:100px);}
+      .service_02>li:nth-child(2){@include backgroundImage($f:"icon_image/ai_white/payment_options.png", $p:center 20px, $s:100px);}
+      .service_02>li:nth-child(3){@include backgroundImage($f:"icon_image/ai_white/gift_card.png", $p:center 20px, $s:100px);}
+
+      
+      #subServiceBox>ul>li:hover{border-radius:10px; transition:600ms; background-color:$pointColor;}
+    #subServiceBox>ul>li> a{display:block; width:100%; height:100%; 
+          @include fontSet($fs:map-get($fontSize, menuTitle),$c:map-get($color, font3), $lh:10px);
+          @include paddingAndBoxsizing(140px 30px 30px 30px);}
+
+
+
+
+
+
+
+
+
+

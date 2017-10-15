@@ -1,0 +1,43 @@
+@import "../_setting/_base.scss";
+@import "../_setting/_mixin.scss";
+
+
+
+// #goToTop{width:100px; height:auto; border-radius:5px; padding:5px; background-color:rgba(0,51,153,0.9); 
+//   position:fixed; right:-10px; bottom:5%; z-index:2000; }
+
+// #goToTop>ul{width:100%; height:100%; 
+//   border:map-get($line,lwhite_2); box-sizing:border-box; }
+// #goToTop>ul>li{width:100%; height:auto;  margin:0 auto;}
+
+// #goToTop>ul>li:first-child>button{@include fontSet($fs:map-get($fontSize, menuTitle),$c:map-get($color, font3));}
+// #goToTop>ul>li:last-child{border-top:map-get($line,lwhite_2); box-sizing:border-box;}
+
+// #goToTop a{width:100%; height:100%; display:block;
+//   @include fontSet($fs:map-get($fontSize, base),$c:map-get($color, font3), $lh:40px); padding:12px 0 12px 0;
+//     &>p{font-size:15px;}
+//     &:hover{background-color:$pointColor; border-radius:5px; color:$whiteColor; font-weight:400;}  
+//   }//#goToTop a
+
+
+// #searchBox____________________________________________________________________
+  #searchBox{@include contentBox($h:400px, $mb:150px); 
+            @include paddingAndBoxsizing($p:10% 0 0 0 );
+            @include backgroundImage($f:"ikea_outside_image/product_kategorie/riving_room/riving_5000_02.jpg"); }
+    
+    .search_input{width:60%; height:30px; height:(30 / 960 *150)+vw; min-height:30px; margin: 0 auto; 
+      background-color:rgba(255,255,255,0.8);  border-radius:2rem; @include paddingAndBoxsizing($p:0.8%);}
+
+  #searchBox>.search_input>form{width:100%; height:100%; background-color:transparent;
+    &>fieldset{width:100%; height:100%; margin:0; padding:0; border:0; background-color:transparent; @include paddingAndBoxsizing($p:0 0 0 4%); }//&>fieldset
+  }//#searchBox>.search_input>form
+
+     #searchText{width:90%; height:100%; background-color:transparent; float:left; border:0; 
+        @include fontSet($fs:map-get($fontSize, middle),$c:map-get($color, font2), $lh:10px, $ta:left);
+      
+      &:focus{outline:0; border-bottom:4px solid rgba(30,30,30,0.2); } 
+    }//#searchBox>.search_input #searchText
+      // border:0;  border-bottom:10px solid $mainColor; @include paddingAndBoxsizing($p:3%);
+    #searchBox>.search_input button{width:10%; height:100%; float:right; background-color:transparent; 
+      @include fontSet($fs:map-get($fontSize, middle2),$c:map-get($color, font2), $lh:10px);}
+
